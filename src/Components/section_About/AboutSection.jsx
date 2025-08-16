@@ -1,5 +1,5 @@
 import React from "react";
-import "./section.css"; // تأكد من المسار الصحيح
+import "./section.css";
 
 function AboutSection() {
   return (
