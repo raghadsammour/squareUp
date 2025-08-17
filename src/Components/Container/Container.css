@@ -1,0 +1,15 @@
+.RB_container{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+@media screen and (max-width:1440px) {
+    .RB_container{
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width:992px) {
+.RB_container{
+    flex-direction: column;
+}
+}

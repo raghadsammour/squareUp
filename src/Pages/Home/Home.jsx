@@ -5,10 +5,17 @@ import bg from "../../assets/imgs/Home/ourservices.webp"
 import bgAbout from "../../assets/imgs/Home/What our Clients say About us.webp"
 import smallSquare from "../../assets/Icons/smallSquare.png"
 import TitleText from "../../Components/TitleText/TitleText"
-
+import HeroHome from "../../Components/HeroHome/HeroHome"
+import image from "../../assets/imgs/Home/hero.webp"
 const Home = () => {
   return (
     <>
+    <HeroHome image={image}
+    title="A Digital Product Studio
+that will Work"
+btn1="Our Works"
+btn2="Contact Us"
+description="Trusted By 250+ Companies"/>
   <TitleText
   title="Our Services"
   text="Transform your brand with our innovative digital solutions that captivate and engage your audience."
