@@ -2,5 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  
+}
+.RB_Show{
+    background-color: #9EFF00;
+    color: #262626;
+    border:none;
+    padding: 10px 15px;
+    border-radius: 6px;
+}
+.RB_Process_Description{
+    color: #9EFF00;
+    font-size: 30px;
+    margin: auto;
 }

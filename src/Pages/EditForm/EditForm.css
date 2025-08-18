@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.RB_Form_Edit{
+    margin: 10px auto;
+    width: 500px;
+}
+.RB_Form_Edit h1{
+    color: #9EFF00;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.RB_Form_Edit input{
+    padding: 20px;
+    margin-bottom: 20px;
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    color:  #9EFF00;
+    outline: none;
+}
+.RB_Form_Edit input::placeholder{
+    color: #9EFF00;
+}
+.RB_Form_Edit input[type="submit"]{
+    color: #9EFF00;
+}
+.RB_Form_Edit input:focus{
+    border-color: #9EFF00;
+}
+.RB_Table{
+    width: 80%;
+    margin: auto;
+    th{
+        background-color: #9EFF00;
+        color: black;
+        padding: 8px;
+    }
+    td{
+        background-color: white;
+        color: #9EFF00;
+        padding: 10px;
+        button,a{
+            background: #9EFF00;
+            color: rgb(31, 28, 28);
+            border: 1px solid rgba(0, 0, 0, 0.59);
+            margin: 4px;
+            padding: 10px;
+            cursor: pointer;
+
+        }
+        a{
+            text-decoration: none;
+            display: block;
+        }
+    }
+}
