@@ -1,0 +1,158 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.padding {
+    padding-left: 162px;
+    padding-right: 162px;
+}
+
+.container {
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    /* flex-wrap: wrap; */
+}
+
+.text {
+    max-width: 598px;
+    max-height: 288px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.hero {
+    max-width: 598px;
+    max-height: 571px;
+}
+
+.img {
+    position: relative;
+}
+
+
+.img::before {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background-color: #9EFF00;
+    transform: translateX(-50%);
+    opacity: 0.7;
+}
+
+.img::after {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 2px;
+    background-color: #9EFF00;
+    transform: translateY(-50%);
+    opacity: 0.7;
+}
+
+.logo {
+    width: 150.7px;
+    height: 150px;
+    background-color: #9EFF00;
+    display: flex;
+    border-radius: 27px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.iconAbout {
+    max-width: 80px;
+    max-height: 90px;
+}
+
+
+
+
+/* @media screen and (max-width: 1200px) {
+    .padding {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .container {
+        gap: 60px;
+    }
+} */
+
+
+@media screen and (max-width: 992px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+        gap : 0;
+    }
+
+    .text {
+        order: 1;
+        margin-bottom: 30px;
+    }
+
+    .img {
+        order: 2; 
+    }
+
+    .hero {
+        width: 490px;
+        height: auto;
+    }
+    .padding {
+        padding-left:100px ;
+        padding-right: 100px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .padding {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .hero {
+        width: 100%;
+        max-width: 350px;
+        margin-top: 30px;
+    }
+    .img{
+        width:358px ;
+        height: 337px;
+    }
+    .logo {
+        width: 80px;
+        height: 80px;
+    }
+    .iconAbout {
+        max-width: 42.67px;
+        max-height: 48px;
+    }
+}
+
+
+/* @media screen and (max-width: 480px) {
+    .padding {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .text {
+        font-size: 14px;
+    }
+} */

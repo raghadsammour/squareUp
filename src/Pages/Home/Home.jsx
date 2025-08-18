@@ -8,7 +8,6 @@ import TitleText from "../../Components/TitleText/TitleText";
 import designIcon from "../../assets/Icons/design.svg";
 import engineeringIcon from "../../assets/Icons/engineering.svg";
 import projectManagementIcon from "../../assets/Icons/projectmangment.svg";
-import "./Home.css";
 import LogoTitleTextButton from "../../Components/LogoTitleTextButton/LogoTitleTextButton";
 import Companies from "../../Components/Companies/Companies";
 import zapier from "../../assets/Icons/zapier.svg";
@@ -25,6 +24,9 @@ import mark from "../../assets/imgs/Home/Clients/Mark a.jpg";
 import micheal from "../../assets/imgs/Home/Clients/Micheal a.jpg";
 import sarah from "../../assets/imgs/Home/Clients/Sarah a.jpg";
 import Slider from "../../Components/Slider/Slider";
+import HeroHome from "../../Components/HeroHome/HeroHome";
+import image from "../../assets/imgs/Home/hero.webp";
+
 const Home = () => {
   const card = [
     {
@@ -32,21 +34,18 @@ const Home = () => {
       logo: designIcon,
       title: "Design",
       text: "At Squareup, our design team is passionate about creating stunning, user-centric designs that captivate your audience and elevate your brand. We believe that great design is not just about aesthetics; it's about creating seamless and intuitive user experiences.",
-      
     },
     {
       id: 2,
       logo: engineeringIcon,
       title: "Engineering",
       text: "Our engineering team combines technical expertise with a passion for innovation to build robust and scalable digital solutions. We leverage the latest technologies and best practices to deliver high-performance applications tailored to your specific needs.",
-     
     },
     {
       id: 3,
       logo: projectManagementIcon,
       title: "Project Management",
       text: "Our experienced project management team ensures that your projects are delivered on time, within budget, and according to your specifications. We follow industry-standard methodologies and employ effective communication and collaboration tools to keep you informed throughout the development process.",
-   
     },
   ];
   const companies = [
@@ -120,12 +119,26 @@ const Home = () => {
 
   return (
     <>
-      <ul className="companyName">
+     
+
+      <HeroHome
+        image={image}
+        title="A Digital Product Studio that will Work"
+        btn1="Our Works"
+        btn2="Contact Us"
+        description="Trusted By 250+ Companies"
+      />
+       <ul className="companyName">
         {companies.map((company, index) => (
           <Companies key={index} name={company.name} logo={company.logo} />
         ))}
       </ul>
-
+      <TitleText
+        title="Our Services"
+        text="Transform your brand with our innovative digital solutions that captivate and engage your audience."
+        image={bg}
+        overlay={smallSquare}
+      />
       <TitleText
         title="Our Services"
         text="Transform your brand with our innovative digital solutions that captivate and engage your audience."
@@ -141,7 +154,6 @@ const Home = () => {
             logo={service.logo}
             title={service.title}
             text={service.text}
-         
           />
         ))}
       </div>
