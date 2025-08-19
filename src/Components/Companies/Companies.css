@@ -1,0 +1,42 @@
+.companyName {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 163px;
+}
+
+.companyName .company {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 60px 0;
+  width: clamp(70px, 100%, 100%);
+}
+
+.company img {
+  height: auto;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 1440px) {
+  .companyName {
+    margin: 0px 80px;
+  }
+  .companyName .company {
+    margin: 46px 0;
+  }
+}
+@media screen and (max-width: 992px) {
+  .companyName {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0px 16px;
+
+    justify-content: center;
+  }
+
+  .companyName .company {
+    border: 1px solid rgb(66, 66, 66);
+    margin: 0;
+    padding: 30px 0;
+  }
+}
