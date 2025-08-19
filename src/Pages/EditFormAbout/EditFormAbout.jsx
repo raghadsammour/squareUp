@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 
 const EditFormAbout = () => {
     const  {id}  = useParams();
+    const navigate = useNavigate();
     const [title, setTitle] = useState("");
       const [description, setDescription] = useState("");
       const [itemsAbout, setItems] = useState(() => {
@@ -10,10 +11,12 @@ const EditFormAbout = () => {
               return stored ? JSON.parse(stored) : [];
             });
             useEffect(()=>{
-              const item=itemsAbout.find(item=>item.id==id)
-              setTitle(item.title)
-              setDescription(item.description)
-            },[])
+              const item=itemsAbout.find(item=>item.id==Number(id))
+              if (item) {
+      setTitle(item.title);
+      setDescription(item.description);
+    }
+  }, [id, itemsAbout]);
             useEffect(() => {
                 localStorage.setItem("itemsAbout", JSON.stringify(itemsAbout));
               }, [itemsAbout]);
@@ -21,7 +24,8 @@ const EditFormAbout = () => {
                 e.preventDefault()
                 const updatedItemsAbout=itemsAbout.map(item=>item.id==id?{...item,title,description}:item)
                 setItems(updatedItemsAbout)
-                window.location.reload()
+                navigate("/about");
+                
               }
   return (
     <div className="RB_Form_Edit">

@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import "./EditForm.css"
 
 const EditForm = () => {
     const  {id}  = useParams();
+    const navigate = useNavigate();
     const [title, setTitle] = useState("");
       const [description, setDescription] = useState("");
       const [items, setItems] = useState(() => {
@@ -11,10 +12,13 @@ const EditForm = () => {
         return stored ? JSON.parse(stored) : [];
       });
       useEffect(()=>{
-        const item=items.find(item=>item.id==id)
-        setTitle(item.title)
-        setDescription(item.description)
-      },[])
+
+        const item=items.find(item=>item.id==Number(id))
+        if (item) {
+      setTitle(item.title);
+      setDescription(item.description);
+    }
+  }, [id, items]);
       useEffect(() => {
           localStorage.setItem("items", JSON.stringify(items));
         }, [items]);
@@ -22,7 +26,8 @@ const EditForm = () => {
           e.preventDefault()
           const updatedItems=items.map(item=>item.id==id?{...item,title,description}:item)
           setItems(updatedItems)
-          window.location.reload()
+          navigate("/process");
+          
         }
   return (
     <div className="RB_Form_Edit">

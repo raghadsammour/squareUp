@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+/* import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import "./TableItems.css"
 
@@ -41,4 +41,4 @@ const TableItems = () => {
   )
 }
 
-export default TableItems
+export default TableItems */

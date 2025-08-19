@@ -2,7 +2,7 @@ import TitleText from "../../Components/TitleText/TitleText";
 import "./Process.css";
 import bgProcess from "../../assets/imgs/Process/herosection.webp";
 import smallSquare from "../../assets/Icons/smallSquare.png";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Container from "../../Components/Container/Container";
 import Card from "../../Components/Card/Card";
 import { BiColor } from "react-icons/bi";
@@ -12,7 +12,14 @@ const Process = () => {
       const stored=localStorage.getItem("items")
       return stored?JSON.parse(stored):[]
   })
-    const [showMore, setShowMore] = useState(false)
+     const [showMore, setShowMore] = useState(() => {
+    const storedShowMore = localStorage.getItem("showMore");
+    return storedShowMore === "false" ? false : true;
+  });
+    useEffect(() => {
+    localStorage.setItem("showMore", showMore);
+  }, [showMore])
+   const shouldShowButton = items.length > 4;
     const halfLength = Math.ceil(items.length / 2);
     const visibleItems = showMore ? items : items.slice(0, halfLength);
   return (
@@ -36,7 +43,11 @@ const Process = () => {
           })
         }
       </Container>
-      <button onClick={() => setShowMore(!showMore)} className="RB_Show"> {showMore ? "Show Less" : "Show More"} </button>
+      {shouldShowButton && (
+        <button onClick={() => setShowMore(!showMore)} className="RB_Show">
+          {showMore ? "Show Less" : "Show More"}
+        </button>
+      )}
     </>
   );
 };
