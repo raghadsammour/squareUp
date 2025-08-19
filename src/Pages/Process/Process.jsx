@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import Container from "../../Components/Container/Container";
 import Card from "../../Components/Card/Card";
 const Process = () => {
+
   const [items,setItems]=useState(()=>{
       const stored=localStorage.getItem("items")
       return stored?JSON.parse(stored):[]
@@ -20,6 +21,7 @@ const Process = () => {
    const shouldShowButton = items.length > 4;
     const halfLength = Math.ceil(items.length / 2);
     const visibleItems = showMore ? items : items.slice(0, halfLength);
+
   return (
     <>
       <TitleText
@@ -45,11 +47,13 @@ const Process = () => {
           })
         )}
       </Container>
+
       {shouldShowButton && (
         <button onClick={() => setShowMore(!showMore)} className="RB_Show">
           {showMore ? "Show Less" : "Show More"}
         </button>
       )}
+
     </>
   );
 };

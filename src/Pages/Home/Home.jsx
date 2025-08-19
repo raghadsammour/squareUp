@@ -8,6 +8,25 @@ import TitleText from "../../Components/TitleText/TitleText";
 import HeroHome from "../../Components/HeroHome/HeroHome";
 import image from "../../assets/imgs/Home/hero.webp";
 import Header from "../../Components/Header/Header";
+import designIcon from "../../assets/Icons/design.svg";
+import engineeringIcon from "../../assets/Icons/engineering.svg";
+import projectManagementIcon from "../../assets/Icons/projectmangment.svg";
+import LogoTitleTextButton from "../../Components/LogoTitleTextButton/LogoTitleTextButton";
+import Companies from "../../Components/Companies/Companies";
+import zapier from "../../assets/Icons/zapier.svg";
+import Zoom from "../../assets/Icons/zoom.png";
+import Adobe from "../../assets/Icons/adobe.svg";
+import amazon from "../../assets/Icons/amazon.svg";
+import Slack from "../../assets/Icons/slack.svg";
+import Spotify from "../../assets/Icons/spotify.svg";
+import ClientsAboutUs from "../../Components/ClientsAboutUs/ClientsAboutUs";
+import john from "../../assets/imgs/Home/Clients/John a.jpg";
+import emily from "../../assets/imgs/Home/Clients/Emily a.jpg";
+import laura from "../../assets/imgs/Home/Clients/Laura a.jpg";
+import mark from "../../assets/imgs/Home/Clients/Mark a.jpg";
+import micheal from "../../assets/imgs/Home/Clients/Micheal a.jpg";
+import sarah from "../../assets/imgs/Home/Clients/Sarah a.jpg";
+import Slider from "../../Components/Slider/Slider";
 const Home = () => {
   const card = [
     {
@@ -100,6 +119,7 @@ const Home = () => {
 
   return (
     <>
+
       <Header className="RB_Header">
         <HeroHome
           image={image}
@@ -117,6 +137,44 @@ const Home = () => {
         />
       </Header>
 
+
+      <HeroHome
+        image={image}
+        title="A Digital Product Studio that will Work"
+        btn1="Our Works"
+        btn2="Contact Us"
+        description="Trusted By 250+ Companies"
+      />
+       <ul className="companyName">
+        {companies.map((company, index) => (
+          <Companies key={index} name={company.name} logo={company.logo} />
+        ))}
+      </ul>
+      <TitleText
+        title="Our Services"
+        text="Transform your brand with our innovative digital solutions that captivate and engage your audience."
+        image={bg}
+        overlay={smallSquare}
+      />
+      <TitleText
+        title="Our Services"
+        text="Transform your brand with our innovative digital solutions that captivate and engage your audience."
+        image={bg}
+        overlay={smallSquare}
+      />
+
+      <div className="services">
+        {card.map((service) => (
+          <LogoTitleTextButton
+            key={service.id}
+            id={service.id}
+            logo={service.logo}
+            title={service.title}
+            text={service.text}
+          />
+        ))}
+      </div>
+
       <TitleText
         title="Why Choose SquareUp?"
         text="Experience excellence in digital craftsmanship with our team of skilled professionals dedicated to delivering exceptional results."
@@ -131,6 +189,25 @@ const Home = () => {
         overlay={smallSquare}
       />
 
+      <div className="clients">
+        {users.map((user) => (
+          <ClientsAboutUs
+            key={user.id}
+            id={user.id}
+            name={user.name}
+            work={user.work}
+            avatar={user.avatar}
+            title={user.title}
+            text={user.text}
+          />
+        ))}
+      </div>
+
+      <div className="slideSmall">
+        <Slider slides={users} />
+      </div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script>
       <TitleText
         title="Frequently Asked Questions"
         text="Still you have any questions? Contact our Team via hello@squareup.com"
