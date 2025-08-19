@@ -5,6 +5,7 @@ import bg from "../../assets/imgs/Home/ourservices.webp";
 import bgAbout from "../../assets/imgs/Home/What our Clients say About us.webp";
 import smallSquare from "../../assets/Icons/smallSquare.png";
 import TitleText from "../../Components/TitleText/TitleText";
+import Header from "../../Components/Header/Header";
 import designIcon from "../../assets/Icons/design.svg";
 import engineeringIcon from "../../assets/Icons/engineering.svg";
 import projectManagementIcon from "../../assets/Icons/projectmangment.svg";
@@ -26,7 +27,6 @@ import sarah from "../../assets/imgs/Home/Clients/Sarah a.jpg";
 import Slider from "../../Components/Slider/Slider";
 import HeroHome from "../../Components/HeroHome/HeroHome";
 import image from "../../assets/imgs/Home/hero.webp";
-
 const Home = () => {
   const card = [
     {
@@ -119,7 +119,24 @@ const Home = () => {
 
   return (
     <>
-     
+
+      <Header className="RB_Header">
+        <HeroHome
+          image={image}
+          title="A Digital Product Studio
+                      that will Work"
+          btn1="Our Works"
+          btn2="Contact Us"
+          description="Trusted By 250+ Companies"
+        />
+        <TitleText
+          title="Our Services"
+          text="Transform your brand with our innovative digital solutions that captivate and engage your audience."
+          image={bg}
+          overlay={smallSquare}
+        />
+      </Header>
+
 
       <HeroHome
         image={image}
@@ -157,6 +174,7 @@ const Home = () => {
           />
         ))}
       </div>
+
       <TitleText
         title="Why Choose SquareUp?"
         text="Experience excellence in digital craftsmanship with our team of skilled professionals dedicated to delivering exceptional results."
@@ -170,6 +188,7 @@ const Home = () => {
         image={bgAbout}
         overlay={smallSquare}
       />
+
       <div className="clients">
         {users.map((user) => (
           <ClientsAboutUs
@@ -189,7 +208,6 @@ const Home = () => {
       </div>
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script>
-
       <TitleText
         title="Frequently Asked Questions"
         text="Still you have any questions? Contact our Team via hello@squareup.com"

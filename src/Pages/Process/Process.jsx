@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Container from "../../Components/Container/Container";
 import Card from "../../Components/Card/Card";
 import { BiColor } from "react-icons/bi";
@@ -8,13 +8,22 @@ import bgProcess from "../../assets/imgs/Process/herosection.webp";
 import smallSquare from "../../assets/Icons/smallSquare.png";
 
 const Process = () => {
-  const [items, setItems] = useState(() => {
-    const stored = localStorage.getItem("items");
-    return stored ? JSON.parse(stored) : [];
+
+  const [items,setItems]=useState(()=>{
+      const stored=localStorage.getItem("items")
+      return stored?JSON.parse(stored):[]
+  })
+     const [showMore, setShowMore] = useState(() => {
+    const storedShowMore = localStorage.getItem("showMore");
+    return storedShowMore === "false" ? false : true;
   });
-  const [showMore, setShowMore] = useState(false);
-  const halfLength = Math.ceil(items.length / 2);
-  const visibleItems = showMore ? items : items.slice(0, halfLength);
+    useEffect(() => {
+    localStorage.setItem("showMore", showMore);
+  }, [showMore])
+   const shouldShowButton = items.length > 4;
+    const halfLength = Math.ceil(items.length / 2);
+    const visibleItems = showMore ? items : items.slice(0, halfLength);
+
   return (
     <>
       <TitleText
@@ -40,10 +49,13 @@ const Process = () => {
           })
         )}
       </Container>
-      <button onClick={() => setShowMore(!showMore)} className="RB_Show">
-        {" "}
-        {showMore ? "Show Less" : "Show More"}{" "}
-      </button>
+
+      {shouldShowButton && (
+        <button onClick={() => setShowMore(!showMore)} className="RB_Show">
+          {showMore ? "Show Less" : "Show More"}
+        </button>
+      )}
+
     </>
   );
 };
