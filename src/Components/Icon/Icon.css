@@ -1,0 +1,35 @@
+.greenLightContainer {
+  margin-top: 0;
+  background-color: transparent;
+  width: 88px;
+  height: 88px;
+  overflow: hidden;
+  position: absolute;
+  border-radius: 10px;
+}
+.greenLight {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: rgba(157, 255, 0, 0.566);
+  overflow: hidden;
+  right: 0px;
+  filter: blur(15px);
+  -webkit-filter: blur(15px);
+}
+
+@media screen and (max-width: 1440px) {
+  .greenLightContainer {
+    margin-top: 0;
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .greenLightContainer {
+    margin-top: 30px;
+    width: 72px;
+    height: 70px;
+  }
+}

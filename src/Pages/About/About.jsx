@@ -1,10 +1,10 @@
+import Container from "../../Components/Container/Container";
+import { useState } from "react";
+import Card from "../../Components/Card/Card";
 import TitleText from "../../Components/TitleText/TitleText";
 import "./About.css";
 import bgAbout from "../../assets/imgs/About/Abouthero.webp";
 import smallSquare from "../../assets/Icons/smallSquare.png";
-import Container from "../../Components/Container/Container";
-import { useState } from "react";
-import Card from "../../Components/Card/Card";
 
 const About = () => {
   const [itemsAbout,setItemsAbout]=useState(()=>{
@@ -14,11 +14,13 @@ const About = () => {
   return (
     <>
       <TitleText
+
       title="About Us"
       text="Welcome to SquareUp, where collaboration, expertise, and client-centricity intersect to shape the future of digital innovation."
       image={bgAbout}
       overlay={smallSquare}
     />
+
     <Container>
       {
           itemsAbout.length==0?

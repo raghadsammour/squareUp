@@ -5,8 +5,6 @@ import smallSquare from "../../assets/Icons/smallSquare.png";
 import { useEffect, useState } from "react";
 import Container from "../../Components/Container/Container";
 import Card from "../../Components/Card/Card";
-import { BiColor } from "react-icons/bi";
-
 const Process = () => {
   const [items,setItems]=useState(()=>{
       const stored=localStorage.getItem("items")
@@ -31,17 +29,21 @@ const Process = () => {
         overlay={smallSquare}
       />
       <Container>
-        {
-          visibleItems.length===0?
-          <p className="RB_Process_Description">There is no items to show</p>:
-          visibleItems.map(item=>{
-            return <Card style={{color:"white"}} key={item.id} 
-              id={item.id}
-              title={item.title}
-              description={item.description}
-            />
+        {visibleItems.length === 0 ? (
+          <p className="RB_Process_Description">There is no items to show</p>
+        ) : (
+          visibleItems.map((item) => {
+            return (
+              <Card
+                style={{ color: "white" }}
+                key={item.id}
+                id={item.id}
+                title={item.title}
+                description={item.description}
+              />
+            );
           })
-        }
+        )}
       </Container>
       {shouldShowButton && (
         <button onClick={() => setShowMore(!showMore)} className="RB_Show">
