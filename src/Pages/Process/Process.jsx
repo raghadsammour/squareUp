@@ -1,12 +1,10 @@
-import { useEffect, useState } from "react";
-import Container from "../../Components/Container/Container";
-import Card from "../../Components/Card/Card";
-import { BiColor } from "react-icons/bi";
 import TitleText from "../../Components/TitleText/TitleText";
 import "./Process.css";
 import bgProcess from "../../assets/imgs/Process/herosection.webp";
 import smallSquare from "../../assets/Icons/smallSquare.png";
-
+import { useEffect, useState } from "react";
+import Container from "../../Components/Container/Container";
+import Card from "../../Components/Card/Card";
 const Process = () => {
 
   const [items,setItems]=useState(()=>{

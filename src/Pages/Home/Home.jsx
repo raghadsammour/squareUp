@@ -5,6 +5,8 @@ import bg from "../../assets/imgs/Home/ourservices.webp";
 import bgAbout from "../../assets/imgs/Home/What our Clients say About us.webp";
 import smallSquare from "../../assets/Icons/smallSquare.png";
 import TitleText from "../../Components/TitleText/TitleText";
+import HeroHome from "../../Components/HeroHome/HeroHome";
+import image from "../../assets/imgs/Home/hero.webp";
 import Header from "../../Components/Header/Header";
 import designIcon from "../../assets/Icons/design.svg";
 import engineeringIcon from "../../assets/Icons/engineering.svg";
@@ -25,8 +27,6 @@ import mark from "../../assets/imgs/Home/Clients/Mark a.jpg";
 import micheal from "../../assets/imgs/Home/Clients/Micheal a.jpg";
 import sarah from "../../assets/imgs/Home/Clients/Sarah a.jpg";
 import Slider from "../../Components/Slider/Slider";
-import HeroHome from "../../Components/HeroHome/HeroHome";
-import image from "../../assets/imgs/Home/hero.webp";
 const Home = () => {
   const card = [
     {
