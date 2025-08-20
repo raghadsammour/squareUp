@@ -1,0 +1,62 @@
+:root {
+    --color-bg: #262626;
+    --color-text: #ffffff;
+    --color-accent: #B6FF19;
+    --color-hover: #333333;
+    --color-TrustedText: #FDFFFA;
+    --color-logoText: #E6E6E6;
+    /*  هي لون الكتابة يلي جنب الايوقنات*/
+    --color-Nomber: #D8FF99;
+    /* لون الارقام */
+    --color-copy: #98989A;
+    /* حقوق النشر */
+}
+
+.card {
+    background-color: var(--color-bg);
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid rgb(80, 79, 79);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(182, 255, 25, 0.2);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin: 0;
+}
+
+.card p {
+    font-size: 20px;
+    color: var(--color-logoText);
+    padding-bottom: 40px;
+}
+
+.card-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-actions button {
+    background-color: var(--color-accent);
+    color: var(--color-bg);
+    border: none;
+    padding: 0.5rem 1.2rem;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.card-actions button:hover {
+    background-color:var(--color-Nomber);
+}
