@@ -5,6 +5,9 @@ import bg from "../../assets/imgs/Home/ourservices.webp"
 import bgAbout from "../../assets/imgs/Home/What our Clients say About us.webp"
 import smallSquare from "../../assets/Icons/smallSquare.png"
 import TitleText from "../../Components/TitleText/TitleText"
+import Faq from "../../Components/Faq/Faq"
+import Thanks from "../../Components/Thanks/thanks"
+
 
 const Home = () => {
   return (
@@ -38,6 +41,8 @@ overlay={smallSquare}
 image={bgFAQ}
 overlay={smallSquare}
 />
+<Faq />
+<Thanks  title="Thank you for your Interest in SquareUp." Text="We would love to hear from you and discuss how we can help bring your digital ideas to life. Here are the different ways you can get in touch with us."/>
 </>
   )
 }
