@@ -5,7 +5,12 @@ import TitleText from "../../Components/TitleText/TitleText";
 import "./About.css";
 import bgAbout from "../../assets/imgs/About/Abouthero.webp";
 import smallSquare from "../../assets/Icons/smallSquare.png";
+<<<<<<< HEAD
+
+
+=======
 import SectionAbout from "../../Components/SectionAbout/SectionAbout";
+>>>>>>> fb91b2ee7609aac24363cfccd8babe07d0846c30
 const About = () => {
   const [itemsAbout, setItemsAbout] = useState(() => {
     const stored = localStorage.getItem("itemsAbout");

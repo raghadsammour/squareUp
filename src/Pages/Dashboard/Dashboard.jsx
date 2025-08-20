@@ -1,7 +1,15 @@
 import "./Dashboard.css";
 import {Outlet } from "react-router-dom";
+<<<<<<< HEAD
+import TableItems from "../../Components/TableItems/TableItems";
+import FormItems from "../../Components/FormItems/FormItems";
+import FormAbout from "../../Components/FormAbout/FormAbout";
+import TableAbout from "../../Components/TableAbout/TableAbout";
+
+=======
 import FormCrud from "../../Components/FormCrud/FormCrud";
 import TableCrud from "../../Components/TableCrud/TableCrud";
+>>>>>>> fb91b2ee7609aac24363cfccd8babe07d0846c30
 const Dashboard = () => {
   return (
     <div className="RB_DashboardContainer">
@@ -31,7 +39,13 @@ const Dashboard = () => {
       />
         </div>
       <Outlet/>
+<<<<<<< HEAD
+      
+    </>
+    
+=======
     </div>
+>>>>>>> fb91b2ee7609aac24363cfccd8babe07d0846c30
   ); 
 };
 

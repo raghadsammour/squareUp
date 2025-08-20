@@ -1,0 +1,61 @@
+.trash-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    direction: rtl;
+}
+
+.back-btn {
+    background: #3182ce;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+.empty-trash {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.trash-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.trash-item {
+    position: relative;
+    border: 1px dashed #e53e3e;
+    border-radius: 8px;
+    padding: 1rem;
+    background: #fff9f9;
+}
+
+.trash-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.restore-btn {
+    background: #38a169;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete-btn {
+    background: #e53e3e;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
