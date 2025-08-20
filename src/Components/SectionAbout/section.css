@@ -15,12 +15,11 @@
     justify-content: center;
     align-items: center;
     gap: 100px;
-    /* background-color: #262626; */  
 }
 
 
 .text {
-    
+    margin-top: 100px;
     max-width: 598px;
     max-height: 288px;
     
@@ -40,11 +39,10 @@ h1 {
 }
 
 .hero {
+    position: relative;
     max-width: 598px;
     max-height: 571px;
-    
-   
-    /* display: block; */
+    z-index: 0;
 }
 
 .img {
@@ -61,18 +59,20 @@ h1 {
     left: 50%;
     width: 3px;
     height: 100%;
-    background: #FFD700; 
     transform: translateX(-50%);
-    opacity: 0.7;
     z-index: 1;
     background: linear-gradient(
-        to left,
-        rgba(255, 255, 0, 0),
-        #9EFF00 20%,
-        #9EFF0080 80%,
-        rgba(255, 255, 0, 0)
+        to bottom,
+        rgba(158,255,0,0) 0%,     
+        rgba(158,255,0,1) 35%,    
+        rgba(158,255,0,1) 65%,
+        rgba(158,255,0,0) 100%    
     );
+    filter: drop-shadow(0 0 10px rgba(158,255,0,.35));
+    pointer-events: none;
 }
+
+
 
 .img::after {
     content: ''; 
@@ -80,18 +80,21 @@ h1 {
     left: 0;
     top: 50%;
     width: 100%;
-    height: 2px;
-    background: #FFD700; 
+    height: 3px;
     transform: translateY(-50%);
-    opacity: 0.7;
+
     z-index: 1;
+   
     background: linear-gradient(
         to right,
-        rgba(255, 255, 0, 0),
-        #9EFF00 20%,
-        #9EFF00 80%,
-        rgba(255, 255, 0, 0)
+        rgba(158,255,0,0) 0%,     
+        rgba(158,255,0,1) 35%,    
+        rgba(158,255,0,1) 65%,
+        rgba(158,255,0,0) 100%    
     );
+    filter: drop-shadow(0 0 10px rgba(158,255,0,.35));
+    pointer-events: none;
+
 }
 
 .logo {
@@ -107,8 +110,18 @@ h1 {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
-    backdrop-filter: blur(217px)
+    
 }
+/* .logo::before {
+    content: '';
+    position: absolute;
+    inset: -120px; 
+    background: radial-gradient(circle,
+        rgba(255, 255, 255, 0.65) 0%,
+        rgba(255, 255, 255, 0) 70%);
+    backdrop-filter: blur(217px);  
+    z-index: -1; 
+  } */
 
 .iconAbout {
     width: 80px;
@@ -119,28 +132,23 @@ h1 {
 
 
 @media screen and (max-width: 1440px) {
-    .container {
-        /* flex-direction: column; */
-        /* text-align: center; */
-        /* gap: 100px; */
-    }
+
     .logo{
         width: 100px;
         height:100px ;
+        border-radius: 16px;
 
 
     }
     .iconAbout {
-        width: 53pxpx;
-        height: 60px;
+        max-width: 53px;
+        max-height: 60px;
         
     }
     .text {
-        order: 1;
-        /* margin-bottom: 30px; */
+        max-width: 490px;
         p{
             font-size: 16px;
-            /* margin-right: 100px; */
         }
         h1{
         font-size: 38px;
@@ -159,11 +167,26 @@ h1 {
         padding-left:80px;
         padding-right: 80px;
     }
+
+    .logo::before {
+        inset: -90px;
+      }
+    
+      .img::before {
+        width: 3px;
+      }
+      .img::after {
+        height: 3px;
+      }
 }
 
 @media screen and (max-width: 992px) {
 .container{
     flex-direction: column;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
 }
     .iconAbout {
         max-width: 42pxpx;
@@ -175,8 +198,8 @@ h1 {
         padding-right: 30px;
     }
     .text{
+        min-width:91.79vw ;
         margin-bottom: 30px;
-    
         p{
             font-size: 14px;
             
@@ -184,26 +207,36 @@ h1 {
         h1{
         font-size: 28px;
         margin-bottom: 16px;
-
         }
     }
     .hero {
-        max-width: 358px;
-        /* margin-top: 30px; */
+        width: 100%;
     }
-     .img{
-       width:358px;
-        height: auto;
-    
-    .logo {
-        width: 80px;
-        height: 80px;
+    .img{
+        width:91.79vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
     }
     .iconAbout {
         max-width: 42.67px;
         max-height: 48px;
     }
- 
+    .logo {
+        width: 80px;
+        height: 80px;
+        border-radius: 16px;
 }
+/* .logo::before {
+    inset: -60px;   */
+  }
 
+  .img::before {
+    width: 3px;
+  }
+  .img::after {
+    height: 3px;
+  }
 }

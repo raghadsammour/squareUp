@@ -1,6 +1,6 @@
 import React from "react";
 import "./section.css";
-import aboutImg from "../../assets/imgs/About/Abouthero.webp";
+import aboutImg from "../../assets/imgs/About/AboutSection.webp";
 import logoImg from "../../assets/Icons/logoSquare.svg";
 
 const SectionAbout = () => {
