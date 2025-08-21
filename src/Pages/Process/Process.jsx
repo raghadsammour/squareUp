@@ -1,23 +1,63 @@
-import TitleText from "../../Components/TitleText/TitleText"
-import "./Process.css"
-import bgProcess from "../../assets/imgs/Process/herosection.webp"
-import smallSquare from "../../assets/Icons/smallSquare.png"
-import Thanks from "../../Components/Thanks/thanks"
-import AtSquareUp from "../../Components/AtSquareUp/AtSquareUp"
 
+import TitleText from "../../Components/TitleText/TitleText";
+import "./Process.css";
+import bgProcess from "../../assets/imgs/Process/herosection.webp";
+import smallSquare from "../../assets/Icons/smallSquare.png";
+import { useEffect, useState } from "react";
+import Container from "../../Components/Container/Container";
+import Card from "../../Components/Card/Card";
 const Process = () => {
-  return (<>
-  <TitleText
-  title="Process of Starting the Project"
-  text="At SquareUp, we value transparency, collaboration, and delivering exceptional results."
-image={bgProcess}
-overlay={smallSquare}
-/>
-<AtSquareUp />
-<Thanks title="Thank you for your Interest in SquareUp." Text="We would love to hear from you and discuss how we can help bring your digital ideas to life. Here are the different ways you can get in touch with us." />
 
-</>
-  )
-}
+  const [items,setItems]=useState(()=>{
+      const stored=localStorage.getItem("items")
+      return stored?JSON.parse(stored):[]
+  })
+     const [showMore, setShowMore] = useState(() => {
+    const storedShowMore = localStorage.getItem("showMore");
+    return storedShowMore === "false" ? false : true;
+  });
+    useEffect(() => {
+    localStorage.setItem("showMore", showMore);
+  }, [showMore])
+   const shouldShowButton = items.length > 4;
+    const halfLength = Math.ceil(items.length / 2);
+    const visibleItems = showMore ? items : items.slice(0, halfLength);
 
-export default Process
+  return (
+    <>
+      <TitleText
+        title="Process of Starting the Project"
+        text="At SquareUp, we value transparency, collaboration, and delivering exceptional results."
+        image={bgProcess}
+        overlay={smallSquare}
+      />
+      <Container>
+        {visibleItems.length === 0 ? (
+          <p className="RB_Process_Description">There is no items to show</p>
+        ) : (
+          visibleItems.map((item) => {
+            return (
+              <Card
+                style={{ color: "white" }}
+                key={item.id}
+                id={item.id}
+                title={item.title}
+                description={item.description}
+              />
+            );
+          })
+        )}
+      </Container>
+
+      {shouldShowButton && (
+        <button onClick={() => setShowMore(!showMore)} className="RB_Show">
+          {showMore ? "Show Less" : "Show More"}
+        </button>
+      )}
+
+    </>
+  );
+};
+
+
+export default Process;

@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.slides {
+  display: contents;
+}
+.slideSmall {
+  display: none;
+}
+.slide {
+  padding: 0 1px;
+
+  width: 47.6%;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s all;
+}
+.slideSmall {
+  margin: 0 80px;
+}
+.slider {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  gap: 4.7%;
+}
+
+.arrows {
+  width: calc(100% - 2px);
+  left: 1px;
+  position: absolute;
+  top: 50%;
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  transform: translateY(-50%);
+
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    width: 32px;
+    height: 32px;
+    border: 1px solid rgb(80, 79, 79);
+    background: none;
+    border-radius: 10%;
+    cursor: pointer;
+  }
+  button:hover {
+    transition: all 0.3s ease;
+    background-color: rgba(216, 255, 153, 1);
+    border: 1px solid rgba(216, 255, 153, 1);
+  }
+
+  .colorArrow {
+    color: rgb(80, 79, 79);
+    background-color: transparent;
+    width: 20px;
+  }
+  .colorArrow:hover {
+    color: black;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .clients {
+    display: none;
+  }
+  .slideSmall {
+    display: block;
+  }
+}
+@media screen and (max-width: 992px) {
+  .slideSmall {
+    margin: 0 16px;
+  }
+
+  .slide {
+    width: 99%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 1s all;
+  }
+
+  .slider {
+    gap: 4.5%;
+  }
+
+  .arrows {
+    width: calc(100% - 10px);
+    left: 7px;
+
+    button {
+      width: 15px;
+      height: 30px;
+    }
+    button:hover {
+      transition: all 0.3s ease;
+      background-color: rgba(216, 255, 153, 1);
+      border: 1px solid rgba(216, 255, 153, 1);
+    }
+
+    .colorArrow {
+      color: rgb(80, 79, 79);
+      background-color: transparent;
+    }
+    .colorArrow:hover {
+      color: black;
+    }
+  }
+}

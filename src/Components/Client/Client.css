@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Barlow", sans-serif;
+}
+.imgName {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.clientInfo {
+  display: flex;
+  flex-direction: column;
+  padding-left: 18px;
+  padding-right: 10px;
+}
+.client-card {
+  border: 1px solid rgb(80, 79, 79);
+  display: flex;
+  border-radius: 8px;
+  padding: 20px;
+  /* justify-content: space-between; */
+
+  .img-box {
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 8px;
+    flex-shrink: 0;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  div {
+    .clientName {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 150%;
+
+      color: rgba(255, 255, 255, 1);
+    }
+    .clientWork {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 150%;
+      color: rgba(230, 230, 230, 1);
+    }
+  }
+}
+.website {
+  padding: 18px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.website:hover {
+  background-color: #555;
+}
+.clients {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media screen and (max-width: 1440px) {
+    
+  .clientInfo {
+    padding-left: 12px;
+    padding-right: 6px;
+  }
+  .client-card {   
+      height: fit-content;
+    padding: 14px;
+    /* margin-bottom: 80px; */
+
+    .img-box {
+      width: 50px;
+      height: 50px;
+    }
+
+    .clientName {
+      font-size: 16px;
+    }
+    .clientWork {
+      font-size: 14px;
+    }
+  }
+  .website {
+    padding: 14px 16px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .clients {
+    display: none;
+  }
+  .clientInfo {
+    padding-left: 10px;
+    padding-right: 0;
+  }
+  .client-card {
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 0px;
+    padding: 14px;
+
+    .img-box {
+      width: 40px;
+      height: 40px;
+    }
+    div {
+      .clientName {
+        font-size: 16px;
+      }
+      .clientWork {
+        font-size: 14px;
+      }
+    }
+  }
+  .website {
+    display: none;
+  }
+}
