@@ -27,12 +27,7 @@ import mark from "../../assets/imgs/Home/Clients/Mark a.jpg";
 import micheal from "../../assets/imgs/Home/Clients/Micheal a.jpg";
 import sarah from "../../assets/imgs/Home/Clients/Sarah a.jpg";
 import Slider from "../../Components/Slider/Slider";
-<<<<<<< HEAD
-import HeroHome from "../../Components/HeroHome/HeroHome";
-import image from "../../assets/imgs/Home/hero.webp";
 import Main from '../../Pages/Main/Main';
-=======
->>>>>>> fb91b2ee7609aac24363cfccd8babe07d0846c30
 const Home = () => {
   const card = [
     {
@@ -126,8 +121,6 @@ const Home = () => {
   return (
     <>
 
-<<<<<<< HEAD
-=======
       <Header className="RB_Header">
         <HeroHome
           image={image}
@@ -145,7 +138,6 @@ const Home = () => {
         />
       </Header>
 
->>>>>>> fb91b2ee7609aac24363cfccd8babe07d0846c30
 
       <HeroHome
         image={image}

@@ -1,13 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-<<<<<<< HEAD
-/*     background-color: rgba(26, 26, 26, 1);
- */}
-=======
-}
->>>>>>> fb91b2ee7609aac24363cfccd8babe07d0846c30
+    box-sizing: border-box;}
 @font-face {
     font-family: barlow4;
     src: url("/font/barlow/Barlow-Regular.ttf");
