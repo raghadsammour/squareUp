@@ -1,5 +1,9 @@
 import "./Dashboard.css";
 import {Outlet } from "react-router-dom";
+// import TableItems from "../../Components/TableItems/TableItems";
+// import FormItems from "../../Components/FormItems/FormItems";
+// import FormAbout from "../../Components/FormAbout/FormAbout";
+// import TableAbout from "../../Components/TableAbout/TableAbout";
 import FormCrud from "../../Components/FormCrud/FormCrud";
 import TableCrud from "../../Components/TableCrud/TableCrud";
 const Dashboard = () => {
@@ -31,7 +35,9 @@ const Dashboard = () => {
       />
         </div>
       <Outlet/>
+
     </div>
+
   ); 
 };
 

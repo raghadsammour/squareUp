@@ -1,0 +1,109 @@
+:root {
+    --color-bg: #262626;
+    --color-text: #ffffff;
+    --color-accent: #B6FF19;
+    --color-hover: #333333;
+    --color-TrustedText: #FDFFFA;
+    --color-logoText: #E6E6E6;
+    /*  هي لون الكتابة يلي جنب الايوقنات*/
+    --color-Nomber: #D8FF99;
+    /* لون الارقام */
+    --color-copy: #98989A;
+    /* حقوق النشر */
+}
+
+.work-container {
+    margin: 0 auto;
+    padding: 0 162px;
+    box-sizing: border-box;
+}
+
+.intro-section h1 {
+    font-size: 48px;
+    margin-top: 120px;
+    margin-bottom: 14px;
+    color: var(--color-text);
+}
+
+.intro-text {
+    font-size: 18px;
+    color: var(--color-logoText);
+    margin-bottom: 50px;
+}
+
+.work-container h2 {
+    display: inline-block;
+    padding: 14px 12px;
+    font-size: 22px;
+    font-weight: normal;
+    color: var(--color-text);
+    background: var(--color-hover);
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* نفس التصميم فوق 1440 */
+@media screen and (max-width: 1440px) {
+    .work-container {
+        padding: 0 60px;
+        /* تقليل الهوامش */
+    }
+
+    .intro-section h1 {
+        font-size: 40px;
+    }
+
+    .intro-text {
+        font-size: 16px;
+    }
+
+    .work-container h2 {
+        font-size: 20px;
+        padding: 12px 10px;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, minmax(300px, 1fr));
+        gap: 1.5rem;
+    }
+}
+
+/* شاشات أقل من 992px */
+@media screen and (max-width: 992px) {
+    .work-container {
+        padding: 0 20px;
+        /* حواف صغيرة */
+    }
+
+    .projects-grid {
+        gap: 1.5rem;
+    }
+
+    .intro-section h1 {
+        font-size: 28px;
+        margin-top: 60px;
+    }
+
+    .intro-text {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .work-container h2 {
+        font-size: 18px;
+        padding: 10px 8px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+}
