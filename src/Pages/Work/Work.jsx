@@ -16,7 +16,6 @@ image={bgAbout}
 overlay={smallSquare}
 />
 <AtSquareUp />
-<Thanks title="Let us Bring your Ideas to Life in the Digital World." Text="No matter which services you choose, we are committed to delivering exceptional results that exceed your expectations. Our multidisciplinary team works closely together to ensure seamless collaboration and a unified vision for your digital product." />
   <div className="work-page">
       <TitleText
         title="What our Clients say About us"
@@ -28,6 +27,9 @@ overlay={smallSquare}
         <MainWork />
       </div>
     </div>
+    
+<Thanks title="Let us Bring your Ideas to Life in the Digital World." Text="No matter which services you choose, we are committed to delivering exceptional results that exceed your expectations. Our multidisciplinary team works closely together to ensure seamless collaboration and a unified vision for your digital product." />
+
 </>
   )
 }
