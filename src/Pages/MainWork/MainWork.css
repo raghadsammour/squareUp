@@ -45,16 +45,13 @@
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
     width: 100%;
     box-sizing: border-box;
 }
 
-/* نفس التصميم فوق 1440 */
 @media screen and (max-width: 1440px) {
     .work-container {
         padding: 0 60px;
-        /* تقليل الهوامش */
     }
 
     .intro-section h1 {
@@ -76,11 +73,9 @@
     }
 }
 
-/* شاشات أقل من 992px */
 @media screen and (max-width: 992px) {
     .work-container {
         padding: 0 20px;
-        /* حواف صغيرة */
     }
 
     .projects-grid {

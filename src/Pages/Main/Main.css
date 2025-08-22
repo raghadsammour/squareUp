@@ -1,8 +1,6 @@
 .main {
-    padding: 20px 162px; 
-    background: url('/src/assets/imgs/background/background.png') no-repeat center center;
+    padding: 0 162px;
     background-size: cover;
-    min-height: 100vh;
     color: var(--color-text);
     box-sizing: border-box;
 }
@@ -12,7 +10,7 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
-    max-width: 1596px; 
+    max-width: 1596px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -20,10 +18,10 @@
 .card-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 30px;
-    max-width: 1596px; 
+/*     gap: 30px;
+ */    max-width: 1597px;
     margin: 0 auto;
-            grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 
 }
 
@@ -31,10 +29,10 @@
     .main {
         padding: 40px 100px;
     }
-    
-    
+
+
     .card-grid {
-        max-width: 1240px; 
+        max-width: 1240px;
     }
 }
 
@@ -42,14 +40,13 @@
     .main {
         padding: 40px 50px;
     }
-    
-    
+
+
     .card-grid {
         max-width: 892px;
     }
-    
+
     .card-grid {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
     }
 }
-
