@@ -23,7 +23,7 @@ const Process = () => {
     const visibleItems = showMore ? items : items.slice(0, halfLength);
 
   return (
-    <>
+    <div className="work-page">
       <TitleText
         title="Process of Starting the Project"
         text="At SquareUp, we value transparency, collaboration, and delivering exceptional results."
@@ -54,7 +54,7 @@ const Process = () => {
         </button>
       )}
 
-    </>
+    </div>
   );
 };
 
