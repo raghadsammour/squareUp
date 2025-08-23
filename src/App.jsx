@@ -13,11 +13,11 @@ import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import TrashPage from './Pages/TrashPage/TrashPage';
 import AdminPage from './Pages/Admin/AdminPage';
+import UsersTable from "./Pages/UsersTable/UsersTable.jsx";
 function App() {
-
   return (
     <>
-      <Navbar />
+      <Navbar/>
 
       <Routes>
         <Route path='/' element={<Home />} />
@@ -29,12 +29,12 @@ function App() {
         <Route path="/trash" element={<TrashPage />} />
         <Route path="/admin" element={<AdminPage />} />
         <Route path='/dashboard' element={<Dashboard />} >
-        <Route path='/dashboard/editform/:id' element={<EditForm />} />
-        <Route path='/dashboard/editformabout/:id' element={<EditFormAbout />} />
+          <Route path='/dashboard/editform/:id' element={<EditForm />} />
+          <Route path='/dashboard/editformabout/:id' element={<EditFormAbout />} />
+          <Route path='/dashboard/userstable' element={<UsersTable/>} />
         </Route>
       </Routes>
       <Footer />
-
     </>
 
   )

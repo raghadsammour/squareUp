@@ -9,6 +9,7 @@ const FormCrud = ({ storageItems, lastIdKey, redirectPath, titleText }) => {
     return stored ? JSON.parse(stored) : [];
   });
   let lastId = parseInt(localStorage.getItem(lastIdKey)) || 0;
+  /* if(isNaN(lastId)) lastId=0 */
   const handleSubmit = (e) => {
     e.preventDefault();
     const newItem = {
