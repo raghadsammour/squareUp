@@ -1,0 +1,28 @@
+.RB_ConnectionWrapper{
+    /* display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center; */
+    height: 154px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 80px;
+    background-color: #1A1A1A;
+    border: 1px solid #262626;
+    border-top-width: 0;
+}
+@media screen and (max-width:992px){
+    .RB_ConnectionWrapper{
+        height: 144px;
+    }
+}
+@media screen and (max-width:992px){
+    .RB_ConnectionWrapper{
+        /* grid-template-columns: 1fr;
+        justify-items: center; */
+        height: 237px;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}

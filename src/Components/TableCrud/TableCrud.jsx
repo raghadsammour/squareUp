@@ -3,17 +3,17 @@ import { Link, useNavigate } from 'react-router-dom';
 
 import "./TableCrud.css"
 const TableCrud = ({ storageItems, editRoute,goTo}) => {
-  const navigate=useNavigate()
+  /* const navigate=useNavigate() */
   const [items, setItems] = useState(() => {
     const stored = localStorage.getItem(storageItems);
     return stored ? JSON.parse(stored) : [];
   });
-
   const deleteItem = (idDeleted) => {
     const itemsAfterDelete = items.filter(item => item.id !== idDeleted);
     setItems(itemsAfterDelete);
     localStorage.setItem(storageItems, JSON.stringify(itemsAfterDelete));
-    navigate(goTo)
+    /* navigate(goTo) */
+    window.location.reload()
   };
   
   return (

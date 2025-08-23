@@ -1,0 +1,21 @@
+.RB_ContactIcons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: #1A1A1A;
+    border: 1px solid #262626;
+    padding: 50px 0;
+}
+@media screen and (max-width:1440px) {
+    .RB_ContactIcons{
+        padding: 40px 0;
+        gap: 20px;
+    }
+}
+@media screen and (max-width:1440px) {
+    .RB_ContactIcons{
+        flex-direction: column;
+        padding: 30px 24px;
+    }
+}

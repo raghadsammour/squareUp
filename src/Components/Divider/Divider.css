@@ -1,0 +1,10 @@
+.RB_Divider{
+    width: 1px;
+    height: 100%;
+    background-color: #262626;
+}
+@media screen and (max-width:992px) {
+    .RB_Divider{
+        display: none;
+    }
+}
