@@ -19,7 +19,7 @@ const initialProjects = [
         subtitle: "E-Commerce Platform for Fashion Hub",
         image: chicBoutique,
         highlightText: "Online Boutique",
-        link: "https://www.chicboutique.com",
+        link: "https://focal-x.com/",
         description: "We developed a visually stunning and user-friendly e-commerce platform for Chic Boutique, a renowned fashion retailer. The platform featured seamless product browsing, secure payment integration, and personalized recommendations, resulting in increased online sales and customer satisfaction.",
     },
     {
@@ -28,7 +28,7 @@ const initialProjects = [
         subtitle: "Mobile App for Food Delivery Service",
         image: hungrybites,
         highlightText: "Food Delivery App",
-        link: "https://www.hungrybites.com",
+        link: "https://focal-x.com/",
         description: "HungryBites is a food delivery service app we developed with real-time order tracking, multiple payment options, and an intuitive interface that improved customer experience and operational efficiency.",
     },
     {
@@ -37,7 +37,7 @@ const initialProjects = [
         subtitle: "Booking and Reservation System for Event Management",
         image: evenmasters,
         highlightText: "Food Delivery App",
-        link: "https://www.hungrybites.com",
+        link: "https://focal-x.com/",
         description: "HungryBites is a food delivery service app we developed with real-time order tracking, multiple payment options, and an intuitive interface that improved customer experience and operational efficiency.",
     },
     {
@@ -46,7 +46,7 @@ const initialProjects = [
         subtitle: "Custom Software for Workflow Automation",
         image: protech,
         highlightText: "Food Delivery App",
-        link: "https://www.hungrybites.com",
+        link: "https://focal-x.com/",
         description: "HungryBites is a food delivery service app we developed with real-time order tracking, multiple payment options, and an intuitive interface that improved customer experience and operational efficiency.",
     },
     {
@@ -55,25 +55,25 @@ const initialProjects = [
         subtitle: "Web Portal for Real Estate Listings",
         image: dreamhomes,
         highlightText: "Food Delivery App",
-        link: "https://www.hungrybites.com",
+        link: "https://focal-x.com/",
         description: "HungryBites is a food delivery service app we developed with real-time order tracking, multiple payment options, and an intuitive interface that improved customer experience and operational efficiency.",
     },
     {
         id: 6,
         title: "FitLife Tracker",
         subtitle: "Custom Software for Supply Chain Management",
-        image: dreamhomes,
+        image: fitlifetracker,
         highlightText: "Food Delivery App",
-        link: "https://www.hungrybites.com",
+        link: "https://focal-x.com/",
         description: "HungryBites is a food delivery service app we developed with real-time order tracking, multiple payment options, and an intuitive interface that improved customer experience and operational efficiency.",
     },
     {
         id: 7,
         title: "Global Logistics Solutions",
         subtitle: "Educational Platform for Online Learning",
-        image: fitlifetracker,
+        image: globallogistics,
         highlightText: "Food Delivery App",
-        link: "https://www.hungrybites.com",
+        link: "https://focal-x.com/",
         description: "HungryBites is a food delivery service app we developed with real-time order tracking, multiple payment options, and an intuitive interface that improved customer experience and operational efficiency.",
     },
     {
@@ -82,7 +82,7 @@ const initialProjects = [
         subtitle: "Educational Platform for Online Learning",
         image: educonnect,
         highlightText: "Food Delivery App",
-        link: "https://www.hungrybites.com",
+        link: "https://focal-x.com/",
         description: "HungryBites is a food delivery service app we developed with real-time order tracking, multiple payment options, and an intuitive interface that improved customer experience and operational efficiency.",
     },
     {
@@ -91,7 +91,7 @@ const initialProjects = [
         subtitle: "Mobile App for Travel Planning",
         image: wanderwise,
         highlightText: "Food Delivery App",
-        link: "https://www.hungrybites.com",
+        link: "https://focal-x.com/",
         description: "HungryBites is a food delivery service app we developed with real-time order tracking, multiple payment options, and an intuitive interface that improved customer experience and operational efficiency.",
     },
     {
@@ -100,7 +100,7 @@ const initialProjects = [
         subtitle: "Web Application for Customer Relationship Management",
         image: connectcrm,
         highlightText: "Food Delivery App",
-        link: "https://www.hungrybites.com",
+        link: "https://focal-x.com/",
         description: "HungryBites is a food delivery service app we developed with real-time order tracking, multiple payment options, and an intuitive interface that improved customer experience and operational efficiency.",
     },
 
