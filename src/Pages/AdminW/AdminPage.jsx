@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-/* المكون الرئيسي */
+/* Main Component */
 import {
     getProjects,
     addProject,
@@ -71,7 +71,7 @@ const AdminPage = () => {
         };
 
         addProject(projectData);
-        alert('تمت الإضافة بنجاح');
+        alert('Added successfully');
 
         setFormData({
             title: '',
@@ -98,7 +98,7 @@ const AdminPage = () => {
         };
 
         updateProject(editingProject.id, projectData);
-        alert('تم التحديث بنجاح');
+        alert('Updated successfully');
 
         setFormData({
             title: '',
@@ -112,7 +112,7 @@ const AdminPage = () => {
     };
 
     const handleDelete = (id) => {
-        if (window.confirm('هل أنت متأكد من نقل هذا المشروع إلى سلة المحذوفات؟')) {
+        if (window.confirm('Are you sure you want to move this project to trash?')) {
             moveToTrash(id);
             refreshData();
         }
@@ -121,11 +121,11 @@ const AdminPage = () => {
     const handleRestore = (id) => {
         restoreProject(id);
         refreshData();
-        alert('تم استعادة المشروع بنجاح');
+        alert('Project restored successfully');
     };
 
     const handlePermanentDelete = (id) => {
-        if (window.confirm('هل أنت متأكد من الحذف النهائي؟')) {
+        if (window.confirm('Are you sure you want to permanently delete?')) {
             permanentlyDeleteProject(id);
             refreshData();
         }
@@ -133,20 +133,20 @@ const AdminPage = () => {
 
     return (
         <div className="admin-container">
-            <h2>إدارة المشاريع</h2>
+            <h2>Projects Management</h2>
 
             <div className="tabs">
                 <button
                     className={activeTab === 'projects' ? 'active' : ''}
                     onClick={() => setActiveTab('projects')}
                 >
-                    المشاريع ({getProjects().length})
+                    Projects ({getProjects().length})
                 </button>
                 <button
                     className={activeTab === 'trash' ? 'active' : ''}
                     onClick={() => setActiveTab('trash')}
                 >
-                    سلة المحذوفات ({getTrashedProjects().length})
+                    Trash ({getTrashedProjects().length})
                 </button>
             </div>
 
