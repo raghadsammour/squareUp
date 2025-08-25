@@ -18,35 +18,40 @@
 .card-grid {
     display: grid;
     grid-template-columns: 1fr;
-/*     gap: 30px;
- */    max-width: 1597px;
+    max-width: 1597px;
     margin: 0 auto;
     grid-template-columns: repeat(2, 1fr);
 
 }
-
 @media (max-width: 1440px) {
     .main {
-        padding: 40px 100px;
+        padding: 0 80px;
     }
-
-
+    
+    .header {
+        max-width: 1280px;
+        margin-bottom: 25px;
+    }
+    
     .card-grid {
-        max-width: 1240px;
+        max-width: 1280px;
     }
 }
 
 @media (max-width: 992px) {
     .main {
-        padding: 40px 50px;
+        padding: 0 16px;
     }
-
-
-    .card-grid {
-        max-width: 892px;
+    
+    .header {
+        max-width: 100%;
+        margin-bottom: 20px;
+        flex-direction: column;
+        text-align: center;
     }
-
+    
     .card-grid {
         grid-template-columns: 1fr;
+        max-width: 100%;
     }
 }

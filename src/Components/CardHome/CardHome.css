@@ -1,19 +1,18 @@
 :root {
-    --color-bg: #262626;
-    --color-text: #ffffff;
-    --color-accent: #B6FF19;
-    --color-hover: #333333;
-    --color-TrustedText: #FDFFFA;
-    --color-logoText: #E6E6E6;
-    /*  هي لون الكتابة يلي جنب الايوقنات*/
-    --color-Nomber: #D8FF99;
-    /* لون الارقام */
-    --color-copy: #98989A;
-    /* حقوق النشر */
+    --secondary-backgroundcolor: #1A1A1A;
+    --secondary-backgroundcolor: #262626;
+    --rarely-backgroundcolor: #333333;
+    --primary-color: #9EFF00;
+    --secondary-color: #D8FF99;
+    --writing-color: #98989A;
+    --writing-color-secondary: #98989A;
+    --writing-color-rarely: #FDFFFA;
+    --writing-color-titles: #FFFFFF;
+    --paragraph-color: #E6E6E6;
 }
 
 .card {
-    background-color: var(--color-bg);
+    background-color: var(--secondary-backgroundcolor);
     padding: 60px;
     border: 1px solid rgb(80, 79, 79);
     transition: all 0.3s ease;
@@ -21,7 +20,7 @@
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 12px var(--color-accent);
+    box-shadow: 0 6px 12px var(--primary-color);
 }
 
 .card-header {
@@ -37,7 +36,7 @@
 
 .card p {
     font-size: 20px;
-    color: var(--color-logoText);
+    color: var(--paragraph-color);
     padding-bottom: 40px;
     line-height: 150%;
     margin-top: 40px;
@@ -46,4 +45,49 @@
 .card-actions {
     display: flex;
     justify-content: space-between;
+}
+
+
+@media (max-width: 1440px) {
+    .card {
+        padding: 40px;
+    }
+    
+    .card h3 {
+        font-size: 22px;
+    }
+    
+    .card p {
+        font-size: 18px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    .card {
+        padding: 30px 25px;
+    }
+    
+    .card-header {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+    
+    .card h3 {
+        font-size: 20px;
+    }
+    
+    .card p {
+        font-size: 16px;
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+    
+    .card-actions {
+        flex-direction: column;
+        gap: 15px;
+        align-items: stretch;
+    }
 }

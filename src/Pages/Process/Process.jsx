@@ -1,3 +1,4 @@
+
 import TitleText from "../../Components/TitleText/TitleText";
 import "./Process.css";
 import bgProcess from "../../assets/imgs/Process/herosection.webp";
@@ -57,5 +58,6 @@ const Process = () => {
     </div>
   );
 };
+
 
 export default Process;
