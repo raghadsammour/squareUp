@@ -7,21 +7,41 @@
   font-family: 'Barlow regular';
   src: url('/font/barlow/Barlow-Regular.ttf');
 }
+.pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/Icons/smallSquare.png");
+  background-repeat: repeat; 
+  isolation: isolate; 
 
-.title-text-container{
-        margin: 0 162px;
-        height: 336px;
-        padding: 120px 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-position: center;
-        background-size:auto ,cover;
-        filter: saturate(0.2);
-    
+
 }
+.bigdiv{
+  position: relative;
+  margin: 0 163px;
+}
+.title-text-container {
+  position: relative;
+  height: 336px;
+  padding: 120px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url("../../assets/imgs/Home/ourservices.webp") center/cover no-repeat;
+  overflow: hidden;
+}
+.title-text-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  filter: contrast(130%) brightness(16%) sepia(100%) hue-rotate(44deg) saturate(92%);
 
+}
 .service-paragraph{
   background-color: transparent;
   display: flex;
@@ -33,6 +53,7 @@
 .title-service,.text-service{
     color: white;
     background-color: transparent;
+    isolation: isolate;
   }
   .title-service{
     font-size: 48px;
@@ -55,6 +76,9 @@ max-width: 996px;
 @media screen and (max-width:1440px){  
   .title-text-container{
     padding: 100px 0;
+    /* margin: 0 80px; */
+  }
+    .bigdiv{
     margin: 0 80px;
   }
 
@@ -78,8 +102,11 @@ max-width: 996px;
 @media screen and (max-width:992px){  
   .title-text-container{
       padding: 50px 16px;
-    margin: 0 20px;
+    
   } 
+  .bigdiv{
+    margin: 0 20px;
+  }
   .title-service{
       font-size: 28px;
       padding-bottom: 6px;

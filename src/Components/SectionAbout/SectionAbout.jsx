@@ -1,6 +1,5 @@
-import React from "react";
 import "./section.css";
-import aboutImg from "../../assets/imgs/About/Abouthero.webp";
+import aboutImg from "../../assets/imgs/About/AboutSection.webp";
 import logoImg from "../../assets/Icons/logoSquare.svg";
 
 const SectionAbout = () => {
@@ -21,10 +20,12 @@ const SectionAbout = () => {
 
       <div className="img">
         <img className="hero" src={aboutImg} alt="About section" />
-        <div className="logo">
+        <div className="logoAbout">
           <img className="iconAbout" src={logoImg} alt="imagesection" />
         </div>
+        <div className="pattern"></div>
       </div>
+
     </section>
   );
 };
