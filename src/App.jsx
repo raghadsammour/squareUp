@@ -21,20 +21,7 @@ import OurService from "./Pages/OurService/OurService.jsx";
 import EditService from "./Pages/EditService/EditService.jsx";
 import CreateService from "./Pages/CreateService/CreateService.jsx";
 import ClientsPage from "./Pages/ClientsPage/ClientsPage.jsx";
-
-// import EditFormAbout from "./Pages/EditFormAbout/EditFormAbout.jsx";
-// import Navbar from "./components/Navbar/Navbar";
-// import Footer from "./components/Footer/Footer";
-// import CardsAdminPage from './Pages/AdminH/CardsAdminPage.jsx';
-// import TrashPage from './Pages/TrashPage/TrashPage';
-// import AdminPage from './Pages/AdminW/AdminPage.jsx';
-// import HomeEdit from "./Pages/HomeEdit/HomeEdit.jsx";
-// import OurService from "./Pages/OurService/OurService.jsx";
-// import EditService from "./Pages/EditService/EditService.jsx";
-// import CreateService from "./Pages/CreateService/CreateService.jsx";
-// import Dash from "./Pages/Dash/Dash.jsx";
 import CreateClients from "./Pages/CreateClients/CreateClients.jsx";
-// import ClientsPage from "./Pages/ClientsPage/ClientsPage.jsx";
 import ClientsEdit from "./Pages/ClientsEdit/ClientsEdit.jsx";
 // import UsersTable from "./Pages/UsersTable//UsersTable.jsx"
 function App() {

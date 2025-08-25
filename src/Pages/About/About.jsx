@@ -4,7 +4,6 @@ import Card from "../../Components/Card/Card";
 import TitleText from "../../Components/TitleText/TitleText";
 import "./About.css";
 import bgAbout from "../../assets/imgs/About/Abouthero.webp";
-
 import SectionAbout from "../../Components/SectionAbout/SectionAbout";
 const About = () => {
   let defaultItemsAbout=[
@@ -53,7 +52,9 @@ useEffect(() => {
   const stored = localStorage.getItem("itemsAbout");
   if (!stored) {
     localStorage.setItem("itemsAbout", JSON.stringify(defaultItemsAbout));
+
     setItemsAbout(defaultItemsAbout); 
+
     localStorage.setItem("lastIdAbout", String(defaultItemsAbout.length));
   }
 }, []);
@@ -66,7 +67,6 @@ useEffect(() => {
         title="About Us"
         text="Welcome to SquareUp, where collaboration, expertise, and client-centricity intersect to shape the future of digital innovation."
         image={bgAbout}
-     
       />
 
       <SectionAbout />
