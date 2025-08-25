@@ -13,6 +13,7 @@
     margin-bottom: 10px;
 }
 .RB_Form_Edit input{
+    background-color: #1a1a1a;
     padding: 20px;
     margin-bottom: 20px;
     display: block;
@@ -31,7 +32,7 @@
     border-color: #9EFF00;
 }
 .RB_Table{
-    width: 80%;
+    width: 50%;
     margin: auto;
     th{
         background-color: #9EFF00;
@@ -39,7 +40,6 @@
         padding: 8px;
     }
     td{
-        background-color: white;
         color: #9EFF00;
         padding: 10px;
         button,a{

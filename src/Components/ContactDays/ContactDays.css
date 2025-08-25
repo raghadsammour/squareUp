@@ -1,0 +1,29 @@
+.RB_DaysWorking span{
+    color: #E6E6E6;
+    font-family: barlow5;
+    font-size: 22px;
+}
+.RB_DaysWorking span:first-child{
+    margin-right: 14px;
+}
+.RB_DaysWorking span:last-child{
+    background-color: #262626;
+    padding: 12px 24px;
+    border-radius: 6px;
+}
+@media screen and (max-width:1440px) {
+    .RB_DaysWorking span{
+        font-size: 16px;
+    }
+    .RB_DaysWorking span:last-child{
+        padding: 10px 20px;
+    }
+}
+@media screen and (max-width:992px) {
+    .RB_DaysWorking{
+        margin: 0;
+    }
+     .RB_DaysWorking span{
+        font-size: 14px;
+    }
+}

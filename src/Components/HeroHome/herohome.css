@@ -1,147 +1,143 @@
-/* .whiteSpacing{
-    padding-left: 162px;
-    padding-right: 162px;
-} */
-@font-face {
-    font-family: barlow4;
-    src: url("/font/barlow/Barlow-Regular.ttf");
+.heroHome {
+  background-image: url("../../assets/imgs/Home/dots.png");
+  background-repeat: repeat;
+  height: 100vh;
+  padding-top: 212px;
+  text-align: center;
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #262626;
+  margin-left: 162px;
+  margin-right: 162px;
 }
-@font-face {
-    font-family: barlow5;
-    src: url("/font/barlow/Barlow-Medium.ttf");
+.heroHome img {
+  height: 41.48%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  background-repeat: repeat;
 }
-
-@font-face {
-    font-family: barlow6;
-    src: url("/font/barlow/Barlow-SemiBold.ttf");
+.heroHome .title {
+  background: none;
+  color: #ffffff;
+  font-family: barlow6;
+  font-size: 68px;
+  line-height: 1;
+  margin-bottom: 40px;
+  max-width: 865px;
+  margin-bottom: 40px;
 }
-.heroHome{
-    background-image: url("../../assets/imgs/Home/dots.png");
-    background-repeat: repeat;
-    height: 100vh;
-    padding-top: 212px;
-    text-align: center;
-    position: relative;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid #262626;
-    margin-left: 162px;
-    margin-right: 162px;
+.heroHome .paragraph {
+  font-family: barlow4;
+  font-size: 22px;
+  color: #98989a;
+  max-width: 865px;
+  margin-bottom: 50px;
+  padding: 24px 40px;
+  border: 1px solid #262626;
+  backdrop-filter: blur(12px);
+  border-radius: 12px;
 }
-.heroHome img{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 0;
-    width: 100%;
-    background-image: url("../../assets/imgs/Home/dots.png");
-    background-repeat: repeat;
+.heroHome .paragraph span {
+  padding: 8px 10px;
+  background-color: #262626;
+  border-radius: 8px;
+  color: #FFFFFF;
 }
-.heroHome .title{
-    background: none;
-    color: #FFFFFF;
-    font-family: barlow6;
-    font-size: 68px;
-    line-height: 1;
-    margin-bottom: 40px;
-    max-width: 865px;
-    margin-bottom: 40px;
+.heroHome .btns {
+  display: flex;
+  gap: 13px;
 }
-.heroHome .paragraph{
-    font-family: barlow4;
-    font-size: 22px;
-    color: #FFFFFF;
-    max-width: 865px;
-    margin-bottom: 50px;
-    padding: 24px 40px;
-    border: 1px solid #262626; 
-    backdrop-filter: blur(12px);
-    border-radius: 12px;
-    
+.heroHome .btn {
+  font-family: barlow5;
+  font-size: 18px;
+  padding: 18px 28px;
+  border: 1px solid #262626;
+  border-radius: 10px;
+  background-color: #24242433;
+  border: 1px solid #333333;
+  backdrop-filter: blur(12px);
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.2s all;
 }
-.heroHome .paragraph span{
-    padding: 8px 10px;
-    background-color: #262626;
-    border-radius: 8px;
+.heroHome .btn:hover {
+  background-color: #9eff00;
+  color: #262626;
 }
-.heroHome .btn{
-    font-family: barlow5;
-    font-size: 18px;
-    padding: 18px 28px;
-    border: 1px solid #262626;
-    border-radius: 10px;
-    background-color: #24242433;
-    border: 1px solid #333333; 
-    backdrop-filter: blur(12px);
-    margin: 0 13px 13px;
-    color: #FFFFFF;
-    cursor: pointer;
-    transition: 0.2s all;
+.heroHome .description {
+  font-family: barlow5;
+  font-size: 18px;
+  padding: 20px 34px;
+  border-radius: 100px;
+  background-color: #1a1a1a;
+  border: 1px solid #262626;
+  position: absolute;
+  bottom: -34px;
+  color: #fdfffa;
 }
-.heroHome .btn:hover{
-    background-color: #9EFF00;
-    color: #262626;
-}
-.heroHome .description{
-    font-family: barlow5;
-    font-size: 18px;
-    padding: 20px 34px;
-    border-radius: 100px;
-    background-color: #1A1A1A;
-    border: 1px solid #262626;
-    position: absolute;
-    bottom: -28px;
-    color: #FDFFFA;
-}
-@media screen and (max-width:1440px) {
-    /* .whiteSpacing{
+@media screen and (max-width: 1440px) {
+  /* .whiteSpacing{
         padding-left: 80px;
         padding-right: 80px;
     } */
-    .heroHome{
-        padding-top: 197px;
-        margin-left: 80px;
+  .heroHome {
+    padding-top: 197px;
+    margin-left: 80px;
     margin-right: 80px;
-    }
-    .heroHome h1{
-        font-size: 48px;
-        margin-bottom: 30px;
-        max-width: 699px;
-    }
-    .heroHome .paragraph{
-        max-width: 699px;
-        font-size: 18px;
-        padding: 18px 30px;
-        margin-bottom: 40px;
-    }
-    .heroHome .btn{
-        font-size: 14px;
-        padding: 14px 20px;
-    }
-    .heroHome .description{
-        font-size: 14px;
-        padding: 14px 24px;
-        bottom: -14px;
-    }
+  }
+  .heroHome .title {
+    font-size: 48px;
+    margin-bottom: 30px;
+    max-width: 699px;
+  }
+  .heroHome .paragraph {
+    max-width: 699px;
+    font-size: 18px;
+    padding: 18px 30px;
+    margin-bottom: 40px;
+  }
+  .heroHome .btn {
+    font-size: 14px;
+    padding: 14px 20px;
+  }
+  .heroHome .description {
+    font-size: 14px;
+    padding: 14px 24px;
+    bottom: -26px;
+
+  }
 }
-@media screen and (max-width:992px) {
-    /* .whiteSpacing{
+@media screen and (max-width: 992px) {
+  /* .whiteSpacing{
         padding-left: 20px;
         padding-right: 20px;
     } */
-    .heroHome{
-        padding-top: 186px;
-        margin-right: 20px;
-        margin-right: 20px;
-    }
-    .heroHome h1{
-        font-size: 34px;
-    }
-    .heroHome .paragraph{
-        font-size: 16px;
-        padding: 18px 20px;
-        line-height: 1.5;
-    }
+  .heroHome {
+    padding-top: 186px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0;
+  }
+  .heroHome .title {
+    font-size: 34px;
+  }
+  .heroHome .paragraph {
+    font-size: 16px;
+    padding: 18px 20px;
+    line-height: 1.5;
+  }
+  .heroHome .paragraph span {
+    color: #98989a;
+    background: none;
+  }
+.heroHome .description {
+    bottom: -28px;
+}
 }

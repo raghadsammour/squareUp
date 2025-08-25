@@ -1,0 +1,14 @@
+.RB_Table{
+    width: 80%;
+    margin: auto;
+    th{
+        background-color: #9EFF00;
+        color: black;
+        padding: 8px;
+    }
+    td{
+        color: #9EFF00;
+        padding: 10px;
+        border: 1px solid #9EFF00;
+    }
+}

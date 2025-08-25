@@ -1,0 +1,449 @@
+:root {
+    --color-bg: #262626;
+    --color-text: #ffffff;
+    --color-accent: #B6FF19;
+    --color-hover: #333333;
+    --color-TrustedText: #FDFFFA;
+    --color-logoText: #E6E6E6;
+    /*  هي لون الكتابة يلي جنب الايوقنات*/
+    --color-Nomber: #D8FF99;
+    /* لون الارقام */
+    --color-copy: #98989A;
+    /* حقوق النشر */
+}
+
+.admin-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: var(--color-bg);
+    color: var(--color-text);
+}
+
+.admin-container h2 {
+    font-size: 2rem;
+    color: var(--color-accent);
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--color-accent);
+}
+
+.tabs {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tabs button {
+    padding: 0.8rem 1.8rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    background: rgba(182, 255, 25, 0.1);
+    color: var(--color-text);
+    font-size: 1rem;
+}
+
+.tabs button.active {
+    background: var(--color-accent);
+    color: var(--color-bg);
+    box-shadow: 0 0 15px rgba(182, 255, 25, 0.5);
+}
+
+.tabs button:hover:not(.active) {
+    background: rgba(182, 255, 25, 0.2);
+}
+
+.admin-table-container {
+    overflow-x: auto;
+    margin-top: 1.5rem;
+    background: var(--color-card-bg);
+    border-radius: 8px;
+    border: 1px solid var(--color-border);
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-table th,
+.admin-table td {
+    padding: 1rem;
+    text-align: right;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.admin-table th {
+    background: rgba(182, 255, 25, 0.1);
+    color: var(--color-accent);
+    font-weight: 600;
+}
+
+.admin-table tr:hover {
+    background: rgba(182, 255, 25, 0.05);
+}
+
+.table-image {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid var(--color-border);
+}
+
+.description-cell {
+    max-width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.table-actions {
+    display: flex;
+    gap: 0.8rem;
+    justify-content: flex-end;
+}
+
+.table-actions button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    min-width: 100px;
+}
+
+.edit-btn {
+    background: var(--color-accent);
+    color: var(--color-bg);
+}
+
+.edit-btn:hover {
+    background: var(--color-accent);
+    transform: translateY(-2px);
+}
+
+.delete-btn {
+    background: var(--color-accent);
+    color: var(--color-bg);
+}
+
+.delete-btn:hover {
+    background: var(--color-accent);
+    transform: translateY(-2px);
+}
+
+.restore-btn {
+    background: var(--color-Nomber);
+    color: var(--color-logoText);
+}
+
+.restore-btn:hover {
+    background: #218838;
+    transform: translateY(-2px);
+}
+
+.edit-form {
+    background: var(--color-card-bg);
+    border-radius: 8px;
+    padding: 2rem;
+    margin-top: 2rem;
+    border: 1px solid var(--color-border);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.edit-form h3 {
+    color: var(--color-accent);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--color-accent);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    color: white;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.form-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    margin-top: 2rem;
+}
+
+.submit-btn {
+    background: var(--color-accent);
+    color: var(--color-bg);
+    font-weight: 600;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+}
+
+.submit-btn:hover {
+    background: #9dff00;
+    transform: translateY(-2px);
+}
+
+.cancel-btn {
+    background: var(--color-accent);
+    color: var(--color-bg);
+    font-weight: 600;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+}
+
+.cancel-btn:hover {
+    background: var(--color-accent);
+    transform: translateY(-2px);
+}
+
+.no-projects {
+    text-align: center;
+    color: var(--color-text);
+    font-size: 1.2rem;
+    padding: 2rem;
+    opacity: 0.7;
+}
+
+@media (max-width: 992px) {
+    .admin-container {
+        padding: 1.5rem;
+    }
+
+    .admin-table th,
+    .admin-table td {
+        padding: 0.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .tabs {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .tabs button {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .table-actions {
+        flex-direction: column;
+    }
+
+    .table-actions button {
+        width: 100%;
+    }
+
+    .description-cell {
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .admin-container {
+        padding: 1rem;
+    }
+
+    .admin-container h2 {
+        font-size: 1.6rem;
+    }
+
+    .table-image {
+        width: 60px;
+        height: 45px;
+    }
+}
+
+.cards-admin-section {
+    margin-top: 2rem;
+    background: var(--color-card-bg);
+    border-radius: 8px;
+    padding: 2rem;
+    border: 1px solid var(--color-border);
+}
+
+.admin-actions {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.add-btn {
+    padding: 0.8rem 1.8rem;
+    background: var(--color-accent);
+    color: var(--color-bg);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+
+.add-btn:hover {
+    background: var(--color-accent);
+    transform: translateY(-2px);
+}
+
+.table-image {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 20px;
+}
+
+.admin-card-wrapper {
+    position: relative;
+    transition: all 0.3s ease;
+    margin-bottom: 80px;
+}
+
+.admin-card-wrapper:hover {
+    transform: translateY(-5px);
+}
+
+.card-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.card-actions button {
+    padding: 0.7rem 1.4rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    min-width: 100px;
+}
+
+.card-actions .edit-btn {
+    background: var(--color-accent);
+    color: var(--color-bg);
+}
+
+.card-actions .edit-btn:hover {
+    background: var(--color-accent);
+}
+
+.card-actions .delete-btn {
+    background: var(--color-accent);
+    color: var(--color-bg);
+}
+
+.card-actions .delete-btn:hover {
+    background: var(--color-accent);
+}
+
+.no-cards {
+    text-align: center;
+    color: var(--color-text);
+    font-size: 1.2rem;
+    grid-column: 1 / -1;
+    padding: 2rem;
+    opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card-actions {
+        flex-direction: column;
+    }
+
+    .card-actions button {
+        width: 100%;
+    }
+
+    .table-image {
+        width: 40px;
+        height: 40px;
+    }
+
+    .admin-actions {
+        justify-content: center;
+    }
+
+    .add-btn {
+        width: 100%;
+    }
+}
+
+.filter-controls {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    justify-content: center;
+}
+
+.filter-controls button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    background: rgba(182, 255, 25, 0.1);
+    color: var(--color-text);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-controls button.active {
+    background: var(--color-accent);
+    color: var(--color-bg);
+}
+
+.show-more-btn {
+    display: block;
+    margin: 1.5rem auto 0;
+    padding: 0.8rem 1.5rem;
+    background: var(--color-accent);
+    color: var(--color-bg);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.show-more-btn:hover {
+    background: var(--color-accent);
+    transform: translateY(-2px);
+}

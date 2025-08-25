@@ -1,0 +1,49 @@
+.RB_SocialIcons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid #262626;
+    border-radius: 6px;
+ /* margin-left: 160px;  */
+    padding: 14px 14px 24px;
+  /*   margin-right: auto; */
+}
+.RB_SocialIcons .RB_Description{
+    color: #E6E6E6;
+    font-family: barlow5;
+    font-size: 18px;
+}
+.RB_SocialIcons .RB_ImageWrapper{
+    display: flex;
+    gap: 14px;
+}
+.RB_SocialIcons .RB_Image{
+    width: 64px;
+    height: 64px;
+    background : linear-gradient(#242424,#24242400);
+    border: 1px solid linear-gradient(#2E2E2E,#2E2E2E00);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width:1440px) {
+    .RB_SocialIcons{
+        padding: 10px 10px 20px;
+    }
+    .RB_SocialIcons .RB_Description{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:992px) {
+    .RB_SocialIcons{
+        flex-direction: column;
+        padding: 20px 0 40px;
+        width: 100%;
+        margin-left: 0;
+        border: 0;
+        border-top: 1px solid #262626;
+        border-radius: 0;
+    }
+    
+}

@@ -1,0 +1,28 @@
+.RB_Table{
+    width: 50%;
+    th{
+        background-color: #9EFF00;
+        color: black;
+        padding: 8px;
+    }
+    td{
+        color: #9EFF00;
+        padding: 10px;
+        border: 1px solid #9EFF00;
+        button,a{
+            background: #9EFF00;
+            color: black;
+            border: 1px solid black;
+            border-radius: 6px;
+            margin: 4px;
+            padding: 10px;
+            cursor: pointer;
+            display: block;
+            width: 100px;
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+        }
+    }
+}

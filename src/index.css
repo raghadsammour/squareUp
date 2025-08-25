@@ -1,87 +1,40 @@
+:root{
+  --primary-backgroundcolor:#1A1A1A;
+  --secondary-backgroundcolor:#262626;
+  --rarely-backgroundcolor:#333333;
+  --primary-color:#9EFF00;
+  --secondary-color:#D8FF99;
+  --writing-color:#98989A;
+  --writing-color-secondary:#98989A;
+  --writing-color-rarely:#FDFFFA;
+  --writing-color-titles:#FFFFFF;
+  --paragraph-color:#E6E6E6;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgba(26, 26, 26, 1);
+  }
+@font-face {
+  font-family: barlow4;
+  src: url("/font/barlow/Barlow-Regular.ttf");
 }
 @font-face {
-    font-family: barlow4;
-    src: url("/font/barlow/Barlow-Regular.ttf");
+  font-family: barlow5;
+  src: url("/font/barlow/Barlow-Medium.ttf");
 }
+
 @font-face {
-    font-family: barlow5;
-    src: url("/font/barlow/Barlow-Medium.ttf");
+  font-family: barlow6;
+  src: url("/font/barlow/Barlow-SemiBold.ttf");
+}   
+@font-face {
+  font-family: inter4;
+  src: url("/font/inter/Inter_18pt-Regular.ttf");
 }
 .whiteSpacing{
     padding-right: 162px;
     padding-left: 162px;
-}
-.RB_card{
-    width: 50%;
-    border: 1px solid #262626;
-    padding: 100px 50px;
-    transition: 1s all;
-}
-.RB_card .RB_info{
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    margin-bottom: 50px;
-}
-.RB_card .RB_id{
-    font-size: 150px;
-    color: #D8FF99;
-}
-.RB_card .RB_info .RB_title{
-    font-family: barlow4;
-    font-size: 30px;
-    color: #98989A;
-    border-bottom: 1px solid #262626;
-    flex-grow: 1;
-    padding: 43px 0 26px 10px;
-}
-.RB_card  .RB_description{
-    font-family: barlow5;
-    font-size: 18px;
-    line-height: 1.5;
-    color: #9a9998;
-}
-@media screen and (max-width:1440px){
-.RB_card .RB_info{
-    margin-bottom: 40px;
-    gap: 10px;
-}
-    .RB_card .RB_id{
-        font-size: 120px;
-    }
-.RB_card .RB_info .RB_title{
-    font-size: 24px;
-    padding: 35px 0 20px 10px;
-
-
-
-}
-.RB_card .RB_description{
-    font-size: 16px;}
-}
-@media screen and (max-width:992px){
-.RB_card{
-    width: 100%;
-}
-    .RB_card .RB_info{
-    margin-bottom: 30px;
-
-}
-    .RB_card .RB_id{
-        font-size: 80px;
-    }
-.RB_card .RB_info .RB_title{
-    padding: 18px 0 14px 10px;
-    
-    
-}
-.RB_card  .RB_description{
-    font-size: 14px;}
 }
 @media screen and (max-width:1440px) {
   .whiteSpacing{

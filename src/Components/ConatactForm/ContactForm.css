@@ -1,0 +1,222 @@
+.RB_FormContact{
+    background-color: #1a1a1a;
+    border: 1px solid #262626;
+    padding: 80px;
+    .RB_NameEmail{
+        display: flex;
+        gap: 40px;
+        .RB_Name,.RB_Email{
+            width: 50%;
+            input{
+                width: 360px;
+            }
+        }
+    }
+    .RB_Name,.RB_Email,.RB_TextArea{
+        padding: 24px 40px;
+        label{
+            display: block;
+            margin-bottom: 20px;
+            font-size: 22px;
+            font-family: barlow5;
+            color: #FFFFFF;
+        }
+        input{
+        outline: none;
+        background: none;
+        border: none;
+        border-bottom: 1px solid #333333;
+        padding-bottom: 6px;
+        transition: 0.3s all ease-in-out;
+        }
+        input:focus{
+            border-bottom: 1px solid #bdec71;
+        }
+        input::placeholder{
+            color: #656567;
+            font-family: barlow4;
+            font-size: 18px;
+        }
+    }
+        .RB_TextArea{
+            position: relative;
+        input{
+            width: 100%;
+        }
+    }
+    .RB_TextArea::after{
+            content: "";
+            display: block;
+            position: absolute;
+            width: calc(100% - 80px);
+            height: 1px;
+            background-color: #333333;
+            bottom: 24px;
+    }
+    .RB_Options{
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 24px;
+        p{
+            font-family: barlow4;
+            font-size: 22px;
+        }
+        .RB_Option{
+            display: flex;
+            align-items: center;
+            label{
+                font-family: barlow4;
+                font-size: 18px;
+                color: #FFFFFF;
+                margin-left: 10px;
+            }
+            input[type="checkbox"]{
+                background: none;
+                width: 28px;
+                height: 28px;
+                accent-color: #262626;
+                border: 1px solid #333333;
+                border-radius: 4px;
+                appearance: none;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
+
+.RB_Option input[type="checkbox"]:checked::after {
+  content: url("./iconcorrect/correct.svg");
+  position: absolute;
+  color: #9EFF00;  
+}
+.RB_FormContact .RB_Email,
+.RB_FormContact .RB_Name,
+.RB_FormContact .RB_OurWorks,
+.RB_FormContact .RB_TextArea{
+    background-color: #24242480;
+    border: 1px solid #262626;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+.RB_FormContact .RB_OurWorks{
+    padding: 40px;
+    p{
+        color: #FFFFFF;
+        font-size: 22px;
+    }
+}
+.RB_FormContact .RB_OurWorks, 
+.RB_FormContact .RB_TextArea{
+    width: 100%;
+}
+.RB_FormContact .RB_TextArea{
+    padding-bottom: 64px;
+}
+.RB_FormContact input[type="submit"]{
+    font-family: barlow5;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    padding: 18px 44px;
+    background-color: #9EFF00;
+    margin: auto;
+    display: block;
+}
+@media screen and (max-width:1440px) {
+    .RB_FormContact{
+        padding: 60px;
+        .RB_NameEmail{
+            gap: 30px;
+            .RB_Name,.RB_Email{
+            input{
+                width: 100%;
+            }
+        }
+        }
+        .RB_Name,.RB_Email,.RB_TextArea{
+            padding: 20px 30px;
+            label{
+                font-size: 18px;
+                margin-bottom: 16px;
+            }
+            input::placeholder{
+                font-size: 16px;
+            }
+        }
+        .RB_OurWorks{
+            padding: 30px;
+            p{
+                    font-size: 18px;
+                }
+            .RB_Options{
+                .RB_Option{
+                    label{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        .RB_TextArea{
+            padding-bottom: 54px;
+        }
+        .RB_TextArea::after{
+            bottom: 24px;
+            width: calc(100% - 60px);
+        }
+    }
+    .RB_FormContact input[type="submit"]{
+            padding: 14px 36px;
+            font-size: 14px;
+        }
+    .RB_FormContact .RB_Email,
+    .RB_FormContact .RB_Name,
+    .RB_FormContact .RB_OurWorks,
+    .RB_FormContact .RB_TextArea{
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width:992px) {
+    .RB_FormContact{
+        padding: 24px;
+        .RB_NameEmail{
+            flex-direction: column;
+            gap: 0;
+            .RB_Name,.RB_Email{
+                width: 100%;
+            }
+        }
+        .RB_Name,.RB_Email,.RB_TextArea{
+            padding: 18px 24px;
+            label{
+                font-size: 16px;
+                margin-bottom: 14px;
+            }
+        }
+        .RB_Options{
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            gap: 20px;
+        }
+        .RB_TextArea{
+            padding-bottom: 52px;
+        }
+        .RB_TextArea::after{
+            width: calc(100% - 48px);
+            bottom: 18px;
+        }
+    }
+    .RB_FormContact .RB_OurWorks{
+        padding: 30px;
+        p{
+            font-size: 16px;
+        }
+    }
+    .RB_FormContact input[type="submit"]{
+        width: 100%;
+    }
+}

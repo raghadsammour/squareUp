@@ -1,0 +1,80 @@
+.RS_ClientsForm{
+   
+  margin: 0 auto;
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  border: 1px solid white;
+  border-radius:16px ;
+  -webkit-border-radius:16px ;
+  -moz-border-radius:16px ;
+  -ms-border-radius:16px ;
+  -o-border-radius:16px ;
+}
+.submit{
+     background-color: rgba(158, 255, 0, 1);
+    width: 30%;
+    height: 50px;
+    border-radius: 16px;
+    margin: 30px;
+   border: none;
+}
+.aa{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
+    width: 80%;
+    margin-bottom: 15px;
+    border: none;
+}
+.aa input{
+    padding: 9px;
+    height: 40px;
+    width: 70%;
+    font-size: 16px;
+    border-radius: 18px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
+}
+.aa input[type="file"] {
+    display: flex;
+    background-color: white;
+    height: 40px;
+    width: 70%;
+    font-size: 18px;
+    border-radius: 18px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
+}
+.photoChoose img{
+    background-color: white;
+    width:300px;
+    padding:5px    ;
+    border-radius:16px ;
+    -webkit-border-radius:16px ;
+    -moz-border-radius:16px ;
+    -ms-border-radius:16px ;
+    -o-border-radius:16px ;
+}
+.aa label{
+    font-size: 18px;
+    padding-right: 15px;
+      text-align: left;  
+      width: 70%;
+      margin-bottom: 10px;
+}
+.RS_ClientsForm{
+    background-color: aqua;
+}
