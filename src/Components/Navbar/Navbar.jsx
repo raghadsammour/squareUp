@@ -54,7 +54,7 @@ const Navbar = () => {
 
         <Link to="/dash" className="nav-link">
 
-  /*      <Link to="/admin" className="nav-link">*/
+     {/* <Link to="/admin" className="nav-link"> */}
 
           Edit
         </Link>
@@ -94,7 +94,7 @@ const Navbar = () => {
 
         <Link to="/dash" className="nav-link">
 
-    /*   <Link to="/admin" className="nav-link">*/
+      {/* <Link to="/admin" className="nav-link"> */}
 
           Edit
         </Link>
