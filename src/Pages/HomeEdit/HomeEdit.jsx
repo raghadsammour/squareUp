@@ -5,7 +5,7 @@ const HomeEdit = () => {
   return (
     <>
     <div className='dashboard'>
-<nav className=''>
+<nav className='NavHome'>
     <Link to="EditOur">Our Service</Link>
     <Link to="EditSquareUp">SquareUp</Link>
         <Link to="EditClients">Clientst</Link>

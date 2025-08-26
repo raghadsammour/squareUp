@@ -1,17 +1,28 @@
 import { useNavigate } from 'react-router-dom';
 import './thanks.css'
-
+import logoSquare from "../../assets/Icons/logoSquare.svg"
 export default function Thanks({title ,Text}){
 const navigate = useNavigate();
         
     return(
-            <section className='Thank'>
-            <img src="src\assets\Icons\logoSquareUP.png" alt="logo" className='logo'/> 
-            <h1 className='titel'>{title}</h1>
+          <section className='Thank'>
+  <div className='thankDiv' >
+
+<div className='bglogothank'>
+
+<img src={logoSquare} />
+</div>
+<div className='thanksParagraph'>
+
+            <h1 className='title'>{title}</h1>
             <p className='discription'>{Text}</p>
+</div>
             
              <button className='but_start' onClick={() => navigate('/contact')}>Start Project</button>
-             <img src="src\assets\imgs\Home\thank you.webp" alt="bg_thank" className='bg_thank' />
+           
+            </div>
+   
+       <div className="pattern"></div>
         </section>
     )
 }

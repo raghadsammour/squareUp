@@ -33,18 +33,22 @@
   src: url("/font/inter/Inter_18pt-Regular.ttf");
 }
 .whiteSpacing{
-    padding-right: 162px;
-    padding-left: 162px;
+    margin-right: 162px;
+    margin-left: 162px;
 }
 @media screen and (max-width:1440px) {
   .whiteSpacing{
-    padding-right: 80px;
-    padding-left: 80px;
+    margin-right: 80px;
+    margin-left: 80px;
   }
 }
 @media screen and (max-width:992px) {
   .whiteSpacing{
-    padding-right: 16px;
-    padding-left: 16px;
+    margin-right: 16px;
+    margin-left: 16px;
   }
+}
+
+:root{
+  background-color: var( --primary-backgroundcolor);
 }

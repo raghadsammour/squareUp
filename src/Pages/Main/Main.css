@@ -1,5 +1,5 @@
 .main {
-    padding: 0 162px;
+    /* padding: 0 162px; */
     background-size: cover;
     color: var(--color-text);
     box-sizing: border-box;
@@ -26,9 +26,7 @@
 }
 
 @media (max-width: 1440px) {
-    .main {
-        padding: 40px 100px;
-    }
+
 
 
     .card-grid {
@@ -37,14 +35,7 @@
 }
 
 @media (max-width: 992px) {
-    .main {
-        padding: 40px 50px;
-    }
 
-
-    .card-grid {
-        max-width: 892px;
-    }
 
     .card-grid {
         grid-template-columns: 1fr;

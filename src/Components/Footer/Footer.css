@@ -62,7 +62,7 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-    background-color: var(--color-bg);
+    /* background-color: var(--color-bg); */
     border-radius: 10px;
     margin-bottom: 1.5rem;
     border: 2px solid #333;
@@ -134,7 +134,7 @@
 
 @media screen and (max-width: 1440px) {
     .footer-container {
-        padding: 50px 120px;
+        padding: 50px 80px;
     }
 
     .footer-logo {
@@ -172,7 +172,7 @@
     .footer-container {
         padding: 40px 20px;
         text-align: center;
-        background-color: var(--color-bg);
+        /* background-color: var(--color-bg); */
     }
 
     .footer-top {
@@ -210,7 +210,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: var(--color-bg);
+        /* background-color: var(--color-bg); */
         flex-direction: column;
         border-radius: 10px;
         border: 2px solid #333;
@@ -268,7 +268,7 @@
     }
 
     .contact-item::after {
-        background-color: var(--color-hover);
+        /* background-color: var(--color-hover); */
     }
 
     .copyright {

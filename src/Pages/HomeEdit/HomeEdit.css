@@ -17,7 +17,7 @@
     /* padding: 120px 0; */
     /* margin: 0 162px; */
 }
-nav {
+.NavHome {
   display: flex;
   gap:20vw;     
   justify-content: center;
@@ -29,7 +29,7 @@ nav {
 }
 
 
-nav a {
+.NavHome a {
   color: white;
   text-decoration: none;
   font-size: 18px;
@@ -38,7 +38,7 @@ nav a {
 
 }
 
-nav a:hover {
+.NavHome a:hover {
   color: rgba(158, 255, 0, 1);       
   transform: scale(1.05); }
 
@@ -48,10 +48,10 @@ nav a:hover {
     /* padding: 100px 0; */
     /* margin: 0 80px; */
   }
-  nav{
+  .NavHome{
     gap: 10vw;
 } 
-nav a{    
+.NavHome a{    
     font-size: 16px;
 }
 }
@@ -60,10 +60,10 @@ nav a{
  
     /* margin: 0 20px; */
   }
-nav{
+.NavHome{
     gap: 9vw;
 } 
-nav a{    
+.NavHome a{    
     font-size: 14px;
 }}
 

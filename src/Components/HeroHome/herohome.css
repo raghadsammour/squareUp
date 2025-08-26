@@ -10,8 +10,6 @@
   flex-direction: column;
   align-items: center;
   border: 1px solid #262626;
-  margin-left: 162px;
-  margin-right: 162px;
 }
 .heroHome img {
   height: 41.48%;
@@ -89,8 +87,7 @@
     } */
   .heroHome {
     padding-top: 197px;
-    margin-left: 80px;
-    margin-right: 80px;
+
   }
   .heroHome .title {
     font-size: 48px;
@@ -115,10 +112,7 @@
   }
 }
 @media screen and (max-width: 992px) {
-  /* .whiteSpacing{
-        padding-left: 20px;
-        padding-right: 20px;
-    } */
+
   .heroHome {
     padding-top: 186px;
     padding-left: 16px;

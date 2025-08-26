@@ -35,7 +35,7 @@ const Home = () => {
   ];
 
   return (
-    <>
+    <div className="whiteSpacing">
  <Header className="RB_Header">
         <HeroHome
           image={image}
@@ -81,7 +81,7 @@ const Home = () => {
 
       />
 
-      <div className="clients">
+      <div className="clientsHome">
   <LocalClients/>
       </div>
 
@@ -98,7 +98,7 @@ const Home = () => {
       <Faq />
 <Thanks  title="Thank you for your Interest in SquareUp." Text="We would love to hear from you and discuss how we can help bring your digital ideas to life. Here are the different ways you can get in touch with us."/>
 
-</>
+</div>
   )
 }
 

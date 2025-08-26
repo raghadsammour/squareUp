@@ -14,7 +14,7 @@ body,
 #root {
     height: 100%;
     width: 100%;
-    background-color: var(--color-bg);
+
     font-family: sans-serif;
 }
 
@@ -27,7 +27,7 @@ body,
     align-items: center;
     justify-content: space-between;
     padding: 20px 162px;
-    background-color: var(--color-bg);
+
     position: fixed;
     top: 0;
     left: 0;

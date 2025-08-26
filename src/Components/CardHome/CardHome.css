@@ -1,19 +1,6 @@
-:root {
-    --color-bg: #262626;
-    --color-text: #ffffff;
-    --color-accent: #B6FF19;
-    --color-hover: #333333;
-    --color-TrustedText: #FDFFFA;
-    --color-logoText: #E6E6E6;
-    /*  هي لون الكتابة يلي جنب الايوقنات*/
-    --color-Nomber: #D8FF99;
-    /* لون الارقام */
-    --color-copy: #98989A;
-    /* حقوق النشر */
-}
 
 .card {
-    background-color: var(--color-bg);
+  
     padding: 60px;
     border: 1px solid rgb(80, 79, 79);
     transition: all 0.3s ease;

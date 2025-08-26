@@ -29,7 +29,7 @@ const OurService = () => {
 
       <Outlet />
 
-   <div className="services">
+   <div className="servicesTable">
   {serviceItems.length > 0 ? (
     <table
       className="RS_tableShow"

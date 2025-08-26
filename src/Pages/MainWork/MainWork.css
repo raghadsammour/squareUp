@@ -14,7 +14,7 @@
 
 .work-container {
     margin: 0 auto;
-    padding: 0 162px;
+
     box-sizing: border-box;
 }
 
@@ -50,9 +50,6 @@
 }
 
 @media screen and (max-width: 1440px) {
-    .work-container {
-        padding: 0 60px;
-    }
 
     .intro-section h1 {
         font-size: 40px;
