@@ -9,7 +9,7 @@ const HomeEdit = () => {
           <Link to="EditOur">Our Service</Link>
           <Link to="AdminPageOK">SquareUp</Link>
           <Link to="EditClients">Clientst</Link>
-          <Link to="Editfaq">FAQ</Link>
+          <Link to="FaqAdminPage">FAQ</Link>
         </nav>
         <Outlet />
       </div>
