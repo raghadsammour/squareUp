@@ -61,7 +61,7 @@ useEffect(() => {
 
     
   return (
-    <>
+    <div className="work-page">
       <TitleText
         title="About Us"
         text="Welcome to SquareUp, where collaboration, expertise, and client-centricity intersect to shape the future of digital innovation."
@@ -85,7 +85,7 @@ useEffect(() => {
           ))
         )}
       </Container>
-    </>
+    </div>
   );
 };
 

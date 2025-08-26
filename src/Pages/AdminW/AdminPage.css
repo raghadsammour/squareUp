@@ -1,3 +1,17 @@
+:root {
+    --color-bg: #262626;
+    --color-text: #ffffff;
+    --color-accent: #B6FF19;
+    --color-hover: #333333;
+    --color-TrustedText: #FDFFFA;
+    --color-logoText: #E6E6E6;
+    /*  هي لون الكتابة يلي جنب الايوقنات*/
+    --color-Nomber: #D8FF99;
+    /* لون الارقام */
+    --color-copy: #98989A;
+    /* حقوق النشر */
+}
+
 .admin-container {
     max-width: 1400px;
     margin: 0 auto;
@@ -57,7 +71,7 @@
     border-collapse: collapse;
 }
 
-.admin-table th, 
+.admin-table th,
 .admin-table td {
     padding: 1rem;
     text-align: right;
@@ -112,7 +126,7 @@
 }
 
 .edit-btn:hover {
-    background: #9dff00;
+    background: var(--color-accent);
     transform: translateY(-2px);
 }
 
@@ -127,8 +141,8 @@
 }
 
 .restore-btn {
-    background: #28a745;
-    color: white;
+    background: var(--color-Nomber);
+    color: var(--color-logoText);
 }
 
 .restore-btn:hover {
@@ -222,8 +236,8 @@
     .admin-container {
         padding: 1.5rem;
     }
-    
-    .admin-table th, 
+
+    .admin-table th,
     .admin-table td {
         padding: 0.8rem;
     }
@@ -234,20 +248,20 @@
         flex-direction: column;
         align-items: stretch;
     }
-    
+
     .tabs button {
         width: 100%;
         justify-content: center;
     }
-    
+
     .table-actions {
         flex-direction: column;
     }
-    
+
     .table-actions button {
         width: 100%;
     }
-    
+
     .description-cell {
         max-width: 150px;
     }
@@ -257,11 +271,11 @@
     .admin-container {
         padding: 1rem;
     }
-    
+
     .admin-container h2 {
         font-size: 1.6rem;
     }
-    
+
     .table-image {
         width: 60px;
         height: 45px;
@@ -295,7 +309,7 @@
 
 
 .add-btn:hover {
-    background: #9dff00;
+    background: var(--color-accent);
     transform: translateY(-2px);
 }
 
@@ -310,11 +324,13 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 2rem;
+    margin-top: 20px;
 }
 
 .admin-card-wrapper {
     position: relative;
     transition: all 0.3s ease;
+    margin-bottom: 80px;
 }
 
 .admin-card-wrapper:hover {
@@ -339,21 +355,21 @@
 }
 
 .card-actions .edit-btn {
-    background: #ffc107;
-    color: #1e293b;
+    background: var(--color-accent);
+    color: var(--color-bg);
 }
 
 .card-actions .edit-btn:hover {
-    background: #ffb300;
+    background: var(--color-accent);
 }
 
 .card-actions .delete-btn {
-    background: #dc3545;
-    color: white;
+    background: var(--color-accent);
+    color: var(--color-bg);
 }
 
 .card-actions .delete-btn:hover {
-    background: #c82333;
+    background: var(--color-accent);
 }
 
 .no-cards {
@@ -369,11 +385,11 @@
     .cards-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .card-actions {
         flex-direction: column;
     }
-    
+
     .card-actions button {
         width: 100%;
     }
@@ -382,11 +398,11 @@
         width: 40px;
         height: 40px;
     }
-    
+
     .admin-actions {
         justify-content: center;
     }
-    
+
     .add-btn {
         width: 100%;
     }
@@ -428,6 +444,6 @@
 }
 
 .show-more-btn:hover {
-    background: #9dff00;
+    background: var(--color-accent);
     transform: translateY(-2px);
 }

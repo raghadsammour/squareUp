@@ -11,9 +11,11 @@ import EditForm from "./Pages/EditForm/EditForm.jsx";
 import EditFormAbout from "./Pages/EditFormAbout/EditFormAbout.jsx";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
+import CardsAdminPage from './Pages/AdminH/CardsAdminPage.jsx';
 import TrashPage from './Pages/TrashPage/TrashPage';
 import AdminPage from './Pages/Admin/AdminPage';
 import UsersTable from "./Pages/UsersTable/UsersTable.jsx";
+import AdminPage from './Pages/AdminW/AdminPage.jsx';
 function App() {
   return (
     <>
@@ -28,6 +30,7 @@ function App() {
         <Route path='/clients' element={<Clients />} />
         <Route path="/trash" element={<TrashPage />} />
         <Route path="/admin" element={<AdminPage />} />
+        <Route path="/adminh" element={<CardsAdminPage />} />
         <Route path='/dashboard' element={<Dashboard />} >
           <Route path='/dashboard/editform/:id' element={<EditForm />} />
           <Route path='/dashboard/editformabout/:id' element={<EditFormAbout />} />
