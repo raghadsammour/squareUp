@@ -168,6 +168,12 @@ export const permanentlyDeleteProject = (id) => {
     saveTrashedProjects(getTrashedProjects().filter(proj => proj.id !== id));
 };
 
-if (getProjects().length === 0 && getTrashedProjects().length === 0) {
+/* if (getProjects().length === 0 && getTrashedProjects().length === 0) {
+    saveProjects(initialProjects);
+} */
+const localData = localStorage.getItem(STORAGE_KEY);
+const trashData = localStorage.getItem(TRASH_KEY);
+
+if (!localData && !trashData) {
     saveProjects(initialProjects);
 }

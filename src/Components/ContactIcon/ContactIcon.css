@@ -1,0 +1,32 @@
+.RB_Icon{
+    background-color: #262626;
+    border-radius: 8px;
+    width: 276px;
+    padding: 18px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.RB_Icon a{
+    text-decoration: none;
+}
+.RB_Icon a:last-child{
+    color: #E6E6E6;
+    font-family: barlow5;
+    font-size: 20px;
+    margin-left: 14px;
+}
+@media screen and (max-width:1440px) {
+    .RB_Icon{
+        padding: 14px 20px;
+    }
+    .RB_Icon a:last-child{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:992px) {
+    .RB_Icon{
+        padding: 18px 0;
+        width: 100%;
+    }
+}

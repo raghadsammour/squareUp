@@ -1,4 +1,73 @@
-.RB_card .RB_info .RB_title{
-    font-size: 38px;
+.RB_Card{
+    width: 50%;
+    border: 1px solid #262626;
+    padding: 100px 50px;
+    transition: 1s all;
+}
+.RB_Card .RB_info{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 50px;
+}
+.RB_Card .RB_id{
+    font-family: barlow6; 
+    font-size: 150px;
     color: #D8FF99;
+}
+.RB_Card .RB_info .RB_title{
+    font-family: barlow5;
+    font-size: 30px;
+    color: #98989A;
+    border-bottom: 1px solid #262626;
+    flex-grow: 1;
+    padding: 43px 0 26px 10px;
+}
+.RB_Card  .RB_description{
+    font-family: barlow5;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #9a9998;
+}
+.RB_Card.about .RB_title{
+    font-family: barlow6;
+    color: #D8FF99;
+    padding: 22px 0 26px 10px;
+}
+.RB_Card.about .RB_description{
+    font-family: inter4;
+}
+@media screen and (max-width:1440px){
+.RB_Card .RB_info{
+    margin-bottom: 40px;
+    gap: 10px;
+}
+    .RB_Card .RB_id{
+        font-size: 120px;
+    }
+.RB_Card .RB_info .RB_title{
+    font-size: 24px;
+    padding: 35px 0 20px 10px;
+}
+.RB_Card .RB_description{
+    font-size: 16px;}
+}
+@media screen and (max-width:992px){
+.RB_Card{
+    width: 100%;
+}
+    .RB_Card .RB_info{
+    margin-bottom: 30px;
+
+}
+    .RB_Card .RB_id{
+        font-size: 80px;
+    }
+.RB_Card .RB_info .RB_title{
+    padding: 18px 0 14px 10px;
+    
+    
+}
+.RB_Card  .RB_description{
+    font-size: 14px;}
 }

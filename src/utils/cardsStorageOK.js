@@ -1,18 +1,13 @@
-// utils/cardsStorage.js
-
-// الحصول على البطاقات من localStorage
 export const getCards = () => {
     const cards = localStorage.getItem('homeCards');
     return cards ? JSON.parse(cards) : [];
 };
 
-// الحصول على البطاقات المحذوفة
 export const getTrashedCards = () => {
     const trashed = localStorage.getItem('trashedHomeCards');
     return trashed ? JSON.parse(trashed) : [];
 };
 
-// إضافة بطاقة جديدة
 export const addCard = (cardData) => {
     const cards = getCards();
     const newCard = {
@@ -25,7 +20,6 @@ export const addCard = (cardData) => {
     return newCard;
 };
 
-// تحديث بطاقة موجودة
 export const updateCard = (id, cardData) => {
     const cards = getCards();
     const updatedCards = cards.map(card =>
@@ -34,7 +28,6 @@ export const updateCard = (id, cardData) => {
     localStorage.setItem('homeCards', JSON.stringify(updatedCards));
 };
 
-// نقل بطاقة إلى سلة المحذوفات
 export const moveCardToTrash = (id) => {
     const cards = getCards();
     const trashedCards = getTrashedCards();
@@ -49,7 +42,6 @@ export const moveCardToTrash = (id) => {
     }
 };
 
-// استعادة بطاقة من سلة المحذوفات
 export const restoreCard = (id) => {
     const cards = getCards();
     const trashedCards = getTrashedCards();
@@ -65,9 +57,9 @@ export const restoreCard = (id) => {
     }
 };
 
-// حذف بطاقة نهائياً
 export const permanentlyDeleteCard = (id) => {
     const trashedCards = getTrashedCards();
     const updatedTrashed = trashedCards.filter(card => card.id !== id);
     localStorage.setItem('trashedHomeCards', JSON.stringify(updatedTrashed));
-};
+}; 
+
