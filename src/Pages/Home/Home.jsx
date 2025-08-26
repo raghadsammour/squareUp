@@ -18,7 +18,7 @@ import amazon from "../../assets/Icons/amazon.svg";
 import Slack from "../../assets/Icons/slack.svg";
 import Spotify from "../../assets/Icons/spotify.svg";
 
-import Main from '../../Pages/Main/Main';
+import Main from '../Main/MainOK';
 import LocalService from "../LocalService/LocalService"
 import LocalClients from "../LocalClients/LocalClients"
 import LocalClientsSlider from "../../Components/LocalClientsSlider/LocalClientsSlider "

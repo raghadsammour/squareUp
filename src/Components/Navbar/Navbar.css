@@ -1,8 +1,16 @@
-/* @font-face {
-    font-family: 'Barlow semi bold';
-    src: url('/font/barlow/Barlow-SemiBold.ttf');
+:root {
+    --secondary-backgroundcolor: #1A1A1A;
+    --secondary-backgroundcolor: #262626;
+    --rarely-backgroundcolor: #333333;
+    --primary-color: #9EFF00;
+    --secondary-color: #D8FF99;
+    --writing-color: #98989A;
+    --writing-color-secondary: #98989A;
+    --writing-color-rarely: #FDFFFA;
+    --writing-color-titles: #FFFFFF;
+    --paragraph-color: #E6E6E6;
 }
- */
+
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +22,7 @@ body,
 #root {
     height: 100%;
     width: 100%;
-    background-color: var(--color-bg);
+    background-color: var(--secondary-backgroundcolor);
     font-family: sans-serif;
 }
 
@@ -27,7 +35,7 @@ body,
     align-items: center;
     justify-content: space-between;
     padding: 20px 162px;
-    background-color: var(--color-bg);
+    background-color: var(--secondary-backgroundcolor);
     position: fixed;
     top: 0;
     left: 0;
@@ -35,14 +43,6 @@ body,
     z-index: 1000;
     width: 100%;
 }
-
-/* .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 162px;
-    background-color: var(--color-bg);
-} */
 
 .navbar-left,
 .navbar-center,
@@ -67,7 +67,7 @@ body,
 
 .nav-link {
     text-decoration: none;
-    color: var(--color-text);
+    color: var(--writing-color-titles);
     font-size: 18px;
     border-radius: 8px;
     transition: background-color 0.3s ease;
@@ -75,20 +75,20 @@ body,
 
 .nav-link:hover,
 .nav-link:focus {
-    background-color: var(--color-copy);
-    color: var(--color-accent);
+    background-color: var(--writing-color-secondary);
+    color: var(--primary-color);
     font-weight: 600;
 }
 
 .nav-link:visited {
-    background-color: var(--color-copy);
+    background-color: var(--writing-color-secondary);
     font-weight: 600;
 }
 
 
 .navbar-button {
-    background-color: var(--color-accent);
-    color: var(--color-bg);
+    background-color: var(--primary-color);
+    color: var(--secondary-backgroundcolor);
     border: none;
     padding: 0.5rem 1.2rem;
     font-weight: 500;
@@ -110,7 +110,7 @@ body,
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: var(--color-bg);
+    background-color: var(--secondary-backgroundcolor);
     transform: scaleY(0);
     transform-origin: top;
     opacity: 0;

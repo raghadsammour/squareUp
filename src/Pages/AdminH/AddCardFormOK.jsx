@@ -1,7 +1,6 @@
 import React from 'react';
 
-const EditCardForm = ({
-    editingCard,
+const AddCardForm = ({
     formData,
     handleChange,
     handleSubmit,
@@ -9,32 +8,34 @@ const EditCardForm = ({
 }) => {
     return (
         <div className="edit-form">
-            <h3>تعديل البطاقة</h3>
+            <h3>Add New Card</h3>
             <form onSubmit={handleSubmit}>
                 <div className="form-group">
-                    <label>العنوان*</label>
+                    <label>Title*</label>
                     <input
                         type="text"
                         name="title"
                         value={formData.title}
                         onChange={handleChange}
                         required
+                        placeholder="Enter card title"
                     />
                 </div>
 
                 <div className="form-group">
-                    <label>الوصف*</label>
+                    <label>Description*</label>
                     <textarea
                         name="description"
                         value={formData.description}
                         onChange={handleChange}
                         rows="4"
                         required
+                        placeholder="Enter card description"
                     />
                 </div>
 
                 <div className="form-group">
-                    <label>رابط الأيقونة (اختياري)</label>
+                    <label>Icon URL (Optional)</label>
                     <input
                         type="text"
                         name="icon"
@@ -46,14 +47,14 @@ const EditCardForm = ({
 
                 <div className="form-actions">
                     <button type="submit" className="submit-btn">
-                        حفظ التعديلات
+                        Add Card
                     </button>
                     <button
                         type="button"
                         onClick={() => setEditingCard(null)}
                         className="cancel-btn"
                     >
-                        إلغاء
+                        Cancel
                     </button>
                 </div>
             </form>
@@ -61,4 +62,4 @@ const EditCardForm = ({
     );
 };
 
-export default EditCardForm;
+export default AddCardForm;

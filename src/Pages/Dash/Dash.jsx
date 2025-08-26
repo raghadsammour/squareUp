@@ -11,7 +11,7 @@ const Dash = () => {
 <div className='dashboard'>
     <nav>
         <Link to="EditHome">Home</Link>
-        <Link to="EditClient">Work</Link>
+        <Link to="AdminPage">Work</Link>
         <Link to="EditOur">Process</Link>
         <Link to="EditOur">About</Link>
       </nav>

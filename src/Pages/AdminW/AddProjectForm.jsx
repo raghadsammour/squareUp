@@ -1,5 +1,5 @@
 import React from 'react';
-/* إضافة مشروع جديد */
+/* Add New Project */
 const AddProjectForm = ({
     formData,
     handleChange,
@@ -8,10 +8,10 @@ const AddProjectForm = ({
 }) => {
     return (
         <div className="edit-form">
-            <h3>إضافة مشروع جديد</h3>
+            <h3>Add New Project</h3>
             <form onSubmit={handleSubmit}>
                 <div className="form-group">
-                    <label>العنوان*</label>
+                    <label>Title</label>
                     <input
                         type="text"
                         name="title"
@@ -22,7 +22,7 @@ const AddProjectForm = ({
                 </div>
 
                 <div className="form-group">
-                    <label>الوصف</label>
+                    <label>Description</label>
                     <textarea
                         name="description"
                         value={formData.description}
@@ -32,7 +32,7 @@ const AddProjectForm = ({
                 </div>
 
                 <div className="form-group">
-                    <label>رابط الصورة</label>
+                    <label>Image URL</label>
                     <input
                         type="text"
                         name="image"
@@ -42,7 +42,7 @@ const AddProjectForm = ({
                 </div>
 
                 <div className="form-group">
-                    <label>الإنجازات (سطر لكل إنجاز)</label>
+                    <label>Achievements (one per line)</label>
                     <textarea
                         name="achievements"
                         value={formData.achievements}
@@ -52,7 +52,7 @@ const AddProjectForm = ({
                 </div>
 
                 <div className="form-group">
-                    <label>رابط المشروع</label>
+                    <label>Project Link</label>
                     <input
                         type="url"
                         name="link"
@@ -63,14 +63,14 @@ const AddProjectForm = ({
 
                 <div className="form-actions">
                     <button type="submit" className="submit-btn">
-                        إضافة المشروع
+                        Add Project
                     </button>
                     <button
                         type="button"
                         onClick={() => setEditingProject(null)}
                         className="cancel-btn"
                     >
-                        إلغاء
+                        Cancel
                     </button>
                 </div>
             </form>

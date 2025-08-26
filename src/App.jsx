@@ -11,9 +11,7 @@ import EditForm from "./Pages/EditForm/EditForm.jsx";
 import EditFormAbout from "./Pages/EditFormAbout/EditFormAbout.jsx";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
-import CardsAdminPage from './Pages/AdminH/CardsAdminPage.jsx';
 import TrashPage from './Pages/TrashPage/TrashPage';
-import AdminPage from './Pages/AdminH/AdminPage.jsx';
 import UsersTable from "./Pages/UsersTable/UsersTable.jsx";
 import Dash from "./Pages/Dash/Dash.jsx";
 import HomeEdit from "./Pages/HomeEdit/HomeEdit.jsx";
@@ -23,11 +21,15 @@ import CreateService from "./Pages/CreateService/CreateService.jsx";
 import ClientsPage from "./Pages/ClientsPage/ClientsPage.jsx";
 import CreateClients from "./Pages/CreateClients/CreateClients.jsx";
 import ClientsEdit from "./Pages/ClientsEdit/ClientsEdit.jsx";
+import AdminPage from "./Pages/AdminW/AdminPage.jsx"
+import AdminPageOK from "./Pages/AdminH/AdminPageOK.jsx"
+
+
 // import UsersTable from "./Pages/UsersTable//UsersTable.jsx"
 function App() {
   return (
     <>
-      <Navbar/>
+      <Navbar />
 
       <Routes>
         <Route path='/' element={<Home />} />
@@ -37,60 +39,56 @@ function App() {
         <Route path='/contact' element={<Contact />} />
         <Route path='/clients' element={<Clients />} />
         <Route path="/trash" element={<TrashPage />} />
-        <Route path="/admin" element={<AdminPage />} />
-        <Route path="/adminh" element={<CardsAdminPage />} />
         {/* <Route path='/dashboard' element={<Dashboard />} >
           <Route path='/dashboard/editform/:id' element={<EditForm />} />
           <Route path='/dashboard/editformabout/:id' element={<EditFormAbout />} />
           <Route path='/dashboard/userstable' element={<UsersTable/>} />
 
         </Route> */}
-         {/* <Route path='/dashboard' element={<Dashboard />} >
+        {/* <Route path='/dashboard' element={<Dashboard />} >
           <Route path='/dashboard/editform/:id' element={<EditForm />} />
           <Route path='/dashboard/editformabout/:id' element={<EditFormAbout />} />
           <Route path='/dashboard/userstable' element={<UsersTable/>} />
 
         </Route> */}
-    
 
-  <Route path="/Dash" element={<Dash />}>
-      
-        {/* Home */}
-        <Route path="EditHome" element={<HomeEdit />}>
+
+        <Route path="/Dash" element={<Dash />}>
+
+          {/* Home */}
+          <Route path="EditHome" element={<HomeEdit />}>
             <Route path="EditOur" element={<OurService />} >
-                <Route path="ServiceEdit/:id" element={<EditService/>} />
-                <Route path="CreateService" element={<CreateService/>} />
+              <Route path="ServiceEdit/:id" element={<EditService />} />
+              <Route path="CreateService" element={<CreateService />} />
             </Route>
-            <Route path="EditClients" element={<ClientsPage/>} >
-                <Route path="ClientsEdit/:id" element={<ClientsEdit/>} />
-                <Route path="CreateClients" element={<CreateClients/>} />
+            <Route path="EditClients" element={<ClientsPage />} >
+              <Route path="ClientsEdit/:id" element={<ClientsEdit />} />
+              <Route path="CreateClients" element={<CreateClients />} />
             </Route>
-{/* sqareup */}
-             {/* <Route path="EditClients" element={<ClientsPage/>} >
-                <Route path="ClientsEdit/:id" element={<ClientsEdit/>} />
-                <Route path="CreateClients" element={<CreateClients/>} />
-            </Route> */}
-{/* Faq */}
-             <Route path="EditClients" element={<ClientsPage/>} >
-                <Route path="ClientsEdit/:id" element={<ClientsEdit/>} />
-                <Route path="CreateClients" element={<CreateClients/>} />
+            {/* sqareup */}
+
+            <Route path="AdminPageOK" element={<AdminPageOK />} >
+              
             </Route>
-        </Route>
+            {/* Faq */}
+            <Route path="EditClients" element={<ClientsPage />} >
+              <Route path="ClientsEdit/:id" element={<ClientsEdit />} />
+              <Route path="CreateClients" element={<CreateClients />} />
+            </Route>
+          </Route>
 
 
 
 
-{/* work */}
-         {/* <Route path="EditClients" element={<ClientsPage/>} >
-                <Route path="ClientsEdit/:id" element={<ClientsEdit/>} />
-                <Route path="CreateClients" element={<CreateClients/>} />
-            </Route> */}
+          {/* work */}
+          <Route path="AdminPage" element={<AdminPage />} >
+          </Route> *
 
 
 
 
- {/* Process */}
-        {/* <Route path="EditClients" element={<ClientsPage/>} >
+          {/* Process */}
+          {/* <Route path="EditClients" element={<ClientsPage/>} >
                 <Route path="ClientsEdit/:id" element={<ClientsEdit/>} />
                 <Route path="CreateClients" element={<CreateClients/>} />
             </Route> */}
@@ -98,8 +96,8 @@ function App() {
 
 
 
-{/* About */}
-      {/* <Route path="EditClients" element={<ClientsPage/>} >
+          {/* About */}
+          {/* <Route path="EditClients" element={<ClientsPage/>} >
                 <Route path="ClientsEdit/:id" element={<ClientsEdit/>} />
                 <Route path="CreateClients" element={<CreateClients/>} />
             </Route> */}

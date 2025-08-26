@@ -1,4 +1,4 @@
-:root{
+/* :root{
   --primary-backgroundcolor:#1A1A1A;
   --secondary-backgroundcolor:#262626;
   --rarely-backgroundcolor:#333333;
@@ -9,7 +9,20 @@
   --writing-color-rarely:#FDFFFA;
   --writing-color-titles:#FFFFFF;
   --paragraph-color:#E6E6E6;
+} */
+
+:root {
+    --secondary-backgroundcolor: #1A1A1A;
+    --rarely-backgroundcolor: #333333;
+    --primary-color: #9EFF00;
+    --secondary-color: #D8FF99;
+    --writing-color: #98989A;
+    --writing-color-secondary: #98989A;
+    --writing-color-rarely: #FDFFFA;
+    --writing-color-titles: #FFFFFF;
+    --paragraph-color: #E6E6E6;
 }
+
 *{
     margin: 0;
     padding: 0;
