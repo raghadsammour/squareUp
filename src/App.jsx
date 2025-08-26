@@ -23,6 +23,7 @@ import CreateClients from "./Pages/CreateClients/CreateClients.jsx";
 import ClientsEdit from "./Pages/ClientsEdit/ClientsEdit.jsx";
 import AdminPage from "./Pages/AdminW/AdminPage.jsx"
 import AdminPageOK from "./Pages/AdminH/AdminPageOK.jsx"
+import FaqAdminPage from "./Pages/AdmainFAQ/FaqAdminPage.jsx";
 
 
 // import UsersTable from "./Pages/UsersTable//UsersTable.jsx"
@@ -71,7 +72,7 @@ function App() {
               
             </Route>
             {/* Faq */}
-            <Route path="EditClients" element={<ClientsPage />} >
+            <Route path="FaqAdminPage" element={<FaqAdminPage />} >
               <Route path="ClientsEdit/:id" element={<ClientsEdit />} />
               <Route path="CreateClients" element={<CreateClients />} />
             </Route>
