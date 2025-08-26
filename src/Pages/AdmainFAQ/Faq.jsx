@@ -10,7 +10,6 @@ const Faq = () => {
     const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
-        // تهيئة البيانات عند تحميل المكون
         initializeFaqs();
         const storedFaqs = getFaqs();
         setFaqList(storedFaqs.length > 0 ? storedFaqs : FaqData);

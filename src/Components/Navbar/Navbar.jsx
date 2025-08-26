@@ -12,7 +12,7 @@ const Navbar = () => {
     try {
       const stored = localStorage.getItem("currentUser");
       if (stored) setCurrentUser(JSON.parse(stored));
-    } catch {}
+    } catch { }
   }, []);
 
   useEffect(() => {
@@ -54,8 +54,6 @@ const Navbar = () => {
 
         <Link to="/dash" className="nav-link">
 
-     {/* <Link to="/admin" className="nav-link"> */}
-
           Edit
         </Link>
       </div>
@@ -93,8 +91,6 @@ const Navbar = () => {
         </Link>
 
         <Link to="/dash" className="nav-link">
-
-      {/* <Link to="/admin" className="nav-link"> */}
 
           Edit
         </Link>
