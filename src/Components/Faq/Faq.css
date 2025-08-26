@@ -1,15 +1,3 @@
-:root {
-    --secondary-backgroundcolor: #1A1A1A;
-    --secondary-backgroundcolor: #262626;
-    --rarely-backgroundcolor: #333333;
-    --primary-color: #9EFF00;
-    --secondary-color: #D8FF99;
-    --writing-color: #98989A;
-    --writing-color-secondary: #98989A;
-    --writing-color-rarely: #FDFFFA;
-    --writing-color-titles: #FFFFFF;
-    --paragraph-color: #E6E6E6;
-}
 
 .faq-container {
   margin: 0 auto;
@@ -33,8 +21,7 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
   border: 1px solid --secondary-backgroundcolor;
-/*   box-shadow: 0 10px 20px rgba(174, 253, 3, 0.103);
- */}
+}
 
 .faq-item.active {
   border: 1px solid var(--primary-color);
@@ -57,7 +44,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #2E2E2E;/* هون لازم عدل لانو اللون مو صح */
+  border: 1px solid #2E2E2E;
   border-radius: 12px;
   flex-shrink: 0;
   transition: all 0.3s ease;

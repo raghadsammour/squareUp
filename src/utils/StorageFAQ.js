@@ -1,5 +1,4 @@
 import FaqData from '../Data/Data';
-
 export const getFaqs = () => {
     const faqs = localStorage.getItem('faqs');
     return faqs ? JSON.parse(faqs).filter(faq => !faq.deleted) : [];
@@ -13,7 +12,6 @@ export const getTrashedFaqs = () => {
 export const initializeFaqs = () => {
     const existingFaqs = localStorage.getItem('faqs');
     if (!existingFaqs) {
-        // إضافة الحقل deleted للبيانات الأولية
         const initializedData = FaqData.map(faq => ({
             ...faq,
             id: Date.now().toString() + Math.random().toString(36).substr(2, 9),

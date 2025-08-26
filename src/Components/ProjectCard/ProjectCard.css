@@ -88,10 +88,8 @@
     transition: all 0.3s ease;
     flex-shrink: 0;
     margin-top: 10px;
-}
+    list-style-type: none !important;
 
-.arrow-link:hover {
-    background-color: var(--primary-color);
 }
 
 .arrow-icon {
@@ -99,6 +97,7 @@
     height: 17px;
     transition: transform 0.2s ease;
 }
+
 
 .link-with-arrow:hover .arrow-icon {
     transform: translate(2px, -2px);
@@ -125,33 +124,75 @@
     font-size: 18px;
 }
 
+
+
+
+/* تحسينات إضافية للتحريكات */
+.project-card {
+    transform-origin: center;
+}
+
+.project-image {
+    transform-origin: center;
+}
+
+.arrow-icon {
+    transition: transform 0.3s ease;
+}
+
+.project-link {
+    transition: all 0.3s ease;
+}
+
+.achievements li {
+    transition: all 0.3s ease;
+    position: relative;
+    padding-left: 10px;
+}
+
+.achievements li::before {
+    content: "•";
+    color: var(--primary-color);
+    position: absolute;
+    left: -15px;
+    transition: all 0.3s ease;
+}
+
+.achievements li:hover::before {
+    transform: scale(1.5);
+}
+
+
+
+
+
 @media screen and (max-width: 1440px) {
     .subtitle-above-image {
         padding: 0 40px;
     }
-    
+
     .subtitle-above-image h4 {
         padding: 25px 0;
         font-size: 24px;
     }
-    
+
     .project-content-wrapper {
         padding: 0 40px 40px;
     }
-    
+
     .project-content h3 {
         font-size: 22px;
     }
-    
+
     .project-link {
         font-size: 18px;
     }
-    
+
     .project-description,
     .achievements li {
         font-size: 17px;
     }
-    
+
     .project-image {
         max-width: 100%;
     }
@@ -161,41 +202,41 @@
     .subtitle-above-image {
         padding: 0 25px;
     }
-    
+
     .subtitle-above-image h4 {
         padding: 20px 0;
         font-size: 22px;
     }
-    
+
     .project-content-wrapper {
         padding: 0 25px 25px;
     }
-    
+
     .project-content h3 {
         font-size: 20px;
     }
-    
+
     .link-with-arrow {
         flex-direction: column;
         align-items: flex-start;
     }
-    
+
     .arrow-link {
         align-self: flex-start;
         margin-top: 15px;
     }
-    
+
     .project-link {
         font-size: 17px;
         padding: 7px 12px;
     }
-    
+
     .project-description,
     .achievements li {
         font-size: 16px;
     }
-    
+
     .project-image {
         margin: 20px 0;
     }
-} 
+}
