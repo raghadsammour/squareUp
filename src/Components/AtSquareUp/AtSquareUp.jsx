@@ -1,4 +1,3 @@
-import { useNavigate } from 'react-router-dom';
 import './AtSquareUp.css'
 
 export default function AtSquareUp(){

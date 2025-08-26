@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
-const FormCrud = ({ storageItems, lastIdKey, redirectPath, titleText }) => {
+const AboutForm = ({ storageItems, lastIdKey, redirectPath, titleText }) => {
   const navigate=useNavigate()
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
@@ -9,7 +9,6 @@ const FormCrud = ({ storageItems, lastIdKey, redirectPath, titleText }) => {
     return stored ? JSON.parse(stored) : [];
   });
   let lastId = parseInt(localStorage.getItem(lastIdKey)) || 0;
-  /* if(isNaN(lastId)) lastId=0 */
   const handleSubmit = (e) => {
     e.preventDefault();
     const newItem = {
@@ -17,6 +16,7 @@ const FormCrud = ({ storageItems, lastIdKey, redirectPath, titleText }) => {
       title,
       description,
     };
+    console.log(newItem)
     localStorage.setItem(lastIdKey, lastId);
     setItems((prev) => [...prev, newItem]);
       navigate(redirectPath)
@@ -27,7 +27,7 @@ const FormCrud = ({ storageItems, lastIdKey, redirectPath, titleText }) => {
   
   return (
 
-      <div className="RB_form">
+      <div className="RB_Form">
         <h1>{titleText}</h1>
         <form onSubmit={(e) => handleSubmit(e)}>
           <input
@@ -46,4 +46,4 @@ const FormCrud = ({ storageItems, lastIdKey, redirectPath, titleText }) => {
       </div> )
 }
 
-export default FormCrud
+export default AboutForm

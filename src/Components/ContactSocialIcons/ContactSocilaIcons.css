@@ -2,14 +2,12 @@
     display: flex;
     align-items: center;
     gap: 20px;
-    border: 1px solid #262626;
+    border: 1px solid var(--secondary-backgroundcolor);
     border-radius: 6px;
- /* margin-left: 160px;  */
     padding: 14px 14px 24px;
-  /*   margin-right: auto; */
 }
 .RB_SocialIcons .RB_Description{
-    color: #E6E6E6;
+    color: var(--paragraph-color);
     font-family: barlow5;
     font-size: 18px;
 }
@@ -42,7 +40,7 @@
         width: 100%;
         margin-left: 0;
         border: 0;
-        border-top: 1px solid #262626;
+        border-top: 1px solid var(--secondary-backgroundcolor);
         border-radius: 0;
     }
     

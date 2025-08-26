@@ -1,0 +1,36 @@
+.table{
+    display: grid;
+ grid-template-columns: 3fr 1fr ;
+ 
+}
+.tablo td:nth-child(5) {
+  max-width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+
+}
+
+
+.RS_tableShow{
+    border: 1px solid white;
+    padding: 15px;
+    /*background-color: brown;
+    */font-size: 16px;
+    height: 300px;
+    overflow-y: scroll;
+    height: 100%;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+.RS_tableContainer {
+  height: calc(100vh - 100px); 
+  overflow-y: auto;          
+  width: 100%;
+  border: 1px solid #ddd;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.RS_tableEdit{width: 70%;}

@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import "./LogoTitleTextButton.css";
 import Icon from "../Icon/Icon";
 
+
 const LogoTitleTextButton = ({ logo, title, text}) => {
   return (
     <div className="cardService">
@@ -10,9 +11,9 @@ const LogoTitleTextButton = ({ logo, title, text}) => {
         <div className="icon-container">
           <img src={logo} alt="logo" />
         </div>
-        <p className="title">{title}</p>
+        <p className="titleService">{title}</p>
       </div>
-      <p className="text">{text}</p>
+      <p className="textService">{text}</p>
 
       <Link to="/Work">
         <button className="learnMore">Learn More</button>

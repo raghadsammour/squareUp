@@ -6,7 +6,7 @@ const UsersTable = () => {
         return stored ? JSON.parse(stored) : []
       })
   return (
-    <table className='RB_Table'>
+    <table className='RB_Table End'>
         <thead>
             <tr>
                 <th>Id</th>

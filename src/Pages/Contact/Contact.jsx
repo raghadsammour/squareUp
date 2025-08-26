@@ -17,6 +17,7 @@ import locationIcon from "../../assets/Icons/locationicon.svg"
 import phoneIcon from "../../assets/Icons/phoneicon.svg"
 import emailIcon from "../../assets/Icons/emailicon.svg"
 import Divider from "../../Components/Divider/Divider"
+import ContactProject from "../../Components/ContactProject/ContactProject"
 const Contact = () => {
   return (
     <>
@@ -56,6 +57,7 @@ overlay={smallSquare}
             imagein={linkedIn}
             alternativefin="linkedin icon"/>
       </ContactConnectionEnding>
+      <ContactProject/>
     </ContactSection>
 <Faq />
 

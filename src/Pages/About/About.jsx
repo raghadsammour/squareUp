@@ -4,8 +4,8 @@ import Card from "../../Components/Card/Card";
 import TitleText from "../../Components/TitleText/TitleText";
 import "./About.css";
 import bgAbout from "../../assets/imgs/About/Abouthero.webp";
-import smallSquare from "../../assets/Icons/smallSquare.png";
 import SectionAbout from "../../Components/SectionAbout/SectionAbout";
+import DesignTitle from "../../Components/DesignTitle/DesignTitle";
 const About = () => {
   let defaultItemsAbout=[
     {
@@ -53,7 +53,9 @@ useEffect(() => {
   const stored = localStorage.getItem("itemsAbout");
   if (!stored) {
     localStorage.setItem("itemsAbout", JSON.stringify(defaultItemsAbout));
-    setItemsAbout(defaultItemsAbout);    // ✅ رجّع العناصر الافتراضية فوراً
+
+    setItemsAbout(defaultItemsAbout); 
+
     localStorage.setItem("lastIdAbout", String(defaultItemsAbout.length));
   }
 }, []);
@@ -66,10 +68,10 @@ useEffect(() => {
         title="About Us"
         text="Welcome to SquareUp, where collaboration, expertise, and client-centricity intersect to shape the future of digital innovation."
         image={bgAbout}
-        overlay={smallSquare}
       />
 
       <SectionAbout />
+      <DesignTitle text="Our Story"/>
       <Container>
         {itemsAbout.length === 0 ? (
           <p className="RB_Process_Description">There is no items to show</p>
