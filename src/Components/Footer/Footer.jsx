@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // ✅ Import Link
+import { Link } from 'react-router-dom';
 import logo from '../../assets/imgs/Footer/logo.svg';
 import emailIcon from '../../assets/imgs/Footer/gmail.svg';
 import phoneIcon from '../../assets/imgs/Footer/call.svg';

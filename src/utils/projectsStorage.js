@@ -111,24 +111,21 @@ export const getProjects = () => {
     return data ? JSON.parse(data) : initialProjects;
 };
 
-// Save projects to localStorage
 export const saveProjects = (projects) => {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(projects));
 };
 
-// Add a new project
 export const addProject = (project) => {
     const projects = getProjects();
     const newProject = {
         ...project,
-        id: Date.now(), // Generate unique ID
-        achievements: project.achievements || [] // Ensure achievements array exists
+        id: Date.now(), 
+        achievements: project.achievements || [] 
     };
     saveProjects([...projects, newProject]);
     return newProject;
 };
 
-// Update an existing project
 export const updateProject = (id, updatedData) => {
     const projects = getProjects();
     const updatedProjects = projects.map(proj =>
@@ -137,19 +134,15 @@ export const updateProject = (id, updatedData) => {
     saveProjects(updatedProjects);
     return updatedProjects;
 };
-
-// Get all trashed projects
 export const getTrashedProjects = () => {
     const data = localStorage.getItem(TRASH_KEY);
     return data ? JSON.parse(data) : [];
 };
 
-// Save trashed projects
 export const saveTrashedProjects = (projects) => {
     localStorage.setItem(TRASH_KEY, JSON.stringify(projects));
 };
 
-// Move project to trash
 export const moveToTrash = (id) => {
     const projects = getProjects();
     const projectToTrash = projects.find(proj => proj.id === id);
@@ -161,7 +154,6 @@ export const moveToTrash = (id) => {
     }
 };
 
-// Restore project from trash
 export const restoreProject = (id) => {
     const trashedProjects = getTrashedProjects();
     const projectToRestore = trashedProjects.find(proj => proj.id === id);
@@ -172,12 +164,16 @@ export const restoreProject = (id) => {
     }
 };
 
-// Permanently delete project
 export const permanentlyDeleteProject = (id) => {
     saveTrashedProjects(getTrashedProjects().filter(proj => proj.id !== id));
 };
 
-// Initialize storage with sample data if empty
-if (getProjects().length === 0 && getTrashedProjects().length === 0) {
+/* if (getProjects().length === 0 && getTrashedProjects().length === 0) {
+    saveProjects(initialProjects);
+} */
+const localData = localStorage.getItem(STORAGE_KEY);
+const trashData = localStorage.getItem(TRASH_KEY);
+
+if (!localData && !trashData) {
     saveProjects(initialProjects);
 }

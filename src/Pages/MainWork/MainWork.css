@@ -12,6 +12,11 @@
     /* حقوق النشر */
 }
 
+@font-face {
+    font-family: barlow6;
+    src: url("/font/barlow/Barlow-SemiBold.ttf");
+}
+
 .work-container {
     margin: 0 auto;
     padding: 0 162px;
@@ -19,6 +24,7 @@
 }
 
 .intro-section h1 {
+    font-family: barlow6;
     font-size: 48px;
     margin-top: 120px;
     margin-bottom: 14px;
@@ -69,7 +75,6 @@
 
     .projects-grid {
         grid-template-columns: repeat(2, minmax(300px, 1fr));
-        gap: 1.5rem;
     }
 }
 

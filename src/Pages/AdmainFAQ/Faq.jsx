@@ -1,16 +1,20 @@
 import { useState, useEffect } from "react";
 import TitleDev from "../../Components/Title/Title";
 import FaqData from "../../Data/Data";
+import { getFaqs, initializeFaqs } from "../../utils/StorageFAQ";
 import "./Faq.css";
 
 const Faq = () => {
-    const [faqList, setFaqList] = useState(() => {
-        const storedFaqs = localStorage.getItem("faqs");
-        return storedFaqs ? JSON.parse(storedFaqs) : FaqData;
-    });
-
+    const [faqList, setFaqList] = useState([]);
     const [showAll, setShowAll] = useState(false);
     const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        // تهيئة البيانات عند تحميل المكون
+        initializeFaqs();
+        const storedFaqs = getFaqs();
+        setFaqList(storedFaqs.length > 0 ? storedFaqs : FaqData);
+    }, []);
 
     useEffect(() => {
         const checkIsMobile = () => {
@@ -36,7 +40,7 @@ const Faq = () => {
                 <div className="faq-column">
                     {leftFaqs.map((faq, idx) => (
                         <TitleDev
-                            key={idx}
+                            key={faq.id || idx}
                             number={`0${idx + 1}`}
                             question={faq.question}
                             answer={faq.answer}
@@ -49,7 +53,7 @@ const Faq = () => {
                         const questionNumber = idx + 5;
                         return (
                             <TitleDev
-                                key={idx}
+                                key={faq.id || idx}
                                 number={questionNumber < 10 ? `0${questionNumber}` : `${questionNumber}`}
                                 question={faq.question}
                                 answer={faq.answer}
@@ -58,7 +62,7 @@ const Faq = () => {
                     })}
                 </div>
             </div>
-            {isMobile && !showAll && (
+            {isMobile && !showAll && rightFaqs.length > 0 && (
                 <div className="show-more-container">
                     <button
                         className="show-more-btn"

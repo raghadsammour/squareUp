@@ -11,10 +11,12 @@ const Dash = () => {
 <div className='dashboard'>
     <nav>
         <Link to="EditHome">Home</Link>
+
         <Link to="EditClient">Work</Link>
         <Link to="editprocess">Process</Link>
         <Link to="editabout">About</Link>
         <Link to="userstable">Users</Link>
+
       </nav>
   
 </div>

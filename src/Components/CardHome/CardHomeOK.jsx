@@ -1,6 +1,5 @@
 import React from 'react';
-import './CardHome.css';
-
+import './CardHomeOK.css'; 
 const Card = ({ card }) => {
     if (!card) {
         return <div className="card error">Error: Card data is missing</div>;
