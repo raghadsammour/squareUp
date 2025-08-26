@@ -9,6 +9,8 @@
     border:none;
     padding: 10px 15px;
     border-radius: 6px;
+    margin: 20px auto;
+    display: block;
 }
 .RB_Process_Description{
     color: #9EFF00;

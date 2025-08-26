@@ -1,5 +1,5 @@
 .RB_DaysWorking span{
-    color: #E6E6E6;
+    color: var(--paragraph-color);
     font-family: barlow5;
     font-size: 22px;
 }
@@ -7,7 +7,7 @@
     margin-right: 14px;
 }
 .RB_DaysWorking span:last-child{
-    background-color: #262626;
+    background-color: var(--secondary-backgroundcolor);
     padding: 12px 24px;
     border-radius: 6px;
 }

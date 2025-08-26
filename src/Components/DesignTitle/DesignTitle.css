@@ -1,0 +1,19 @@
+.RB_Design{
+    font-size: 58px;
+    font-family: barlow6;
+    padding: 100px 50px;
+    border: 1px solid var(--secondary-backgroundcolor);
+    color: var(--writing-color-titles);
+}
+@media screen and (max-width:1440px) {
+    .RB_Design{
+        font-size: 48px;
+        padding: 80px 50px;
+    }
+}
+@media screen and (max-width:992px) {
+    .RB_Design{
+        font-size: 38px;
+        padding: 40px 24px;
+    }
+}

@@ -1,0 +1,131 @@
+.RB_Project{
+    padding: 80px;
+    border: 1px solid var(--secondary-backgroundcolor);
+    .RB_Project_First{
+        display: flex;
+        align-items: center;
+        margin-bottom: 50px;
+        .RB_Img{
+            width: 150.704px;
+            height: 150px;
+            background-color: var(--primary-color);
+            box-shadow: 0px 0px 23px 16px #FFFFFF80 inset;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .RB_Info{            
+            margin-left: 40px;
+            h3{
+                color: #98989A;
+                font-family: barlow5;
+                font-size: 30px;
+                margin-bottom: 20px;
+            }
+            p{
+                color: var(--writing-color);
+                font-family: barlow4;
+                font-size: 18px;
+                line-height: 1.5;
+                max-width: 1245.295px;
+            }
+        }
+    }
+    .RB_Project_Second{
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        padding: 26.5px 40px;
+        border: 1px solid var(--secondary-backgroundcolor);
+        border-radius: 12px;
+        background-color: #24242433;
+        .RB_Container_Description{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            .RB_First{
+                color: var(--writing-color);
+                font-family: barlow4;
+                font-size: 20px;
+                flex-shrink: 0;
+        }
+        .RB_Second{
+                color: #ffffff;
+                font-family: barlow4;
+                font-size: 20px;
+                line-height: 1.5;
+                padding: 14px 20px;
+                background-color: var(--secondary-backgroundcolor);
+                border-radius: 8px;
+            }
+        }
+        button{
+            width: 170px;
+            height: 63px;
+            flex-shrink: 0;
+            border-radius: 8px;
+            font-size: 18px;
+            font-family: barlow5;
+            background-color: var(--primary-color);
+            color: var(--primary-backgroundcolor);
+            border: none;
+        }
+
+    }
+}
+@media screen and (max-width:1440px) {
+    .RB_Project{
+        padding: 60px;
+        .RB_Project_First{
+            .RB_Info{
+                margin-left: 30px;
+                h3{
+                    font-size: 24px;
+                    margin-bottom: 14px;
+                }
+                p{
+                    font-size: 16px;
+                }
+            }
+        }
+        .RB_Project_Second{
+            padding: 22.5px 30px;
+            gap: 49px;
+            .RB_Container_Description{
+                .RB_First{
+                font-size: 18px;
+            }
+            .RB_Second{
+                    font-size: 16px;
+                    padding: 10px 14px;
+                    margin-left: 14px;
+                }
+            }
+            button{
+                width: 119px;
+                height: 49px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+@media screen and (max-width:992px) {
+    .RB_Project{
+        padding: 40px 24px;
+        .RB_Project_Second{
+            flex-direction: column;
+            align-items: center;
+            .RB_Container_Description{
+                flex-direction: column;
+                align-items: center;
+                .RB_Second{
+                    text-align: center;
+                }
+            }
+            button{
+                width: 100%;
+            }
+        }
+    }
+}

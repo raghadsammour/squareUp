@@ -33,7 +33,7 @@ const OurService = () => {
   {serviceItems.length > 0 ? (
     <table
       className="RS_tableShow"
-         >
+          >
       <thead>
         <tr>
           <th>Logo</th>

@@ -1,0 +1,5 @@
+.RB_Flex{
+    display: flex;
+    gap: 20px;
+    margin: 100px;
+}
