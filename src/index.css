@@ -52,6 +52,9 @@
 
 :root{
   background-color: var(--primary-backgroundcolor);
+  max-width: 1920px;
+  margin :0 auto;
+
 }
 
 html {

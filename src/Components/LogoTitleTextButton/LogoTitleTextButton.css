@@ -18,7 +18,7 @@
   border: 1px solid rgb(46, 46, 46);
   padding: 50px;
   display: grid;
-    grid-template-rows: 40% 47% 13%;
+  rid-template-rows: 50% ;
   }
   
 .titleService,
