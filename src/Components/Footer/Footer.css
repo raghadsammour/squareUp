@@ -1,8 +1,11 @@
 .footer-container {
     padding: 66px 162px;
+    
 }
 
 .footer-top {
+    border-top: 1px solid var(--secondary-backgroundcolor);
+    padding-top: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -161,6 +164,7 @@
         padding: 40px 20px;
         text-align: center;
         background-color: var(--secondary-backgroundcolor);
+
     }
 
     .footer-top {
