@@ -1,5 +1,6 @@
 import "./ContactProject.css"
 import square from "../../assets/Icons/square.svg"
+import { Link } from "react-router-dom"
 const ContactProject = () => {
   return (
     <div className='RB_Project'>
@@ -26,7 +27,7 @@ const ContactProject = () => {
                     Digital Innovation.
                 </div>
             </div>
-            <button>Start Project</button>
+            <Link to="/contact">Start Project</Link>
         </div>
     </div>
   )

@@ -52,6 +52,7 @@
   gap: 13px;
 }
 .RB_HeroHome .RB_Btn {
+  text-decoration: none;
   font-family: barlow5;
   font-size: 18px;
   padding: 18px 28px;
