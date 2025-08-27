@@ -18,18 +18,19 @@
  
     border-top: 1px solid var(  --writing-color-titles);
     
-}
-.DashNav {
-  display: flex;
-  gap: 15vw;     
-  justify-content: center;
-  align-items: center;
-  background-color: #111;  
+  }
+  .DashNav {
+    display: flex;
+    gap: 10vw;     
+    justify-content: center;
+    align-items: center;
+    background-color: #111;  
     padding: 14px 24px;
-}
-
-
-.DashNav a {
+  }
+  
+  
+  .DashNav a {
+   
   color: var(  --writing-color-titles);  
   text-decoration: none;  
   font-size: 18px;

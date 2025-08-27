@@ -16,6 +16,8 @@
   padding-right: 10px;
 }
 .client-card {
+      display: flex;
+    justify-content: space-between;
   border: 1px solid rgb(80, 79, 79);
   display: flex;
   border-radius: 8px;

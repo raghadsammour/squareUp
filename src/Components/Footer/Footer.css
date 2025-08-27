@@ -1,8 +1,11 @@
 .footer-container {
     padding: 66px 162px;
+    
 }
 
 .footer-top {
+    border-top: 1px solid var(--secondary-backgroundcolor);
+    padding-top: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,11 +51,7 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-<<<<<<< HEAD
-    /* background-color: var(--color-bg); */
-=======
     background-color: var(--secondary-backgroundcolor);
->>>>>>> 8126c9ceddd161803d78d3a1c4c70325163ef111
     border-radius: 10px;
     margin-bottom: 1.5rem;
     border: 2px solid #333;
@@ -162,11 +161,8 @@
     .footer-container {
         padding: 40px 20px;
         text-align: center;
-<<<<<<< HEAD
-        /* background-color: var(--color-bg); */
-=======
         background-color: var(--secondary-backgroundcolor);
->>>>>>> 8126c9ceddd161803d78d3a1c4c70325163ef111
+
     }
 
     .footer-top {
@@ -204,11 +200,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-<<<<<<< HEAD
-        /* background-color: var(--color-bg); */
-=======
         background-color: var(--secondary-backgroundcolor);
->>>>>>> 8126c9ceddd161803d78d3a1c4c70325163ef111
         flex-direction: column;
         border-radius: 10px;
         border: 2px solid #333;
@@ -266,11 +258,7 @@
     }
 
     .contact-item::after {
-<<<<<<< HEAD
-        /* background-color: var(--color-hover); */
-=======
         background-color: var(--rarely-backgroundcolor);
->>>>>>> 8126c9ceddd161803d78d3a1c4c70325163ef111
     }
 
     .copyright {

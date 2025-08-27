@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import Container from "../../Components/Container/Container";
 import Card from "../../Components/Card/Card";
 import ProcessTitle from "../../Components/ProcessTitle/ProcessTitle";
+import Thanks from "../../Components/Thanks/thanks";
 const Process = () => {
   let defaultItems=[
     {
@@ -107,6 +108,7 @@ useEffect(() => {
           {showMore ? "Show Less" : "Show More"}
         </button>
       )}
+<Thanks title="Thank you for your Interest in SquareUp." Text="We would love to hear from you and discuss how we can help bring your digital ideas to life. Here are the different ways you can get in touch with us."/>
 
     </div>
   );
