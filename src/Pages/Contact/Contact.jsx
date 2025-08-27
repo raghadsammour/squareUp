@@ -56,7 +56,6 @@ image={bgAbout}
             imagein={linkedIn}
             alternativefin="linkedin icon"/>
       </ContactConnectionEnding>
-      <ContactProject/>
     </ContactSection>
       <TitleText
   title="Frequently Asked Questions"
@@ -65,6 +64,7 @@ image={bgAbout}
 
 />
 <Faq />
+      <ContactProject/>
 
 </div>
   )
