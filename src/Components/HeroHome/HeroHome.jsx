@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import './herohome.css'
 const HeroHome = ({image,title,btn1,btn2,description}) => {
+
     return (
         <div className="RB_HeroHome">
             <div className="RB_ImgWrapper">

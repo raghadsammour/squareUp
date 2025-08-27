@@ -45,17 +45,20 @@
 }
 
 .footer-right {
-    padding-bottom: 20px;
-    padding-top: 20px;
-    padding: 20px 32px;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    background-color: var(--secondary-backgroundcolor);
-    border-radius: 10px;
-    margin-bottom: 1.5rem;
-    border: 2px solid #333;
-
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding: 20px 32px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--secondary-backgroundcolor);
+  margin-bottom: 1.5rem;
+  border: 2px solid #333;
+  border-radius:10px ;
+  -webkit-border-radius:10px ;
+  -moz-border-radius:10px ;
+  -ms-border-radius:10px ;
+  -o-border-radius:10px ;
 }
 
 .social-text {

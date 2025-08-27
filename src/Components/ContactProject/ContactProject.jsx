@@ -27,7 +27,9 @@ const ContactProject = () => {
                     Digital Innovation.
                 </div>
             </div>
-            <Link to="/contact">Start Project</Link>
+
+       <Link to="/contact">Start Project</Link>
+
         </div>
     </div>
   )

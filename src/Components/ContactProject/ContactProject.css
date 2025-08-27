@@ -62,7 +62,9 @@
             }
         }
         a{
+
             text-decoration: none;
+
             width: 170px;
             height: 63px;
             flex-shrink: 0;
@@ -75,6 +77,10 @@
             background-color: var(--primary-color);
             color: var(--primary-backgroundcolor);
             border: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
         }
 
     }

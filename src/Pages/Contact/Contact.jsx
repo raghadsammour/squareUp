@@ -64,7 +64,9 @@ image={bgAbout}
 
 />
 <Faq />
+
 <ContactProject/>
+
 </div>
   )
 }
