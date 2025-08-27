@@ -19,7 +19,7 @@
         .RB_Info{            
             margin-left: 40px;
             h3{
-                color: #98989A;
+                color: var(--writing-color);
                 font-family: barlow5;
                 font-size: 30px;
                 margin-bottom: 20px;
@@ -52,7 +52,7 @@
                 flex-shrink: 0;
         }
         .RB_Second{
-                color: #ffffff;
+                color: var(--writing-color-titles);
                 font-family: barlow4;
                 font-size: 20px;
                 line-height: 1.5;

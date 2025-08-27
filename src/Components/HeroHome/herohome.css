@@ -5,11 +5,10 @@
   padding-top: 212px;
   text-align: center;
   position: relative;
-  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid #262626;
+  border: 1px solid var(--secondary-backgroundcolor);
 }
 .RB_HeroHome img {
   height: 41.48%;
@@ -23,7 +22,7 @@
 }
 .RB_HeroHome .RB_Title {
   background: none;
-  color: var(--writing-color-RB_Titles);
+  color: var(--writing-color-titles);
   font-family: barlow6;
   font-size: 68px;
   line-height: 1;
@@ -34,7 +33,7 @@
 .RB_HeroHome .RB_Paragraph {
   font-family: barlow4;
   font-size: 22px;
-  color:#FFFFFF;
+  color: var(--writing-color);
   max-width: 865px;
   margin-bottom: 50px;
   padding: 24px 40px;
@@ -46,9 +45,9 @@
   padding: 8px 10px;
   background-color: var(--secondary-backgroundcolor);
   border-radius: 8px;
-  color: var(--writing-color-RB_Titles);
+  color: var(--writing-color-titles);
 }
-.RB_HeroHome .RB_RB_Btns {
+.RB_HeroHome .RB_Btns {
   display: flex;
   gap: 13px;
 }
@@ -61,7 +60,7 @@
   background-color: #24242433;
   border: 1px solid #333333;
   backdrop-filter: blur(12px);
-  color: var(--writing-color-RB_Titles);
+  color: var(--writing-color-titles);
   cursor: pointer;
   transition: 0.2s all;
 }
@@ -74,8 +73,8 @@
   font-size: 18px;
   padding: 20px 34px;
   border-radius: 100px;
-  background-color: #1a1a1a;
-  border: 1px solid #262626;
+  background-color: var(--primary-backgroundcolor);
+  border: 1px solid var(--secondary-backgroundcolor);
   position: absolute;
   bottom: -34px;
   color: #fdfffa;
@@ -125,7 +124,7 @@
     line-height: 1.5;
   }
   .RB_HeroHome .RB_Paragraph span {
-    color: #98989a;
+    color: var(--writing-color);
     background: none;
   }
 .RB_HeroHome .RB_Description {

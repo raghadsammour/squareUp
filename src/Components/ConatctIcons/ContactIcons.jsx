@@ -1,4 +1,3 @@
-import React from 'react'
 import "./ConatctIcons.css"
 const ContactIcons = (props) => {
   return (

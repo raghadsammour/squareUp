@@ -1,4 +1,3 @@
-import React from 'react'
 import "./ContactProject.css"
 import square from "../../assets/Icons/square.svg"
 const ContactProject = () => {

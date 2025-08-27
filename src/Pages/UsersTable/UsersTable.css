@@ -1,4 +1,12 @@
- .RB_Table.End{
-    width: 80%;
-    margin: auto;
+.RB_Container_Table{
+    overflow-x: auto;
+}
+.RB_Table.End{
+    margin: 20px auto;
+}
+@media screen and (max-width:992px) {
+    .RB_Table.End{
+        max-width: 500px;
+        overflow-x: scroll;
+    }
 }

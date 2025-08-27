@@ -1,4 +1,3 @@
-import React from 'react'
 import "./ContactDays.css"
 const ContactDays = ({description,days}) => {
   return (

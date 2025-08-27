@@ -43,12 +43,6 @@ const About = () => {
       const stored=localStorage.getItem("itemsAbout")
       return stored?JSON.parse(stored): []
   })
-  /* useEffect(() => {
-  const stored = localStorage.getItem("itemsAbout");
-  if (!stored) {
-    localStorage.setItem("itemsAbout", JSON.stringify(defaultItemsAbout));
-  }
-}, []); */
 useEffect(() => {
   const stored = localStorage.getItem("itemsAbout");
   if (!stored) {

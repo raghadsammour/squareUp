@@ -13,7 +13,6 @@ const AboutPage = () => {
         <TableCrud
             storageItems="itemsAbout"
             editRoute="/dash/editabout/editformabout"
-            goTo="/about"
           />
       </div>
     </>

@@ -13,7 +13,6 @@ const ProcessPage = () => {
             <TableCrud
             storageItems="items"
             editRoute="/dash/editprocess/editform"
-            goTo="/process"
           />
           </div>
     </>

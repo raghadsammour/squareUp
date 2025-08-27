@@ -1,6 +1,6 @@
 .RB_Form{
     margin: 0;
-    width: 500px;
+    max-width: 500px;
 }
 .RB_Form h1{
     color: var(--primary-color);
