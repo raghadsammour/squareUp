@@ -90,13 +90,13 @@ const ClientsPage = () => {
 
 <Outlet />
 
-<div className="services">
+<div className="servicesTable">
   <table className="RS_tableShow">
     <thead>
       <tr>
+        <th>Avatar</th>
         <th>Name</th>
         <th>Work</th>
-        <th>Avatar</th>
         <th>Title</th>
         <th>Text</th>
         <th>Actions</th>
@@ -105,11 +105,11 @@ const ClientsPage = () => {
     <tbody>
       {users.map((user) => (
         <tr key={user.id}>
-          <td>{user.name}</td>
-          <td>{user.work}</td>
           <td>
             <img src={user.avatar} alt={user.name} width="100" />
           </td>
+          <td>{user.name}</td>
+          <td>{user.work}</td>
           <td><b>{user.title}</b></td>
           <td>{user.text}</td>
           <td>

@@ -8,13 +8,13 @@ const navigate = useNavigate();
           <section className='Thank'>
   <div className='thankDiv' >
 
-<div className='bglogothank'>
+<div className='bglogothank logoAboutThank'>
 
 <img src={logoSquare} />
 </div>
 <div className='thanksParagraph'>
 
-            <h1 className='title'>{title}</h1>
+            <h1 className='titleThank'>{title}</h1>
             <p className='discription'>{Text}</p>
 </div>
             

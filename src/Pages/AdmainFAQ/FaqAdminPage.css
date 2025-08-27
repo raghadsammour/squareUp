@@ -1,0 +1,347 @@
+
+:root {
+    --color-bg: #262626;
+    --color-text: #ffffff;
+    --color-accent: #B6FF19;
+    --color-hover: #333333;
+    --color-TrustedText: #FDFFFA;
+    --color-logoText: #E6E6E6;
+    --color-Nomber: #D8FF99;
+    --color-copy: #98989A;
+    --color-card-bg: #1A1A1A;
+    --color-border: #333333;
+}
+
+.faq-admin-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem 0;
+    /* background: var(--color-bg); */
+    color: var(--color-text);
+    min-height: 100vh;
+}
+
+.faq-admin-container h2 {
+    font-size: 2rem;
+    color: var(--color-accent);
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--color-accent);
+}
+
+.faq-tabs {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.faq-tabs button {
+    padding: 0.8rem 1.8rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    background: rgba(182, 255, 25, 0.1);
+    color: var(--color-text);
+    font-size: 1rem;
+}
+
+.faq-tabs button.active {
+    background: var(--color-accent);
+    color: var(--color-bg);
+    box-shadow: 0 0 15px rgba(182, 255, 25, 0.5);
+}
+
+.faq-tabs button:hover:not(.active) {
+    background: rgba(182, 255, 25, 0.2);
+}
+
+.faq-table-container {
+    overflow-x: auto;
+    margin-top: 1.5rem;
+    background: var(--color-card-bg);
+    border-radius: 8px;
+    border: 1px solid var(--color-border);
+}
+
+.faq-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.faq-table th,
+.faq-table td {
+    padding: 1rem;
+    text-align: right;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.faq-table th {
+    background: rgba(182, 255, 25, 0.1);
+    color: var(--color-accent);
+    font-weight: 600;
+}
+
+.faq-table tr:hover {
+    background: rgba(182, 255, 25, 0.05);
+}
+
+.answer-cell {
+    max-width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.faq-table-actions {
+    display: flex;
+    gap: 0.8rem;
+    justify-content: flex-end;
+}
+
+.faq-table-actions button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    min-width: 100px;
+}
+
+.faq-edit-btn {
+    background: var(--color-accent);
+    color: var(--color-bg);
+}
+
+.faq-edit-btn:hover {
+    background: var(--color-accent);
+    transform: translateY(-2px);
+}
+
+.faq-delete-btn {
+    background: var(--color-accent);
+    color: var(--color-bg);
+}
+
+.faq-delete-btn:hover {
+    background: var(--color-accent);
+    transform: translateY(-2px);
+}
+
+.faq-restore-btn {
+    background: var(--color-Nomber);
+    color: var(--color-bg);
+}
+
+.faq-restore-btn:hover {
+    background: var(--color-Nomber);
+    transform: translateY(-2px);
+}
+
+.faq-edit-form {
+    background: var(--color-card-bg);
+    border-radius: 8px;
+    padding: 2rem;
+    margin-top: 2rem;
+    border: 1px solid var(--color-border);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.faq-edit-form h3 {
+    color: var(--color-accent);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.faq-form-group {
+    margin-bottom: 1.5rem;
+}
+
+.faq-form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--color-accent);
+}
+
+.faq-form-group input,
+.faq-form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    color: white;
+    font-size: 1rem;
+}
+
+.faq-form-group textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.faq-form-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    margin-top: 2rem;
+}
+
+.faq-submit-btn {
+    background: var(--color-accent);
+    color: var(--color-bg);
+    font-weight: 600;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+}
+
+.faq-submit-btn:hover {
+    background: var(--color-accent);
+    transform: translateY(-2px);
+}
+
+.faq-cancel-btn {
+    background: var(--color-accent);
+    color: var(--color-bg);
+    font-weight: 600;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+}
+
+.faq-cancel-btn:hover {
+    background: var(--color-accent);
+    transform: translateY(-2px);
+}
+
+.no-faqs {
+    text-align: center;
+    color: var(--color-text);
+    font-size: 1.2rem;
+    padding: 2rem;
+    opacity: 0.7;
+}
+
+.faq-admin-actions {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.faq-add-btn {
+    padding: 0.8rem 1.8rem;
+    background: var(--color-accent);
+    color: var(--color-bg);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.faq-add-btn:hover {
+    background: var(--color-accent);
+    transform: translateY(-2px);
+}
+
+@media screen and (max-width: 1440px) {
+    .faq-admin-container {
+        padding: 2rem 0;
+    }
+    
+    .faq-admin-container h2 {
+        font-size: 1.8rem;
+    }
+    
+    .faq-tabs button {
+        padding: 0.7rem 1.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .faq-table th,
+    .faq-table td {
+        padding: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .faq-admin-container {
+        /* padding: 1.5rem; */
+    }
+    
+    .faq-admin-container h2 {
+        font-size: 1.6rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .faq-tabs {
+        margin-bottom: 2rem;
+        gap: 0.8rem;
+    }
+    
+    .faq-tabs button {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.85rem;
+    }
+    
+    .faq-table th,
+    .faq-table td {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+    
+    .faq-table-actions {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .faq-table-actions button {
+        width: 100%;
+        min-width: auto;
+        font-size: 0.85rem;
+    }
+    
+    .answer-cell {
+        max-width: 200px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .faq-admin-container {
+        padding: 1rem;
+    }
+    
+    .faq-tabs {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .faq-tabs button {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .faq-table-container {
+        margin-top: 1rem;
+    }
+    
+    .faq-table {
+        font-size: 0.8rem;
+    }
+    
+    .faq-table th,
+    .faq-table td {
+        padding: 0.6rem;
+    }
+    
+    .faq-admin-actions {
+        justify-content: center;
+    }
+    
+    .faq-add-btn {
+        width: 100%;
+    }
+}

@@ -1,4 +1,4 @@
-.heroHome {
+.RB_HeroHome {
   background-image: url("../../assets/imgs/Home/dots.png");
   background-repeat: repeat;
   height: 100vh;
@@ -11,7 +11,7 @@
   align-items: center;
   border: 1px solid #262626;
 }
-.heroHome img {
+.RB_HeroHome img {
   height: 41.48%;
   width: 100%;
   object-fit: cover;
@@ -21,9 +21,9 @@
   z-index: 0;
   background-repeat: repeat;
 }
-.heroHome .title {
+.RB_HeroHome .RB_Title {
   background: none;
-  color: #ffffff;
+  color: var(--writing-color-RB_Titles);
   font-family: barlow6;
   font-size: 68px;
   line-height: 1;
@@ -31,45 +31,45 @@
   max-width: 865px;
   margin-bottom: 40px;
 }
-.heroHome .paragraph {
+.RB_HeroHome .RB_Paragraph {
   font-family: barlow4;
   font-size: 22px;
-  color: #98989a;
+  color:#FFFFFF;
   max-width: 865px;
   margin-bottom: 50px;
   padding: 24px 40px;
-  border: 1px solid #262626;
+  border: 1px solid var(--secondary-backgroundcolor);
   backdrop-filter: blur(12px);
   border-radius: 12px;
 }
-.heroHome .paragraph span {
+.RB_HeroHome .RB_Paragraph span {
   padding: 8px 10px;
-  background-color: #262626;
+  background-color: var(--secondary-backgroundcolor);
   border-radius: 8px;
-  color: #FFFFFF;
+  color: var(--writing-color-RB_Titles);
 }
-.heroHome .btns {
+.RB_HeroHome .RB_RB_Btns {
   display: flex;
   gap: 13px;
 }
-.heroHome .btn {
+.RB_HeroHome .RB_Btn {
   font-family: barlow5;
   font-size: 18px;
   padding: 18px 28px;
-  border: 1px solid #262626;
+  border: 1px solid var(--secondary-backgroundcolor);
   border-radius: 10px;
   background-color: #24242433;
   border: 1px solid #333333;
   backdrop-filter: blur(12px);
-  color: #ffffff;
+  color: var(--writing-color-RB_Titles);
   cursor: pointer;
   transition: 0.2s all;
 }
-.heroHome .btn:hover {
-  background-color: #9eff00;
-  color: #262626;
+.RB_HeroHome .RB_Btn:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-backgroundcolor);
 }
-.heroHome .description {
+.RB_HeroHome .RB_Description {
   font-family: barlow5;
   font-size: 18px;
   padding: 20px 34px;
@@ -81,30 +81,26 @@
   color: #fdfffa;
 }
 @media screen and (max-width: 1440px) {
-  /* .whiteSpacing{
-        padding-left: 80px;
-        padding-right: 80px;
-    } */
-  .heroHome {
+  .RB_HeroHome {
     padding-top: 197px;
 
   }
-  .heroHome .title {
+  .RB_HeroHome .RB_Title {
     font-size: 48px;
     margin-bottom: 30px;
     max-width: 699px;
   }
-  .heroHome .paragraph {
+  .RB_HeroHome .RB_Paragraph {
     max-width: 699px;
     font-size: 18px;
     padding: 18px 30px;
     margin-bottom: 40px;
   }
-  .heroHome .btn {
+  .RB_HeroHome .RB_Btn {
     font-size: 14px;
     padding: 14px 20px;
   }
-  .heroHome .description {
+  .RB_HeroHome .RB_Description {
     font-size: 14px;
     padding: 14px 24px;
     bottom: -26px;
@@ -113,25 +109,26 @@
 }
 @media screen and (max-width: 992px) {
 
-  .heroHome {
+  /* .heroHome { */
+  .RB_HeroHome {
     padding-top: 186px;
     padding-left: 16px;
     padding-right: 16px;
     margin: 0;
   }
-  .heroHome .title {
+  .RB_HeroHome .RB_Title {
     font-size: 34px;
   }
-  .heroHome .paragraph {
+  .RB_HeroHome .RB_Paragraph {
     font-size: 16px;
     padding: 18px 20px;
     line-height: 1.5;
   }
-  .heroHome .paragraph span {
+  .RB_HeroHome .RB_Paragraph span {
     color: #98989a;
     background: none;
   }
-.heroHome .description {
+.RB_HeroHome .RB_Description {
     bottom: -28px;
 }
 }

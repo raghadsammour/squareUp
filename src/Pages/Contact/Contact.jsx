@@ -1,7 +1,6 @@
 import TitleText from "../../Components/TitleText/TitleText"
 import "./Contact.css"
 import bgAbout from "../../assets/imgs/contact/contactus.webp"
-import smallSquare from "../../assets/Icons/smallSquare.png"
 import Faq from "../../Components/Faq/Faq"
 import ContactForm from "../../Components/ConatactForm/ContactForm"
 import ContactSection from "../../Components/ContactSection/ContactSection"
@@ -17,14 +16,15 @@ import locationIcon from "../../assets/Icons/locationicon.svg"
 import phoneIcon from "../../assets/Icons/phoneicon.svg"
 import emailIcon from "../../assets/Icons/emailicon.svg"
 import Divider from "../../Components/Divider/Divider"
+import ContactProject from "../../Components/ContactProject/ContactProject"
 const Contact = () => {
   return (
-    <>
+    <div className="whiteSpacing work-page">
   <TitleText
   title="Contact Us"
   text="Get in touch with us today and let us help you with any questions or inquiries you may have."
 image={bgAbout}
-overlay={smallSquare}
+
 />
     <ContactSection>
       <ContactIcons>
@@ -56,10 +56,17 @@ overlay={smallSquare}
             imagein={linkedIn}
             alternativefin="linkedin icon"/>
       </ContactConnectionEnding>
+      <ContactProject/>
     </ContactSection>
+      <TitleText
+  title="Frequently Asked Questions"
+  text="Still you have any questions? Contact our Team via hello@squareup.com"
+image={bgAbout}
+
+/>
 <Faq />
 
-</>
+</div>
   )
 }
 

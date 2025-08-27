@@ -12,10 +12,9 @@
 
 
 .RS_tableShow{
-    border: 1px solid white;
+    border: 1px solid var(  --writing-color-titles);
     padding: 15px;
-    /*background-color: brown;
-    */font-size: 16px;
+  font-size: 16px;
     height: 300px;
     overflow-y: scroll;
     height: 100%;

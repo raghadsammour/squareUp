@@ -4,14 +4,16 @@
     box-sizing: border-box;
 }
 .RB_Show{
-    background-color: #9EFF00;
-    color: #262626;
+    background-color:var( --primary-color);
+    color: var( --secondary-backgroundcolor);
     border:none;
     padding: 10px 15px;
     border-radius: 6px;
+    margin: 20px auto;
+    display: block;
 }
 .RB_Process_Description{
-    color: #9EFF00;
+    color: var( --primary-color);
     font-size: 30px;
     margin: auto;
 }

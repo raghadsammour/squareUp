@@ -15,6 +15,7 @@ import connectcrm from "../../src/assets/imgs/Work/connectcrm.webp";
 const initialProjects = [
     {
         id: 1,
+        behance: "https://www.behance.net/gallery/122254095/Maldives-Web-design-concept",
         title: "Chic Boutique",
         subtitle: "E-Commerce Platform for Fashion Hub",
         image: chicBoutique,
@@ -24,6 +25,7 @@ const initialProjects = [
     },
     {
         id: 2,
+        behance: "https://www.behance.net/gallery/159187695/Ui-Design-Furniture-Apps",
         title: "hungrybites",
         subtitle: "Mobile App for Food Delivery Service",
         image: hungrybites,
@@ -33,6 +35,7 @@ const initialProjects = [
     },
     {
         id: 3,
+        behance: "https://www.behance.net/gallery/122254095/Maldives-Web-design-concept",
         title: "EventMasters",
         subtitle: "Booking and Reservation System for Event Management",
         image: evenmasters,
@@ -42,6 +45,7 @@ const initialProjects = [
     },
     {
         id: 4,
+        behance: "https://www.behance.net/gallery/122254095/Maldives-Web-design-concept",
         title: "ProTech Solutions",
         subtitle: "Custom Software for Workflow Automation",
         image: protech,
@@ -51,6 +55,7 @@ const initialProjects = [
     },
     {
         id: 5,
+        behance: "https://www.behance.net/gallery/122254095/Maldives-Web-design-concept",
         title: "Dream Homes Realty",
         subtitle: "Web Portal for Real Estate Listings",
         image: dreamhomes,
@@ -60,6 +65,7 @@ const initialProjects = [
     },
     {
         id: 6,
+        behance: "https://www.behance.net/gallery/122254095/Maldives-Web-design-concept",
         title: "FitLife Tracker",
         subtitle: "Custom Software for Supply Chain Management",
         image: fitlifetracker,
@@ -69,6 +75,7 @@ const initialProjects = [
     },
     {
         id: 7,
+        behance: "https://www.behance.net/gallery/122254095/Maldives-Web-design-concept",
         title: "Global Logistics Solutions",
         subtitle: "Educational Platform for Online Learning",
         image: globallogistics,
@@ -78,6 +85,7 @@ const initialProjects = [
     },
     {
         id: 8,
+        behance: "https://www.behance.net/gallery/122254095/Maldives-Web-design-concept",
         title: "WanderWise",
         subtitle: "Educational Platform for Online Learning",
         image: educonnect,
@@ -87,6 +95,7 @@ const initialProjects = [
     },
     {
         id: 9,
+        behance: "https://www.behance.net/gallery/122254095/Maldives-Web-design-concept",
         title: "ConnectCRM",
         subtitle: "Mobile App for Travel Planning",
         image: wanderwise,
@@ -96,6 +105,7 @@ const initialProjects = [
     },
     {
         id: 10,
+        behance: "https://www.behance.net/gallery/122254095/Maldives-Web-design-concept",
         title: "HungryBites",
         subtitle: "Web Application for Customer Relationship Management",
         image: connectcrm,
@@ -111,24 +121,21 @@ export const getProjects = () => {
     return data ? JSON.parse(data) : initialProjects;
 };
 
-// Save projects to localStorage
 export const saveProjects = (projects) => {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(projects));
 };
 
-// Add a new project
 export const addProject = (project) => {
     const projects = getProjects();
     const newProject = {
         ...project,
-        id: Date.now(), // Generate unique ID
-        achievements: project.achievements || [] // Ensure achievements array exists
+        id: Date.now(),
+        achievements: project.achievements || []
     };
     saveProjects([...projects, newProject]);
     return newProject;
 };
 
-// Update an existing project
 export const updateProject = (id, updatedData) => {
     const projects = getProjects();
     const updatedProjects = projects.map(proj =>
@@ -137,19 +144,15 @@ export const updateProject = (id, updatedData) => {
     saveProjects(updatedProjects);
     return updatedProjects;
 };
-
-// Get all trashed projects
 export const getTrashedProjects = () => {
     const data = localStorage.getItem(TRASH_KEY);
     return data ? JSON.parse(data) : [];
 };
 
-// Save trashed projects
 export const saveTrashedProjects = (projects) => {
     localStorage.setItem(TRASH_KEY, JSON.stringify(projects));
 };
 
-// Move project to trash
 export const moveToTrash = (id) => {
     const projects = getProjects();
     const projectToTrash = projects.find(proj => proj.id === id);
@@ -161,7 +164,6 @@ export const moveToTrash = (id) => {
     }
 };
 
-// Restore project from trash
 export const restoreProject = (id) => {
     const trashedProjects = getTrashedProjects();
     const projectToRestore = trashedProjects.find(proj => proj.id === id);
@@ -172,12 +174,13 @@ export const restoreProject = (id) => {
     }
 };
 
-// Permanently delete project
 export const permanentlyDeleteProject = (id) => {
     saveTrashedProjects(getTrashedProjects().filter(proj => proj.id !== id));
 };
 
-// Initialize storage with sample data if empty
-if (getProjects().length === 0 && getTrashedProjects().length === 0) {
+const localData = localStorage.getItem(STORAGE_KEY);
+const trashData = localStorage.getItem(TRASH_KEY);
+
+if (!localData && !trashData) {
     saveProjects(initialProjects);
 }

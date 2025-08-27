@@ -70,12 +70,10 @@ const LocalClients = () => {
     return stored ? JSON.parse(stored) : initialUsers;
   });
 
-  // حفظ التحديثات في localStorage
   useEffect(() => {
     localStorage.setItem("users", JSON.stringify(users));
   }, [users]);
 
-  // حذف مستخدم
   const handleDelete = (id) => {
     const updatedUsers = users.filter(user => user.id !== id);
     setUsers(updatedUsers);

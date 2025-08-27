@@ -5,6 +5,7 @@ import TitleText from "../../Components/TitleText/TitleText";
 import "./About.css";
 import bgAbout from "../../assets/imgs/About/Abouthero.webp";
 import SectionAbout from "../../Components/SectionAbout/SectionAbout";
+import DesignTitle from "../../Components/DesignTitle/DesignTitle";
 const About = () => {
   let defaultItemsAbout=[
     {
@@ -70,6 +71,7 @@ useEffect(() => {
       />
 
       <SectionAbout />
+      <DesignTitle text="Our Story"/>
       <Container>
         {itemsAbout.length === 0 ? (
           <p className="RB_Process_Description">There is no items to show</p>

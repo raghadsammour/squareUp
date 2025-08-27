@@ -1,10 +1,9 @@
 .asu{
-    /* background-color: #262626; */
-    text-align: left;
+       text-align: left;
     margin: 0 50px;    
-}
+   }
 .titel_asu{
-    color: white;
+    color: var(--writing-color-titles);
     font-weight: 600;
     font-size: 48px;
     line-height: 100%;
@@ -12,7 +11,7 @@
     padding-bottom: 14px;
 }
 .discription_asu{
-    color: #E6E6E6;
+    color: var(--paragraph-color);
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
@@ -21,7 +20,7 @@
 .p_asu{
     border-radius: 8px;
     border-color: #262626;
-    color: white;
+    color: var(--writing-color-titles);
     width: 100%;
     font-weight: 400;
     font-size: 22px;

@@ -1,8 +1,6 @@
-import "./ContactSection.css"
-
 const ContactSection = (props) => {
     return (
-        <section className="RB_ContactSection whiteSpacing">
+        <section className="RB_ContactSection">
             {props.children}
         </section>
     )

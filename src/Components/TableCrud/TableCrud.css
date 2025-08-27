@@ -1,18 +1,19 @@
 .RB_Table{
-    width: 50%;
+    width: 60%;
+    margin:0 100px 0 auto;
     th{
-        background-color: #9EFF00;
-        color: black;
+        background-color: var(--primary-color);
+        color: var(--primary-backgroundcolor);
         padding: 8px;
     }
     td{
-        color: #9EFF00;
+        color: var(--primary-color);
         padding: 10px;
-        border: 1px solid #9EFF00;
+        border: 1px solid var(--primary-color);
         button,a{
-            background: #9EFF00;
-            color: black;
-            border: 1px solid black;
+            background: var(--primary-color);
+            color: var(--primary-backgroundcolor);
+            border: 1px solid var(--primary-backgroundcolor);
             border-radius: 6px;
             margin: 4px;
             padding: 10px;

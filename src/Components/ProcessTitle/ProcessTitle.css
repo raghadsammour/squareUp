@@ -1,0 +1,58 @@
+.RB_Process_Title{
+    padding: 120px 50px;
+    border: 1px solid var(--secondary-backgroundcolor);
+}
+.RB_Process_Title .RB_Adress{
+    font-size: 48px;
+    font-family: barlow6;
+    color: var(--writing-color-titles);
+    margin-bottom: 14px;
+}
+.RB_Process_Title .RB_Des{
+    font-family: barlow4;
+    font-size: 18px;
+    color: var(--paragraph-color);
+    line-height: 1.5;
+    letter-spacing: -0.006em;
+    margin-bottom: 50px;
+}
+.RB_Process_Title .RB_In{
+    font-family: barlow4;
+    font-size: 18px;
+    color: var(--writing-color-titles);
+    padding: 12px 14px;
+    background-color: var(--secondary-backgroundcolor);
+    border-radius: 8px;
+    width: fit-content;
+}
+@media screen and (max-width:1440px) {
+    .RB_Process_Title{
+        padding: 80px 40px;
+    }
+    .RB_Process_Title .RB_Adress{
+        font-size: 38px;
+        margin-bottom: 10px;
+    }
+    .RB_Process_Title .RB_Des{
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+    .RB_Process_Title .RB_In{
+        padding: 10px;
+    }
+}
+@media screen and (max-width:992px) {
+    .RB_Process_Title{
+        padding: 40px 16px;
+    }
+    .RB_Process_Title .RB_Adress{
+        font-size: 28px;
+    }
+    .RB_Process_Title .RB_Des{
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+    .RB_Process_Title .RB_In{
+        font-size: 16px;
+    }
+}

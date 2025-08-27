@@ -6,6 +6,7 @@ import smallSquare from "../../assets/Icons/smallSquare.png";
 import { useEffect, useState } from "react";
 import Container from "../../Components/Container/Container";
 import Card from "../../Components/Card/Card";
+import ProcessTitle from "../../Components/ProcessTitle/ProcessTitle";
 const Process = () => {
   let defaultItems=[
     {
@@ -53,12 +54,6 @@ const Process = () => {
       const stored=localStorage.getItem("items")
       return stored?JSON.parse(stored):[]
   })
-  /* useEffect(() => {
-  const stored = localStorage.getItem("items");
-  if (!stored) {
-    localStorage.setItem("items", JSON.stringify(defaultItems));
-  }
-}, []); */
 useEffect(() => {
   const stored = localStorage.getItem("items");
   if (!stored) {
@@ -86,6 +81,9 @@ useEffect(() => {
         image={bgProcess}
         overlay={smallSquare}
       />
+      <ProcessTitle title="At SquareUp"
+      description="We follow a structured and collaborative process to ensure the successful delivery of exceptional digital products. Our process combines industry best practices, creative thinking, and a client-centric approach."
+      info="Here's an overview of our typical process:" />
       <Container>
         {visibleItems.length === 0 ? (
           <p className="RB_Process_Description">There is no items to show</p>

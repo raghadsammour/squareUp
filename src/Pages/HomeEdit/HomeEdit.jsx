@@ -7,12 +7,13 @@ const HomeEdit = () => {
     <div className='dashboard'>
 <nav className='NavHome'>
     <Link to="EditOur">Our Service</Link>
-    <Link to="EditSquareUp">SquareUp</Link>
-        <Link to="EditClients">Clientst</Link>
-        <Link to="Editfaq">FAQ</Link>
+    <Link to="AdminPageOK">SquareUp</Link>
+        <Link to="EditClients">Clients</Link>
+        <Link to="FaqAdminPage">FAQ</Link>
 </nav>
         <Outlet/>
     </div>
+    
     </>
   )
 }

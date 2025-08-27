@@ -1,33 +1,19 @@
-:root {
-    --color-bg: #262626;
-    --color-text: #ffffff;
-    --color-accent: #B6FF19;
-    --color-hover: #333333;
-    --color-TrustedText: #FDFFFA;
-    --color-logoText: #E6E6E6;
-    /*  هي لون الكتابة يلي جنب الايوقنات*/
-    --color-Nomber: #D8FF99;
-    /* لون الارقام */
-    --color-copy: #98989A;
-    /* حقوق النشر */
-}
-
 .work-container {
     margin: 0 auto;
-
     box-sizing: border-box;
 }
 
 .intro-section h1 {
+    font-family: barlow6;
     font-size: 48px;
     margin-top: 120px;
     margin-bottom: 14px;
-    color: var(--color-text);
+    color: var(--writing-color-titles);
 }
 
 .intro-text {
     font-size: 18px;
-    color: var(--color-logoText);
+    color: var(--paragraph-color);
     margin-bottom: 50px;
 }
 
@@ -36,8 +22,9 @@
     padding: 14px 12px;
     font-size: 22px;
     font-weight: normal;
-    color: var(--color-text);
-    background: var(--color-hover);
+    color: var(--writing-color-titles);
+    /* background: var(--rarely-backgroundcolor); */
+  
     border-radius: 8px;
     margin-bottom: 2rem;
 }
@@ -66,7 +53,6 @@
 
     .projects-grid {
         grid-template-columns: repeat(2, minmax(300px, 1fr));
-        gap: 1.5rem;
     }
 }
 

@@ -12,7 +12,7 @@ const Navbar = () => {
     try {
       const stored = localStorage.getItem("currentUser");
       if (stored) setCurrentUser(JSON.parse(stored));
-    } catch {}
+    } catch { }
   }, []);
 
   useEffect(() => {

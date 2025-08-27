@@ -7,12 +7,11 @@ import {
     restoreCard,
     permanentlyDeleteCard,
     updateCard
-} from '../../utils/cardsStorage';
-import Card from '../../Components/CardHome/CardHome';
-import EditCardForm from './EditCardForm';
-import AddCardForm from './AddCardForm';
-import CardsList from './CardsList';
-import './CardsAdmin.css';
+} from '../../utils/cardsStorageOK';
+import EditCardForm from './EditCardFormOK'; 
+import AddCardForm from './AddCardFormOK';
+import CardsList from './CardsListOK'; 
+import './CardsAdminOK.css'; 
 
 const CardsAdminPage = () => {
     const [cards, setCards] = useState([]);
@@ -56,7 +55,7 @@ const CardsAdminPage = () => {
     const handleAddSubmit = (e) => {
         e.preventDefault();
         addCard(formData);
-        alert('تمت إضافة البطاقة بنجاح');
+        alert('Card added successfully');
         resetForm();
         refreshData();
     };
@@ -64,13 +63,13 @@ const CardsAdminPage = () => {
     const handleEditSubmit = (e) => {
         e.preventDefault();
         updateCard(editingCard.id, formData);
-        alert('تم تحديث البطاقة بنجاح');
+        alert('Card updated successfully');
         resetForm();
         refreshData();
     };
 
     const handleDelete = (id) => {
-        if (window.confirm('هل أنت متأكد من نقل هذه البطاقة إلى سلة المحذوفات؟')) {
+        if (window.confirm('Are you sure you want to move this card to trash?')) {
             moveCardToTrash(id);
             refreshData();
         }
@@ -79,11 +78,11 @@ const CardsAdminPage = () => {
     const handleRestore = (id) => {
         restoreCard(id);
         refreshData();
-        alert('تم استعادة البطاقة بنجاح');
+        alert('Card restored successfully');
     };
 
     const handlePermanentDelete = (id) => {
-        if (window.confirm('هل أنت متأكد من الحذف النهائي؟')) {
+        if (window.confirm('Are you sure you want to permanently delete this card?')) {
             permanentlyDeleteCard(id);
             refreshData();
         }
@@ -100,20 +99,20 @@ const CardsAdminPage = () => {
 
     return (
         <div className="admin-container cards-admin">
-            <h2>إدارة بطاقات الصفحة الرئيسية</h2>
+            <h2>Home Page Cards Management</h2>
 
             <div className="tabs">
                 <button
                     className={activeTab === 'cards' ? 'active' : ''}
                     onClick={() => setActiveTab('cards')}
                 >
-                    البطاقات ({getCards().length})
+                    Cards ({getCards().length})
                 </button>
                 <button
                     className={activeTab === 'trash' ? 'active' : ''}
                     onClick={() => setActiveTab('trash')}
                 >
-                    سلة المحذوفات ({getTrashedCards().length})
+                    Trash ({getTrashedCards().length})
                 </button>
             </div>
 

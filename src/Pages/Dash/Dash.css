@@ -15,9 +15,8 @@
 }
 
 .dashboard{
-   
-    margin: 0 163px;
-    border-top: 1px solid white;
+ 
+    border-top: 1px solid var(  --writing-color-titles);
     
 }
 .DashNav {
@@ -31,7 +30,7 @@
 
 
 .DashNav a {
-  color: white;  
+  color: var(  --writing-color-titles);  
   text-decoration: none;  
   font-size: 18px;
   font-family: "Barlow Semi Bold", sans-serif;
@@ -45,10 +44,7 @@
 
 
 @media screen and (max-width:1440px){  
-  .dashboard{
-    /* padding: 100px 0; */
-    margin: 0 80px;
-  }
+
   .DashNav{
     gap: 10vw;
 } 
@@ -57,10 +53,7 @@
 }
 }
 @media screen and (max-width:992px){  
-  .dashboard{
- 
-    margin: 0 20px;
-  }
+
 .DashNav{
     gap: 5vw;
 } 

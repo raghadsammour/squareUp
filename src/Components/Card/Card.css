@@ -1,6 +1,6 @@
 .RB_Card{
     width: 50%;
-    border: 1px solid #262626;
+    border: 1px solid var(--secondary-backgroundcolor);
     padding: 100px 50px;
     transition: 1s all;
 }
@@ -13,13 +13,13 @@
 .RB_Card .RB_id{
     font-family: barlow6; 
     font-size: 150px;
-    color: #D8FF99;
+    color: var(--secondary-color);
 }
 .RB_Card .RB_info .RB_title{
     font-family: barlow5;
     font-size: 30px;
-    color: #98989A;
-    border-bottom: 1px solid #262626;
+    color: var(--writing-color);
+    border-bottom: 1px solid var(--secondary-backgroundcolor);
     flex-grow: 1;
     padding: 43px 0 26px 10px;
 }
@@ -31,7 +31,7 @@
 }
 .RB_Card.about .RB_title{
     font-family: barlow6;
-    color: #D8FF99;
+    color: var(--secondary-color);
     padding: 22px 0 26px 10px;
 }
 .RB_Card.about .RB_description{
