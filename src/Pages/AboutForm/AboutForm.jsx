@@ -16,7 +16,7 @@ const AboutForm = ({ storageItems, lastIdKey, redirectPath, titleText }) => {
       title,
       description,
     };
-    console.log(newItem)
+
     localStorage.setItem(lastIdKey, lastId);
     setItems((prev) => [...prev, newItem]);
       navigate(redirectPath)

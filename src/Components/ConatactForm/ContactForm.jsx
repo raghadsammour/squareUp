@@ -18,7 +18,6 @@ const ContactForm = () => {
 
   useEffect(() => {
     localStorage.setItem("users", JSON.stringify(users))
-    console.log("Users:", users)
   }, [users])
 
   const saveUser = (event) => {

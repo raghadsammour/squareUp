@@ -211,7 +211,11 @@ padding-top: 30px;
     padding-bottom: 24px;
     padding-top: 24px;
   }
-
+.TableService{
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
   .learnMore {
     position: relative;
     width: 100%;
