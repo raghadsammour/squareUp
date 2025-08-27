@@ -110,20 +110,13 @@ const ProjectCard = ({ project, index }) => {
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="project-link"
-                                        whileHover={{
-                                            backgroundColor: "var(--primary-color)",
-                                            color: "var(--secondary-backgroundcolor)"
-                                        }}
+
                                         transition={{ duration: 0.2 }}
                                     >
                                         {project.link}
                                     </motion.a>
                                 </div>
                                 <motion.div
-                                    whileHover={{
-                                        scale: 1.1,
-                                        backgroundColor: "var(--primary-color)"
-                                    }}
                                     whileTap={{ scale: 0.95 }}
                                     transition={{ type: "spring", stiffness: 400, damping: 17 }}
                                 >

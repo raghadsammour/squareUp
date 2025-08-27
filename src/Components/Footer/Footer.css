@@ -1,8 +1,11 @@
 .footer-container {
     padding: 66px 162px;
+    
 }
 
 .footer-top {
+    border-top: 1px solid var(--secondary-backgroundcolor);
+    padding-top: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,7 +25,7 @@
     justify-content: center;
     flex-wrap: wrap;
 }
-
+/* هاد للرابط */
 .footer-links {
     display: flex;
     gap: 30px;
@@ -48,11 +51,7 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-<<<<<<< HEAD
-    /* background-color: var(--color-bg); */
-=======
     background-color: var(--secondary-backgroundcolor);
->>>>>>> 8126c9ceddd161803d78d3a1c4c70325163ef111
     border-radius: 10px;
     margin-bottom: 1.5rem;
     border: 2px solid #333;
@@ -65,6 +64,8 @@
     white-space: nowrap;
     align-self: center;
     margin: 0;
+    border-radius: 10px;
+
 }
 
 .social-links {
@@ -91,7 +92,7 @@
 }
 
 .footer-contact {
-    color: var(--writing-color-secondary);
+    color: var(--writing-color);
     display: flex;
     flex-direction: row;
     gap: 2rem;
@@ -119,12 +120,12 @@
 }
 
 .copyright {
-    color: var(--writing-color-secondary);
+    color: var(--writing-color);
 }
 
 @media screen and (max-width: 1440px) {
     .footer-container {
-        padding: 50px 80px;
+        padding: 50px 120px;
     }
 
     .footer-logo {
@@ -162,11 +163,8 @@
     .footer-container {
         padding: 40px 20px;
         text-align: center;
-<<<<<<< HEAD
-        /* background-color: var(--color-bg); */
-=======
         background-color: var(--secondary-backgroundcolor);
->>>>>>> 8126c9ceddd161803d78d3a1c4c70325163ef111
+
     }
 
     .footer-top {
@@ -195,7 +193,7 @@
         flex-wrap: wrap;
         justify-content: center;
         flex-direction: row;
-    }   
+    }
 
     .footer-right {
         width: 90%;
@@ -204,11 +202,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-<<<<<<< HEAD
-        /* background-color: var(--color-bg); */
-=======
         background-color: var(--secondary-backgroundcolor);
->>>>>>> 8126c9ceddd161803d78d3a1c4c70325163ef111
         flex-direction: column;
         border-radius: 10px;
         border: 2px solid #333;
@@ -227,7 +221,7 @@
     }
 
     .social-links img {
-          width: 52px;  /* زيادة حجم الأيقونات */
+        width: 52px;
         height: 52px;
         transition: opacity 0.3s;
     }
@@ -245,7 +239,7 @@
         flex-direction: column;
         gap: 0.75rem;
         align-items: center;
-        color: var(--writing-color-secondary);
+        color: var(--writing-color);
         width: 100%;
         box-sizing: border-box;
         gap: 20px;
@@ -266,16 +260,12 @@
     }
 
     .contact-item::after {
-<<<<<<< HEAD
-        /* background-color: var(--color-hover); */
-=======
         background-color: var(--rarely-backgroundcolor);
->>>>>>> 8126c9ceddd161803d78d3a1c4c70325163ef111
     }
 
     .copyright {
         font-size: 16px;
-        color: var(--writing-color-secondary);
+        color: var(--writing-color);
         margin-top: 1rem;
     }
 }
