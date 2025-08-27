@@ -47,9 +47,10 @@ h1 {
 }
 
 .hero {
-  width: 598px;
-  height: 571px;
-
+  max-width: 598px;
+  max-height: 571px;
+  width: 30vw;
+  height: 30vw;
   filter: contrast(120%) brightness(16%) sepia(100%) hue-rotate(44deg)
     saturate(92%);
   object-fit: cover;
@@ -110,10 +111,11 @@ h1 {
 }
 
 .logoAbout {
-  box-shadow: 0 0 200px var(--writing-color-titles),
-    inset 0 0 27px var(--writing-color-titles);
-  width: 150.7px;
-  height: 150px;
+  box-shadow: 0 0 200px var(--writing-color-titles),    inset 0 0 27px var(--writing-color-titles);
+ max-width: 150.7px;
+ max-height: 150px;
+width: 8vw;
+height: 8vw;
   background-color: var(--primary-color);
   display: flex;
   border-radius: 27px;
@@ -124,11 +126,17 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
+  -webkit-border-radius: 27px;
+  -moz-border-radius: 27px;
+  -ms-border-radius: 27px;
+  -o-border-radius: 27px;
 }
 
 .iconAbout {
-  width: 80px;
-  height: 90px;
+  max-width: 80px;
+  max-height: 90px;
+  width: 6vw;
+  height: 5vw;
 }
 
 @media screen and (max-width: 1440px) {
@@ -152,10 +160,11 @@ h1 {
   }
 
   .hero {
-    width: 490px;
-    height: 483px;
-    /* width: 25.52vw;
-  height: 25.16vw; */
+   
+    max-width: 490px;
+  max-height: 483px;
+  width: 30vw;
+  height: 30vw;
   }
 
   .logoAbout {
@@ -197,8 +206,10 @@ h1 {
   }
 
   .hero {
-    max-width: 385px;
-    max-height: 337px;
+max-width: 358px;
+max-height: 337px;
+    width:90vw;
+   height:90vw;
   }
 
   .logoAbout {
