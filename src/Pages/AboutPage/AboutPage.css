@@ -1,4 +1,12 @@
 .RB_Flex_About{
     display: flex;
-    margin: 100px;
+    justify-content: space-between;
+    gap: 20px;
+    overflow-x: auto;
+}
+@media screen and (max-width:992px){
+    .RB_Flex_About{
+        flex-direction: column;
+        align-items: center;
+    }
 }

@@ -1,5 +1,4 @@
 import "./ProcessTitle.css"
-
 const ProcessTitle = ({title,description,info}) => {
   return (
     <div className='RB_Process_Title'>

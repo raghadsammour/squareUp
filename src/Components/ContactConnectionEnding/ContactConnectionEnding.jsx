@@ -1,4 +1,3 @@
-import React from 'react'
 import "./ContactConnectionEnding.css"
 const ContactConnectionEnding = (props) => {
   return (
