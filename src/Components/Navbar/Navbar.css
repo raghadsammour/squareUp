@@ -23,7 +23,6 @@ body,
     align-items: center;
     justify-content: space-between;
     padding: 20px 162px;
-
     background-color: var(--primary-backgroundcolor);
     position: fixed;
     top: 0;
@@ -49,11 +48,12 @@ body,
 }
 
 .navbar-logo {
-    
+
     height: 60px;
-      border-radius: 8px;
+    border-radius: 8px;
 
 }
+
 .nav-link {
     text-decoration: none;
     color: var(--writing-color-titles);
@@ -65,7 +65,9 @@ body,
 
 .nav-link:hover,
 .nav-link:focus {
-    background-color: var(--writing-color);
+
+    background-color: var(--secondary-backgroundcolor);
+
     color: var(--primary-color);
     padding: 14px;
     transition: all 0.5s ease;
@@ -73,10 +75,11 @@ body,
 }
 
 .nav-link:visited {
-    background-color: var(--writing-color);
+
+    background-color: var(--secondary-backgroundcolor);
+
     font-weight: 600;
 }
-
 
 .navbar-button {
     background-color: var(--primary-color);
@@ -102,7 +105,7 @@ body,
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: var( --primary-backgroundcolor);
+    background-color: var(--primary-backgroundcolor);
     transform: scaleY(0);
     transform-origin: top;
     opacity: 0;
@@ -126,10 +129,12 @@ body,
     .navbar {
         padding: 20px 80px;
     }
-.navbar-logo {
-    height: 40px;
 
-}
+    .navbar-logo {
+        height: 40px;
+
+    }
+
     .navbar-center {
         gap: 1.5rem;
     }
@@ -173,6 +178,6 @@ body,
         width: 92%;
         margin-top: 1rem;
         margin: 16px;
-        
+
     }
 }

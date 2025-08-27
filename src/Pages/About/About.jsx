@@ -6,7 +6,9 @@ import "./About.css";
 import bgAbout from "../../assets/imgs/About/Abouthero.webp";
 import SectionAbout from "../../Components/SectionAbout/SectionAbout";
 import DesignTitle from "../../Components/DesignTitle/DesignTitle";
+
 import ContactProject from "../../Components/ContactProject/ContactProject"
+
 const About = () => {
   let defaultItemsAbout=[
     {
@@ -82,7 +84,9 @@ useEffect(() => {
           ))
         )}
       </Container>
-      <ContactProject/>
+
+<ContactProject/>
+
     </div>
   );
 };
