@@ -4,7 +4,6 @@ import About from "./Pages/About/About.jsx";
 import Work from "./Pages/Work/Work.jsx";
 import Process from "./Pages/Process/Process.jsx";
 import Contact from "./Pages/Contact/Contact.jsx";
-import Clients from "./Pages/Clients/Clients.jsx";
 import { Route, Routes } from "react-router-dom";
 /* import Dashboard from "./Pages/Dashboard/Dashboard.jsx"; */
 import EditForm from "./Pages/EditForm/EditForm.jsx";
@@ -32,11 +31,10 @@ import ProcessForm from "./Pages/ProcessForm/ProcessForm.jsx";
 import AboutPage from "./Pages/AboutPage/AboutPage.jsx";
 import AboutForm from "./Pages/AboutForm/AboutForm.jsx";
 import UsersTable from "./Pages/UsersTable/UsersTable.jsx";
-import AdminPage from "./Pages/AdminW/AdminPage.jsx"
+
 import AdminPageOK from "./Pages/AdminH/AdminPageOK.jsx"
 import FaqAdminPage from "./Pages/AdmainFAQ/FaqAdminPage.jsx";
 
-// import UsersTable from "./Pages/UsersTable//UsersTable.jsx"
 function App() {
   return (
     <>
@@ -48,22 +46,8 @@ function App() {
         <Route path='/process' element={<Process />} />
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
-        <Route path='/clients' element={<Clients />} />
-        <Route path="/trash" element={<TrashPage />} />
-        {/* <Route path='/dashboard' element={<Dashboard />} >
-          <Route path='/dashboard/editform/:id' element={<EditForm />} />
-          <Route path='/dashboard/editformabout/:id' element={<EditFormAbout />} />
-          <Route path='/dashboard/userstable' element={<UsersTable/>} />
-
-        </Route> */}
-        {/* <Route path='/dashboard' element={<Dashboard />} >
-          <Route path='/dashboard/editform/:id' element={<EditForm />} />
-          <Route path='/dashboard/editformabout/:id' element={<EditFormAbout />} />
-          <Route path='/dashboard/userstable' element={<UsersTable/>} />
-
-        </Route> */}
-
-
+            <Route path="/trash" element={<TrashPage />} />
+  
         <Route path="/Dash" element={<Dash />}>
 
           {/* Home */}
@@ -89,11 +73,9 @@ function App() {
           </Route>
 
 
-
-
           {/* work */}
           <Route path="AdminPage" element={<AdminPage />} >
-          </Route> *
+          </Route> 
 
  {/* Process */}
           <Route path="editprocess" element={<ProcessPage/>} >

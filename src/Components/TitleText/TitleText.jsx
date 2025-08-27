@@ -2,9 +2,7 @@ import './TitleText.css';
 
 const TitleText = ({ title, text ,image}) => {
   return (
-    <>
     <div className='bigdiv'>
-
   <div 
   className="title-text-container"
   style={{
@@ -19,7 +17,7 @@ const TitleText = ({ title, text ,image}) => {
 </div>
   <div className="pattern"></div>
     </div>
-    </>
+  
 
   );
 };

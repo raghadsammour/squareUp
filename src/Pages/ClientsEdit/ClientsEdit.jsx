@@ -53,16 +53,7 @@ const ClientsEdit = () => {
 
   return (
   <form className='RS_FormEdit' onSubmit={handleSubmit}>
-  <div className='RS_FormEditService'>
-      <label>Title:</label>
-      <input type="text" value={title} required onChange={(e) => setTitle(e.target.value)} />
-</div>
-  <div className='RS_FormEditService'>
-
-      <label>Text:</label>
-      <input type="text" value={text} required onChange={(e) => setText(e.target.value)} />
-  </div>
-  <div className='RS_FormEditService'>
+   <div className='RS_FormEditService'>
 
       <label>Name:</label>
       <input type="text" value={name} required onChange={(e) => setName(e.target.value)} />
@@ -72,6 +63,17 @@ const ClientsEdit = () => {
       <label>Work:</label>
       <input type="text" value={work} required onChange={(e) => setWork(e.target.value)} />
   </div>
+  <div className='RS_FormEditService'>
+      <label>Title:</label>
+      <input type="text" value={title} required onChange={(e) => setTitle(e.target.value)} />
+</div>
+  <div className='RS_FormEditService'>
+
+      <label>Text:</label>
+      <input type="text" value={text} required onChange={(e) => setText(e.target.value)} />
+  </div>
+ 
+  
   <div className='RS_FormEditService'>
 
       <label>Link:</label>

@@ -17,7 +17,6 @@ import Adobe from "../../assets/Icons/adobe.svg";
 import amazon from "../../assets/Icons/amazon.svg";
 import Slack from "../../assets/Icons/slack.svg";
 import Spotify from "../../assets/Icons/spotify.svg";
-
 import Main from '../Main/MainOK';
 import LocalService from "../LocalService/LocalService"
 import LocalClients from "../LocalClients/LocalClients"
@@ -35,7 +34,7 @@ const Home = () => {
   ];
 
   return (
-    <>
+    <div className="whiteSpacing">
  <Header className="RB_Header">
         <HeroHome
           image={image}
@@ -81,7 +80,7 @@ const Home = () => {
 
       />
 
-      <div className="clients">
+      <div className="clientsHome">
   <LocalClients/>
       </div>
 
@@ -98,7 +97,7 @@ const Home = () => {
       <Faq />
 <Thanks  title="Thank you for your Interest in SquareUp." Text="We would love to hear from you and discuss how we can help bring your digital ideas to life. Here are the different ways you can get in touch with us."/>
 
-</>
+</div>
   )
 }
 

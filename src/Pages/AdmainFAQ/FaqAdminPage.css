@@ -15,8 +15,8 @@
 .faq-admin-container {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 2rem 162px;
-    background: var(--color-bg);
+    padding: 2rem 0;
+    /* background: var(--color-bg); */
     color: var(--color-text);
     min-height: 100vh;
 }
@@ -249,7 +249,7 @@
 
 @media screen and (max-width: 1440px) {
     .faq-admin-container {
-        padding: 2rem 80px;
+        padding: 2rem 0;
     }
     
     .faq-admin-container h2 {
@@ -269,7 +269,7 @@
 
 @media screen and (max-width: 992px) {
     .faq-admin-container {
-        padding: 1.5rem;
+        /* padding: 1.5rem; */
     }
     
     .faq-admin-container h2 {

@@ -9,7 +9,6 @@ body,
 #root {
     height: 100%;
     width: 100%;
-    background-color: var(--primary-backgroundcolor);
     font-family: sans-serif;
 }
 
@@ -22,7 +21,8 @@ body,
     align-items: center;
     justify-content: space-between;
     padding: 20px 162px;
-    background-color: var(--secondary-backgroundcolor);
+
+    background-color: var(--primary-backgroundcolor);
     position: fixed;
     top: 0;
     left: 0;
@@ -47,11 +47,11 @@ body,
 }
 
 .navbar-logo {
+    
     height: 60px;
-    width: auto;
-    border-radius: 8px;
-}
+      border-radius: 8px;
 
+}
 .nav-link {
     text-decoration: none;
     color: var(--writing-color-titles);
@@ -100,7 +100,7 @@ body,
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: var(--secondary-backgroundcolor);
+    background-color: var( --primary-backgroundcolor);
     transform: scaleY(0);
     transform-origin: top;
     opacity: 0;
@@ -124,7 +124,10 @@ body,
     .navbar {
         padding: 20px 80px;
     }
+.navbar-logo {
+    height: 40px;
 
+}
     .navbar-center {
         gap: 1.5rem;
     }
@@ -146,6 +149,7 @@ body,
         position: relative;
     }
 
+
     .nav-link {
         margin-left: 20px;
     }
@@ -164,8 +168,9 @@ body,
 
     .mobile-menu .navbar-button {
         display: block;
-        width: 95%;
+        width: 92%;
         margin-top: 1rem;
-        margin: 20px;
+        margin: 16px;
+        
     }
 }

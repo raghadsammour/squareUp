@@ -6,6 +6,7 @@
         align-items: center;
         margin-bottom: 50px;
         .RB_Img{
+            padding: 30px 35.35px;
             width: 150.704px;
             height: 150px;
             background-color: var(--primary-color);
@@ -78,6 +79,15 @@
     .RB_Project{
         padding: 60px;
         .RB_Project_First{
+                  .RB_Img{
+                       width: 100px;
+        height: 100px;
+        padding: 20px 23.57px;
+        img{
+     width: 53px;
+     height: 60px;
+      }
+        }
             .RB_Info{
                 margin-left: 30px;
                 h3{
@@ -112,7 +122,22 @@
 }
 @media screen and (max-width:992px) {
     .RB_Project{
-        padding: 40px 24px;
+            padding: 40px 24px;
+          .RB_Project_First{
+            flex-direction: column;
+            .RB_Img{
+                width: 80px;
+                height: 80px;
+                padding: 16px 18px;
+                img{
+                    width: 42px;
+                    height: 48px;
+                   }
+        }
+              .RB_Info{
+                margin-top: 24px;
+              }
+        }
         .RB_Project_Second{
             flex-direction: column;
             align-items: center;

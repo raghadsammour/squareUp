@@ -1,34 +1,10 @@
-:root {
-    --color-bg: #262626;
-    --color-text: #ffffff;
-    --color-accent: #B6FF19;
-    --color-hover: #333333;
-    --color-TrustedText: #FDFFFA;
-    --color-logoText: #E6E6E6;
-    --color-Nomber: #D8FF99;
-    --color-copy: #98989A;
-    --color-card-bg: #1A1A1A;
-    --color-border: #333333;
-}
 
-:root {
-    --secondary-backgroundcolor: #1A1A1A;
-    --secondary-backgroundcolor: #262626;
-    --rarely-backgroundcolor: #333333;
-    --primary-color: #9EFF00;
-    --secondary-color: #D8FF99;
-    --writing-color: #98989A;
-    --writing-color-secondary: #98989A;
-    --writing-color-rarely: #FDFFFA;
-    --writing-color-titles: #FFFFFF;
-    --paragraph-color: #E6E6E6;
-}
 
 .admin-container {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 2rem 162px;
-    background: var(--color-bg);
+    padding: 2rem 0;
+    /* background: var(--color-bg); */
     color: var(--color-text);
 }
 

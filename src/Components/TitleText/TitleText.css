@@ -21,7 +21,7 @@
 }
 .bigdiv{
   position: relative;
-  margin: 0 163px;
+
 }
 .title-text-container {
   position: relative;
@@ -40,7 +40,7 @@
   inset: 0;
   background: inherit;
   filter: contrast(130%) brightness(16%) sepia(100%) hue-rotate(44deg) saturate(92%);
-
+  -webkit-filter: contrast(130%) brightness(16%) sepia(100%) hue-rotate(44deg) saturate(92%);
 }
 .service-paragraph{
   background-color: transparent;
@@ -76,10 +76,10 @@ max-width: 996px;
 @media screen and (max-width:1440px){  
   .title-text-container{
     padding: 100px 0;
-    /* margin: 0 80px; */
+   
   }
     .bigdiv{
-    margin: 0 80px;
+
   }
 
   .title-service{
@@ -104,9 +104,7 @@ max-width: 996px;
       padding: 50px 16px;
     
   } 
-  .bigdiv{
-    margin: 0 20px;
-  }
+
   .title-service{
       font-size: 28px;
       padding-bottom: 6px;

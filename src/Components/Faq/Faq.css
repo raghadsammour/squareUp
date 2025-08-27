@@ -1,8 +1,4 @@
 
-.faq-container {
-  margin: 0 auto;
-  padding: 0 162px;
-}
 
 .faq-columns-container {
   display: flex;
@@ -16,11 +12,11 @@
 }
 
 .faq-item {
-  background-color: var(--secondary-backgroundcolor);
+
   padding: 30px 50px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
-  border: 1px solid --secondary-backgroundcolor;
+  border: 1px solid var(--secondary-backgroundcolor);
 }
 
 .faq-item.active {
@@ -37,6 +33,11 @@
 }
 
 .faq-number {
+   background-image: linear-gradient(
+    180deg,
+    #2e2e2e 0%,
+    rgba(46, 46, 46, 0) 100%
+  );
   color: var(--writing-color-titles);
   width: 80px;
   height: 80px;
@@ -129,9 +130,7 @@
 }
 
 @media screen and (max-width: 1440px) {
-  .faq-container {
-    padding: 0 80px;
-  }
+
 
   .faq-item {
     padding: 25px 40px;
@@ -164,10 +163,7 @@
 }
 
 @media screen and (max-width: 992px) {
-  .faq-container {
-    padding: 0 16px;
-  }
-
+ 
   .faq-columns-container {
     flex-direction: column;
   }

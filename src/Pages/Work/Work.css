@@ -1,3 +1,10 @@
 .work-page{
     margin-top: 100px;
 }
+
+
+@media screen and (max-width:992px) {
+.work-page{
+    margin-top: 0;
+}
+}

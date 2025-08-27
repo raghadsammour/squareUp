@@ -8,7 +8,7 @@
   box-sizing: border-box;
 }
 .servicesC {
-  margin: 0 163px;
+
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
@@ -18,13 +18,12 @@
   border: 1px solid rgb(46, 46, 46);
   padding: 50px;
   display: grid;
-  
-  grid-template-rows: 40% 47% 13%;
+    grid-template-rows: 40% 47% 13%;
   }
   
 .titleService,
 .textService {
-  color: white;
+  color: var(--writing-color-titles);
   font-family: "Barlow", sans-serif;
 }
 .titleService {
@@ -49,7 +48,7 @@
   border-radius: 8px;
   border: none;
   background-color: #373737;
-  color: white;
+  color: var(--writing-color-titles);
   bottom: 0;
 }
 
@@ -60,9 +59,7 @@
   align-items: center;
 }
   @media screen and (max-width: 1440px) {
-  .servicesC {
-    margin: 0 80px;
-  }
+
    .cardService {
     padding: 40px;
     grid-template-rows: 30% 60%;
@@ -91,7 +88,7 @@
 @media screen and (max-width: 992px) {
   .servicesC {
     grid-template-columns: 1fr;
-    margin: 0 16px;
+
   }
   .cardService {
     padding: 30px;
@@ -130,5 +127,4 @@ padding-top: 30px;
     margin-bottom: 0px;
   }
 } 
-
 

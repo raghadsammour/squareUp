@@ -9,9 +9,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid var(--secondary-backgroundcolor);
-  margin-left: 162px;
-  margin-right: 162px;
+  border: 1px solid #262626;
 }
 .RB_HeroHome img {
   height: 41.48%;
@@ -36,7 +34,7 @@
 .RB_HeroHome .RB_Paragraph {
   font-family: barlow4;
   font-size: 22px;
-  color: var(--writing-color);
+  color:#FFFFFF;
   max-width: 865px;
   margin-bottom: 50px;
   padding: 24px 40px;
@@ -85,8 +83,7 @@
 @media screen and (max-width: 1440px) {
   .RB_HeroHome {
     padding-top: 197px;
-    margin-left: 80px;
-    margin-right: 80px;
+
   }
   .RB_HeroHome .RB_Title {
     font-size: 48px;
@@ -111,6 +108,8 @@
   }
 }
 @media screen and (max-width: 992px) {
+
+  /* .heroHome { */
   .RB_HeroHome {
     padding-top: 186px;
     padding-left: 16px;

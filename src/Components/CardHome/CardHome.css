@@ -1,0 +1,36 @@
+
+.card {
+  
+    padding: 60px;
+    border: 1px solid rgb(80, 79, 79);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px var(--color-accent);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 26px;
+}
+
+.card p {
+    font-size: 20px;
+    color: var(--color-logoText);
+    padding-bottom: 40px;
+    line-height: 150%;
+    margin-top: 40px;
+}
+
+.card-actions {
+    display: flex;
+    justify-content: space-between;
+}

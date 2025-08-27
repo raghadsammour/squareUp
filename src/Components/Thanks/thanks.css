@@ -1,102 +1,149 @@
-.Thank{
-    position: relative;
-    background-image: url("/assets/img/dots.png");
-    background-repeat: repeat;
-    background-position: bottom;
-    background-color: #262626;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+.Thank {
+  position: relative;
+  background-image: url("../../assets/imgs/Process/thank you.webp");
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  z-index: -1;
 }
-.logo{
-    width: 80px;
-    padding: 16px;
-    background-color: #9EFF00;
-    border-radius: 15px;
-    margin-bottom: 50px;
-    margin-top: 120px;
+.logoAboutThank{
+    box-shadow:  inset 0 0 27px var(--writing-color-titles);
+
 }
-.titel{
-    color: #FFFFFF;
-    max-width: 896px;
-    font-weight: 600;
-    font-size: 38px;
-    line-height: 100%; 
-    margin-bottom: 14px;
+.Thank::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  z-index: -1;
+  filter: contrast(130%) brightness(16%) sepia(100%) hue-rotate(44deg)
+    saturate(92%);
+  -webkit-filter: contrast(130%) brightness(16%) sepia(100%) hue-rotate(44deg)
+    saturate(92%);
 }
-.discription{
-    color: #E6E6E6;
-    max-width: 896px;
-    font-size: 18px;
-    line-height: 150%;
-    margin-bottom: 50px;
+.thankDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 120px 0;
 }
-.but_start{
-    position: relative;
-    z-index: 2;
-    width: 170px;
-    height: 63px;
-    margin-bottom: 120px;
-    color: #1A1A1A;
-    background-color: #9EFF00;
-    border-radius: 8px;
-    border: none;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 150%;
-    cursor: pointer;
+.bglogothank {
+  width: 80px;
+  height: 80px;
+  padding: 16px;
+  background-color: #9eff00;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  z-index: 2;
+  margin-bottom: 50px;
+  img {
+    width: 42.66665267944336px;
+  }
 }
-.bg_thank{
-    position: absolute;
-    /* padding: 0 120px; */
-    opacity: 10%;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
+.thanksParagraph {
+  max-width: 896px;
 }
-@media screen and (max-width:1440px) {
-.logo{
+.thanksParagraph .titleThank {
+  color: var(--writing-color-titles);
+  max-width: 896px;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 100%;
+  margin-bottom: 14px;
+}
+
+.discription {
+  color: var(--paragraph-color);
+  max-width: 896px;
+  font-size: 18px;
+  line-height: 150%;
+  margin-bottom: 50px;
+}
+.but_start {
+  position: relative;
+  z-index: 2;
+  width: 170px;
+  height: 63px;
+  color: var(--primary-backgroundcolor);
+  background-color: #9eff00;
+  border-radius: 8px;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 150%;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1440px) {
+  .bglogothank {
     width: 60px;
+    height: 60px;
     padding: 12px 14px;
-    margin-bottom: 40px;
-    margin-top: 100px;
-}    
-.titel{
-    font-size: 30px;
-    margin-bottom: 10px;
+ margin-bottom: 40px;
+    img {
+      width: 32px;
+    }}
+.thanksParagraph {
+  max-width: 750px;
 }
-.discription{
-    font-size: 16px;
-    margin-bottom: 40px;
+.thanksParagraph .titleThank {
+  max-width: 896px;
+  font-size: 30px;
+  margin-bottom: 10px;
 }
-.but_start{
-    width: 127px;
-    height: 49px;
-    margin-bottom: 100px;
-    font-size: 14px;
+
+.discription {
+
+  font-size: 16px;
+  line-height: 150%;
+  margin-bottom: 40px;
 }
+.but_start {
+  width: 127px;
+  height: 49px;
+  font-size: 14px;
+
 }
-@media screen and (max-width:992px) {
-.logo{
+.thankDiv {
+
+  padding: 100px 0;
+}
+
+}
+@media screen and (max-width: 992px) {
+  .bglogothank {
     width: 50px;
-    padding: 10px 11px;
-    margin-bottom: 28px;
-    margin-top: 50px;
-}      
-.titel{
-    font-size: 24px;
-    margin-bottom: 6px;
+    height: 50px;
+    padding: 10px 11.78px;
+
+    img {
+      width: 26.67px;
+    }}
+.thanksParagraph {
+padding: 28px 16px;
 }
-.discription{
-    font-size: 14px;
-    margin-bottom: 28px;
+.thanksParagraph .titleThank {
+margin-top: 0;
+  font-size: 24px;
+  margin-bottom: 6px;
+  line-height: 100%;
 }
-.but_start{
-    width: 127px;
-    height: 49px;
-    margin-bottom: 50px;
-    font-size: 14px;
+
+.discription {
+margin-bottom: 0;
+  font-size: 14px;
+  line-height: 24px;
+
 }
+.thankDiv {
+  padding: 50px 0;
+}
+
 }

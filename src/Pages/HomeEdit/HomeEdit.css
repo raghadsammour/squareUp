@@ -13,24 +13,20 @@
   font-family: 'Barlow regular';
   src: url('/font/barlow/Barlow-Regular.ttf');
 }
-.dashboard{
-    /* padding: 120px 0; */
-    /* margin: 0 162px; */
-}
-nav {
+
+.NavHome {
   display: flex;
   gap:20vw;     
   justify-content: center;
   align-items: center;
   background-color: #111;  
     padding: 14px 24px;
-
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid var( --writing-color-titles);
 }
 
 
-nav a {
-  color: white;
+.NavHome a {
+  color: var( --writing-color-titles);
   text-decoration: none;
   font-size: 18px;
   font-family: "Barlow Semi Bold", sans-serif;
@@ -38,32 +34,26 @@ nav a {
 
 }
 
-nav a:hover {
-  color: rgba(158, 255, 0, 1);       
+.NavHome a:hover {
+  color: var( --primary-color);       
   transform: scale(1.05); }
 
 
 @media screen and (max-width:1440px){  
-  .dashboard{
-    /* padding: 100px 0; */
-    /* margin: 0 80px; */
-  }
-  nav{
+
+  .NavHome{
     gap: 10vw;
 } 
-nav a{    
+.NavHome a{    
     font-size: 16px;
 }
 }
 @media screen and (max-width:992px){  
-  .dashboard{
- 
-    /* margin: 0 20px; */
-  }
-nav{
+
+.NavHome{
     gap: 9vw;
 } 
-nav a{    
+.NavHome a{    
     font-size: 14px;
 }}
 
@@ -77,10 +67,9 @@ nav a{
   box-sizing: border-box;
 }
 .cardService {
-  border: 1px solid rgb(46, 46, 46);
+  border: 1px solid var(  --secondary-backgroundcolor);
   padding: 50px;
   display: grid;
-
   grid-template-rows: 35% 54%;
 }
 
@@ -91,15 +80,15 @@ nav a{
     #2e2e2e 0%,
     rgba(46, 46, 46, 0) 100%
   );
-  border-top: 1px solid rgb(46, 46, 46);
-  border-left: 1px solid rgb(46, 46, 46);
-  border-right: 1px solid rgb(46, 46, 46);
+  border-top: 1px solid var(  --secondary-backgroundcolor);
+  border-left: 1px solid var(  --secondary-backgroundcolor);
+  border-right: 1px solid var(  --secondary-backgroundcolor);
   padding: 24px;
 }
 
 .titleService,
 .textService {
-  color: white;
+  color: var( --writing-color-titles);
   font-family: "Barlow", sans-serif;
 }
 .titleService {
@@ -123,8 +112,8 @@ nav a{
   margin-bottom: 50px;
   border-radius: 8px;
   border: none;
-  background-color: #373737;
-  color: white;
+  background-color: var(  --secondary-backgroundcolor);
+  color: var( --writing-color-titles);
   bottom: 0;
 }
 .servicesCard {
@@ -181,12 +170,7 @@ nav a{
   .icon-container{
 padding-top: 30px;
 }
-  .paragraphIcon-container {
-    /* width: 58px; */
-  }
-  .paragraphIcon-container img {
-    /* padding: 16px; */
-  }
+
   .paragraphIcon-container {
     display: flex;
     flex-direction: row;

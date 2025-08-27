@@ -6,13 +6,12 @@ import bg from "../../assets/imgs/Home/ourservices.webp";
 const Dash = () => {
 
   return (
-    <div className='RS_DashPage'>
+    <div className='RS_DashPage whiteSpacing work-page'>
 <TitleText title={"Dashboard"} text={"Edit , Delete and Add"} image={bg}/>
 <div className='dashboard'>
-    <nav>
+    <nav className='DashNav'>
         <Link to="EditHome">Home</Link>
-
-        <Link to="EditClient">Work</Link>
+        <Link to="AdminPage">Work</Link>
         <Link to="editprocess">Process</Link>
         <Link to="editabout">About</Link>
         <Link to="userstable">Users</Link>

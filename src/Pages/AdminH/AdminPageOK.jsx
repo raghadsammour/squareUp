@@ -99,7 +99,7 @@ const CardsAdminPage = () => {
     };
 
     return (
-        <div className="admin-container cards-admin">
+        <div className="admin-container cards-admin whiteSpacing">
             <h2>Home Page Cards Management</h2>
 
             <div className="tabs">

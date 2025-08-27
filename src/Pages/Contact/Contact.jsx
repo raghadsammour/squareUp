@@ -1,7 +1,6 @@
 import TitleText from "../../Components/TitleText/TitleText"
 import "./Contact.css"
 import bgAbout from "../../assets/imgs/contact/contactus.webp"
-import smallSquare from "../../assets/Icons/smallSquare.png"
 import Faq from "../../Components/Faq/Faq"
 import ContactForm from "../../Components/ConatactForm/ContactForm"
 import ContactSection from "../../Components/ContactSection/ContactSection"
@@ -20,12 +19,12 @@ import Divider from "../../Components/Divider/Divider"
 import ContactProject from "../../Components/ContactProject/ContactProject"
 const Contact = () => {
   return (
-    <>
+    <div className="whiteSpacing work-page">
   <TitleText
   title="Contact Us"
   text="Get in touch with us today and let us help you with any questions or inquiries you may have."
 image={bgAbout}
-overlay={smallSquare}
+
 />
     <ContactSection>
       <ContactIcons>
@@ -59,9 +58,15 @@ overlay={smallSquare}
       </ContactConnectionEnding>
       <ContactProject/>
     </ContactSection>
+      <TitleText
+  title="Frequently Asked Questions"
+  text="Still you have any questions? Contact our Team via hello@squareup.com"
+image={bgAbout}
+
+/>
 <Faq />
 
-</>
+</div>
   )
 }
 

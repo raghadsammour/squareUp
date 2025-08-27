@@ -15,12 +15,11 @@
 }
 
 .dashboard{
-    /* padding: 120px 0; */
-    margin: 0 163px;
-    border-top: 1px solid white;
+ 
+    border-top: 1px solid var(  --writing-color-titles);
     
 }
-nav {
+.DashNav {
   display: flex;
   gap: 15vw;     
   justify-content: center;
@@ -30,40 +29,34 @@ nav {
 }
 
 
-nav a {
-  color: white;  
-  text-decoration: none;  /* يشيل الخط تحت النص */
+.DashNav a {
+  color: var(  --writing-color-titles);  
+  text-decoration: none;  
   font-size: 18px;
   font-family: "Barlow Semi Bold", sans-serif;
   transition: color 0.3s ease, transform 0.2s ease;
 }
 
-nav a:hover {
-  color: rgba(158, 255, 0, 1);        /* لون عند الهوفر */
-  transform: scale(1.05); /* تكبير بسيط */
+.DashNav a:hover {
+  color: rgba(158, 255, 0, 1);    
+  transform: scale(1.05);
 }
 
 
 @media screen and (max-width:1440px){  
-  .dashboard{
-    /* padding: 100px 0; */
-    margin: 0 80px;
-  }
-  nav{
+
+  .DashNav{
     gap: 10vw;
 } 
-nav a{    
+.DashNav a{    
     font-size: 16px;
 }
 }
 @media screen and (max-width:992px){  
-  .dashboard{
- 
-    margin: 0 20px;
-  }
-nav{
+
+.DashNav{
     gap: 5vw;
 } 
-nav a{    
+.DashNav a{    
     font-size: 14px;
 }}

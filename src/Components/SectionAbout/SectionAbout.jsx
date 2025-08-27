@@ -4,7 +4,7 @@ import logoImg from "../../assets/Icons/logoSquare.svg";
 
 const SectionAbout = () => {
   return (
-    <section className="container padding">
+    <section className="container">
       <div className="text">
         <h1>About SquareUP</h1>
         <p>

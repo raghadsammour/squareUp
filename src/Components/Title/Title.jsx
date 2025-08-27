@@ -7,7 +7,7 @@ const FaqItem = ({ question, answer, number }) => {
 
   return (
     <div className="faq-item">
-      <div className="faq-header">
+      <div className="faq-header ">
         <span className={isOpen ? "faq-number active" : "faq-number"}>{number}</span>
         <h3 className={isOpen ? "faq-question active" : "faq-question"}>{question}</h3>
         <button className="faq-toggle" onClick={() => setIsOpen(!isOpen)}>

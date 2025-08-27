@@ -74,7 +74,7 @@ useEffect(() => {
     const halfLength = Math.ceil(items.length / 2);
     const visibleItems = showMore ? items : items.slice(0, halfLength);
   return (
-    <div className="work-page">
+    <div className="work-page whiteSpacing">
       <TitleText
         title="Process of Starting the Project"
         text="At SquareUp, we value transparency, collaboration, and delivering exceptional results."

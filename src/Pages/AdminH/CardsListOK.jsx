@@ -20,7 +20,7 @@ const CardsList = ({
                 </button>
             </div>
 
-            <div className="cards-table-container">
+            <div className="cards-table-container ">
                 {cards.length === 0 ? (
                     <p className="no-cards">No cards to display</p>
                 ) : (

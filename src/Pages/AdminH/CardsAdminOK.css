@@ -81,7 +81,7 @@
 
 /* تنسيقات الجدول */
 .cards-admin .cards-table-container {
-    margin: 2rem -120px;
+  
     overflow-x: auto;
     background: var(--color-card-bg);
     border-radius: 8px;
