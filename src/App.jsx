@@ -37,6 +37,7 @@ import FaqAdminPage from "./Pages/AdmainFAQ/FaqAdminPage.jsx";
 
 function App() {
   return (
+    
     <>
       <Navbar />
 
@@ -103,5 +104,6 @@ function App() {
     </>
 
   )
+  
 }
 export default App;
